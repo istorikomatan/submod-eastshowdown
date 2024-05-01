@@ -1,0 +1,38 @@
+add_namespace = LFR
+
+country_event = {
+    id = LFR.1
+	months = 16 
+    title = "War Event"
+    desc = "This is a war declaration event."
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+    option = {
+        name = "Declare War on Russia"
+        ai_chance = {
+            base = 100
+        }
+       start_border_war = {
+    change_state_after_war = no
+    attacker = {
+        state = 89
+        num_provinces = 1
+        on_win = 
+        on_lose = 
+        on_cancel = 
+        modifier = 0.1
+        dig_in_factor = 0
+        terrain_factor = 0
+    }	
+    defender = {
+        state = 371
+        num_provinces = 1
+        on_win = 
+        on_lose = 
+        on_cancel =
+    }
+}
+        }
+    }
+}

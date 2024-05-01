@@ -1,0 +1,6 @@
+ LFR_category = {
+ my_decision_1 = {
+    }
+    my_decision_2 = {
+    }
+}

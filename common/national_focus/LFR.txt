@@ -1,0 +1,75 @@
+focus_tree = {
+    id = LFR
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = LFR
+        }
+    }
+    default = no
+    
+    initial_show_position = {
+        focus = LFR_start
+    }
+    
+    focus = {
+        id = LFR_start
+        icon = GFX_focus_my_focus_icon
+        cost = 2.50
+        x = 17
+        y = 0
+        available = {
+            NOT = {
+                has_war_with = RUS
+            }
+        }
+        bypass = {
+            has_war_with = RUS
+        }
+        completion_reward = {
+            add_political_power = 30
+            add_war_support = 0.05
+            set_popularities = {
+                democratic = 32
+                neutrality = 21
+                fascism = 27
+                communism = 20
+            }
+            set_politics = {
+                ruling_party = democratic
+                elections_allowed = no
+                long_name = LFR_party_long
+                name = LFR_party
+            }
+            set_party_name = {
+                ideology = neutrality
+                long_name = LFR_n_l
+                name = LFR_n
+            }
+            set_party_name = {
+                ideology = nationalism
+                long_name = LFR_nac_l
+                name = LFR_nac
+            }
+            set_party_name = {
+                ideology = communism
+                long_name = LFR_c_l
+                name = LFR_c
+            }
+        }
+    }
+    
+    focus = {
+        id = LFR_hyeta
+        icon = GFX_focus_my_focus_icon
+        prerequisite = { focus = LFR_start }
+        x = 15
+        y = 5
+        relative_position_id = LFR_start
+        cost = 2.50
+        completion_reward = {
+            add_command_power = 15
+        }
+    }
+}

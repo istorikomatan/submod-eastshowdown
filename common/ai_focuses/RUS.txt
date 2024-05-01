@@ -1,0 +1,9 @@
+ai_historical_focus_list_RUS = {
+	ai_national_focuses = {
+	    #до начала СВО
+		
+		RUS_SMO
+	
+		#после начала СВО
+	}
+ }	
