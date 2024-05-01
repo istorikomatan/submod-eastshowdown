@@ -1,0 +1,29 @@
+state = {
+	id = 554
+	name = "STATE_554"
+	manpower = 5000
+
+	state_category = small_town
+
+	provinces = {
+		 10472 
+	}
+
+	history = {
+		owner = LFR
+		
+	
+		victory_points = { 10472 2 }
+		
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		
+		add_core_of = LFR
+	}
+
+	buildings_max_level_factor = 0.75
+}

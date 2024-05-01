@@ -1,0 +1,43 @@
+state = {
+	id = 293
+	name = "STATE_293"
+	manpower = 140771
+
+	state_category = small_town
+
+	provinces = {
+		524 6031 18686 18722 18723 18724 
+	}
+
+	resources = {
+		steel = 45
+	}
+
+	history = {
+		owner = LPR
+		
+		victory_points = { 524 25 }
+		victory_points = { 18686 18 }
+		victory_points = { 18722 17 }
+		victory_points = { 18723 6 }
+		victory_points = { 18724 5 }
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+
+			524 = { bunker = 9 }
+			6031 = { bunker = 8 }
+			18686 = { bunker = 3 }
+			18722 = { bunker = 5 }
+			18723 = { bunker = 4 }
+			18724 = { bunker = 3 }
+		}
+		
+		add_core_of = LPR
+		add_claim_by = UKR
+	}
+
+	buildings_max_level_factor = 0.5
+}

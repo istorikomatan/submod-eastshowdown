@@ -1,0 +1,26 @@
+state = {
+	id = 392
+	name = "STATE_392"
+	manpower = 43
+
+	state_category = military_facility
+
+	provinces = {
+		18165 
+	}
+
+	history = {
+		owner = NTO
+		
+		victory_points = { 18165 15 }
+		
+		buildings = {
+			ammunition_silo = 1
+			ammunition_plant = 1
+		}
+		
+		add_core_of = NTO
+		add_core_of = LIT
+	}
+
+}

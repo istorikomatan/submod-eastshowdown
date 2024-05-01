@@ -1,0 +1,30 @@
+state = {
+	id = 312
+	name = "STATE_312"
+	manpower = 27683
+
+	state_category = town
+
+	provinces = {
+		145 442 1293 2068 5429 6504 8668 11188 11655 16820 
+	}
+
+	resources = {
+		steel = 15
+	}
+
+	history = {
+		owner = CRO
+		
+		victory_points = { 8668 6 }
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			anti_air_building = 1
+		}
+		
+		add_core_of = CRO
+	}
+
+}

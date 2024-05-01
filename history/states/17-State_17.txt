@@ -1,0 +1,32 @@
+state = {
+	id = 17
+	name = "STATE_17"
+	manpower = 561621
+
+	state_category = town
+
+	provinces = {
+		849 1070 1287 1514 1969 2298 2388 2429 3632 3771 4259 4329 4886 4951 5242 5293 5342 5457 5545 5616 5973 6197 6625 6704 8874 9262 10695 10991 11083 11387 12114 12348 12455 12786 13160 13169 13222 
+	}
+
+	resources = {
+		oil = 465
+		gas = 342
+	}
+
+	history = {
+		owner = RUS
+		
+		victory_points = { 3632 12 }
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 3
+			anti_air_building = 2
+		}
+		
+		add_core_of = RUS
+	}
+
+}

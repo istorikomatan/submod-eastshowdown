@@ -1,0 +1,24 @@
+state = {
+	id = 398
+	name = "STATE_398"
+	manpower = 6282
+
+	state_category = enclave
+
+	provinces = {
+		10410 10839 12097 
+	}
+
+	history = {
+		owner = BLR
+		
+		victory_points = { 10410 1 }
+		
+		buildings = {
+			infrastructure = 3
+		}
+		
+		add_core_of = BLR
+	}
+
+}

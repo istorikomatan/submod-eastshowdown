@@ -1,0 +1,24 @@
+state = {
+	id = 41
+	name = "STATE_41"
+	manpower = 422
+
+	state_category = enclave
+
+	provinces = {
+		6185 
+	}
+
+	history = {
+		owner = RUS
+		
+		victory_points = { 13683 1 }
+		
+		buildings = {
+			infrastructure = 2
+		}
+		
+		add_core_of = RUS
+	}
+
+}

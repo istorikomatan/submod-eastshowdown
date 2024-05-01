@@ -1,0 +1,412 @@
+oob = "LAT_2022"
+
+capital = 14
+
+set_research_slots = 0
+
+set_stability = 1
+
+set_war_support = 0.50
+
+add_political_power = 0
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 70
+	communism = 3
+	fascism = 15
+	neutrality = 12
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2019.04.21"
+	election_frequency = 48
+	elections_allowed = Yes
+}
+
+
+recruit_character = egils_levits
+
+create_corps_commander = {
+	name = "Rob Rodriguez"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Stacy Farley"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Denny Haines"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Bayard Russon"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Kenneth Pattinson"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Neron Akhtar"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Erhard Fellows"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Ebeneser Downing"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Yanaton Widdows"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Martyn Vockins"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Halvard Joynson"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Liam Edney"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lazaro Leal"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Andrus Rowe"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Gomer Potter"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_navy_leader = {
+	name = "Roddy Cornock"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 5
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Roderigo Antram"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Hilary Crew"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Paton Fothergill"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Kennedy Mccormick"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Hercules Legg"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Sandro Fearn"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Miguel Oakey"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Swen Villiger"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 4
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Jarvis Allam"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_weapons3 = 1
+	infantry_anti_air = 1
+	infantry_anti_air_1 = 1
+	infantry_anti_air_2 = 1
+	infantry_anti_tank = 1
+	infantry_anti_tank_1 = 1
+	infantry_anti_tank_2 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	atgm_1 = 1
+	atgm_2 = 1
+	atgm_3 = 1
+	mortar_1 = 1
+	mortar_2 = 1
+	infantry_improvement = 1
+	tech_engineering = 1
+	tech_ARV = 1
+	tech_AMV = 1 
+	tech_sniper = 1
+	transport1 = 1
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	hel_strike1 = 1
+	hel_strike2 = 1
+	hel_transport1 = 1
+	uav_strike1 = 1
+	uav_strike2 = 1
+	uav_recon1 = 1
+	uav_recon2 = 1
+	tools_1 = 1
+	railroad_train1 = 1
+	railroad_1 = 1
+	railroad_2 = 1
+	construction_1 = 1
+	construction_3 = 1
+	excavation_1 = 1
+	oil_1 = 1
+	oil_2 = 1
+	rubber_processing_1 = 1
+	
+	motorised_infantry = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_recon = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	tech_support = 1
+	
+	
+	avtopushki1 = 1
+	avtopushki2 = 1
+	avtopushki3 = 1
+	legkieorydiya1 = 1
+	legkieorydiya2 = 1
+	legkieorydiya3 = 1
+	tankorydiya1 = 1
+	tankorydiya2 = 1
+	tankorydiya3 = 1
+	tankorydiya4 = 1
+	pszo1 = 1
+	legkiezrk1 = 1
+	legkiezrk2 = 1
+	sredniezrk1 = 1
+	sredniezrk2 = 1
+	sredniezrk3 = 1
+	tyazeliezrk1 = 1
+	tyazeliezrk2 = 1
+	tyazeliezrk3 = 1
+	artorydiya1 = 1
+	artorydiya2 = 1
+	artorydiya3 = 1
+	artorydiya4 = 1
+	
+	bronemashina1 = 1
+	bronemashina2 = 1
+	bronemashina3 = 1
+	tyazbronemashina1 = 1
+	tyazbronemashina2 = 1
+	btr1 = 1
+	btr2 = 1
+	btr3 = 1
+	t72korpus = 1
+	t64korpus = 1
+	bmp1 = 1
+	bmp2 = 1
+	bmp3 = 1
+	bmd1 = 1
+	bmd2 = 1
+	bmd3 = 1 
+	gmkorpus1 = 1
+	gmkorpus2 = 1
+	tyazeliykorpus = 1
+	engine1 = 1
+	engine2 = 1
+	engine3 = 1 
+	engine4 = 1
+	turret1 = 1
+	turret2 = 1
+	turret3 = 1
+	turret4 = 1
+	desant1 = 1
+	desant2 = 1
+	desant3 = 1
+	passzachita1 = 1
+	passzachita2 = 1
+	passzachita3 = 1
+	passzachita4 = 1
+	electr1 = 1
+	electr2 = 1 
+	electr3 = 1
+	electr4 = 1
+	electr5 = 1 
+	electr6 = 1
+	electr7 = 1
+	electr8 = 1
+	oborudovanie1 = 1
+	oborudovanie2 = 1
+	oborudovanie3 = 1
+	oborudovanie4 = 1
+	t80korpus = 1
+
+}

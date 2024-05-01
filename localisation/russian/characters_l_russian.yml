@@ -1,0 +1,345 @@
+﻿l_russian:
+ #Россия
+ 
+ #Политики
+ #Авторитаризм
+
+ #Единая Россия
+ vladimir_putin: "Владимир Путин"
+ mikhail_mishustin: "Михаил Мишустин"
+ dmitry_medvedev: "Дмитрий Медведев"
+ dmitry_peskov: "Дмитрий Песков"
+ andrey_belousov: "Андрей Белоусов"
+ sergei_lavrov: "Сергей Лавров"
+ viacheslav_volodin: "Вячеслав Володин"
+ alexey_overchuk: "Алексей Оверчук"
+ anton_siluanov: "Антон Силуанов"
+ maxim_reshetnikov: "Максим Решетников"
+ tatyana_golikova: "Татьяна Голикова"
+ marat_khusnullin: "Марат Хуснуллин"
+ dmitry_rogozin: "Дмитрий Рогозин"
+ yuri_borisov: "Юрий Борисов"
+ konstantin_chuichenko: "Константин Чуйченко"
+ denis_manturov: "Денис Мантуров"
+ sergey_kravtsov: "Сергей Кравцов"
+ vladimir_solovyov: "Владимир Соловьев"
+ dmitry_kiselyov: "Дмитрий Киселёв"
+ igor_konashenkov: "Игорь Конашенков"
+ alexander_bortnikov: "Александр Бортников"
+ patriarch_kirill: "Патриарх Кирилл"
+ viktor_medvedchuk: "Виктор Медведчук"
+ vladimir_kolokoltsev: "Владимир Колокольцев"
+ ###МОА
+igor_vlasenko: "Игорь Власенко"
+moa_sovet: "Совет МОА"
+alexey_smislov: "Алексей Смыслов"
+vladimir_emilianov: "Владимир Емельянов"
+ivan_nesterenko: "Иван Нестеренко"
+
+ #Родина
+ alexey_zhuravlev: "Алексей Журавлев"
+
+ #Новые люди
+
+ alexey_nechaev: "Алексей Нечаев"
+
+ #Демократия
+ alexey_navalny: "Алексей Навальный"
+ leonid_volkov: "Леонид Волков"
+ grigory_yavlinsky: "Григорий Явлинский"
+ nikolai_rybakov: "Николай Рыбаков"
+ mikhail_kasyanov: "Михаил Касьянов"
+ ksenia_sobchak: "Ксения Собчак"
+ anatoly_chubais: "Анатолий Чубайс"
+
+ #Справедливая Россия - Патриоты - За правду
+ sergey_mironov: "Сергей Миронов"
+
+ #Коммунизм
+ gennady_zyuganov: "Геннадий Зюганов"
+ pavel_grudinin: "Павел Грудинин"
+ zakhar_prilepin: "Захар Прилепин"
+ nikolai_platoshkin: "Николай Платошкин"
+
+ #Национализм
+ vladimir_zhirinovsky: "Владимир Жириновский"
+ leonid_slutsky: "Леонид Слуцкий"
+ alexander_dugin: "Александр Дугин"
+ igor_girkin: "Игорь Гиркин"
+ andrei_saveliev: "Андрей Савельев"
+ alexander_barkashov: "Александр Баркашов"
+ RUS_evgeniy_prigozhin: "Евгений Пригожин"
+
+ #Военные
+ aleksandr_dvornikov: "Александр Дворников"
+ general_staff_character: "Руководство генерального штаба ВС РФ"
+ evgeny_burdinsky: "Евгений Бурдинский"
+ vladimir_alekseev: "Владимир Алексеев"
+ vitaly_kuznetsov: "Виталий Кузнецов"
+ mihail_zucko: "Михаил Зусько"
+ mihail_ugalev: "Михаил Уголев"
+ valery_gerasimov: "Валерий Герасимов"
+ sergey_shoygu: "Сергей Шойгу"
+ nikolai_kormiltsev: "Николай Кормильцев"
+ alexey_maslov: "Алексей Маслов"
+ vladimir_boldyrev: "Владимир Болдырев"
+ anatoly_kornukov: "Анатолий Корнуков"
+ vladimir_mikhaylov: "Владимир Михайлов"
+ alexander_zelin: "Александр Зелин"
+ vladimir_kuroyedov: "Владимир Куроедов"
+ vladimir_masorin: "Владимир Масорин"
+ vladimir_vysotsky: "Владимир Высоцкий"
+ pavel_popov: "Павел Попов"
+ sergei_shoigy: "Сергей Шойгу"
+ sergei_syrovikin: "Сергей Суровикин"
+ igor_sergeyev: "Игорь Сергеев"
+ yuriy_sadovenko: "Юрий Садовенко"
+ igor_borisovich_tymofeyev: "Игорь Борисович Тимофеев"
+ vadym_ivanovych_pankov: "Вадим Иванович Паньков"
+ vladimir_anatolievich_kochetkov: "Владимир Анатольевич Кочетков"
+ aleksandr_ivanovich_lentsov: "Александр Иванович Ленцов"
+ aleksej_vladimirovich_zavizion: "Алексей Владимирович Завизион"
+ andrey_leonidovich_krasov: "Андрей Леонидович Красов"
+ gennady_anashkin: "Геннадий Анашкин"
+ vladimir_korolev: "Владимир Королев"
+ aleksandr_viktorovich_vitko: "Александр Викторович Витко"
+ nikolay_yevmenov: "Николай Евменов"
+ sergei_avakyants: "Сергей Авакянц"
+ oleg_salyukov: "Олег Салюков"
+ alexander_lapin: "Александр Лапин"
+ viktor_nikolayevich_mardusin: "Виктор Николаевич Мардусин"
+ alexander_nosatov: "Александр Носатов"
+ viktor_petrovich_kravchuk: "Виктор Петрович Кравчук"
+ michael_teplinsky: "Михаил Теплинский"
+ sergey_kisel: "Сергей Кисель"
+ evgeniy_nikiforov: "Евгений Никифоров"
+ rustam_muradov: "Рустам Мурадов"
+ andrey_mordvichev: "Андрей Мордвичев"
+ sergey_kuzolev: "Сергей Кузолев"
+ viktor_zolotov: "Виктор Золотов"
+ victor_afzalov: "Виктор Афзалов"
+ nikolay_evmenov: "Николай Евменов"
+ gregory_galagan: "Григорий Галаган"
+
+ #Приграничная Зона
+ pogranichnaya_sluzhba_federalnoy_sluzhby_bezopasnosti_rossiyskoy_federatsii: "Пограничная служба Федеральной службы безопасности Российской Федерации"
+ federalnaya_pogranichnaya_sluzhba_rossiyskoy_federatsii: "Федеральная пограничная служба Российской Федерации"
+ pogranichnyye_voyska_kgb_sssr: "Пограничные войска КГБ СССР"
+ otdelnyy_korpus_pogranichnoy_strazhi: "Отдельный корпус пограничной стражи"
+ 
+ #Беларусь
+ #Лидеры
+ BLR_alexander_lukashenko: "Александр Лукашенко"
+ BLR_svetlana_tikhanovskaya: "Светлана Тихановская" 
+ BLR_alexey_sokol: "Алексей Сокол"
+ BLR_vadim_saranchuk: "Вадим Саранчуков"
+ BLR_gregory_kostusev: "Григорий Костусёв"
+ #Советники
+ BLR_roman_golovchenko: "Роман Головченко"
+ BLR_alexey_bogdanov: "Алексей Богданов"
+ BLR_ruslan_parkhamovich: "Руслан Пархамович"
+ BLR_ivan_kubrakov: "Иван Кубраков"
+ BLR_andrey_khmel: "Андрей Хмель"
+ BLR_gennady_trubilo: "Геннадий Трубило"
+ BLR_dmitry_pinevich: "Дмитрий Пиневич"
+ BLR_sergey_aleynik: "Сергей Алейник"
+ BLR_vladimir_makey: "Владимир Макей"
+ BLR_petr_parkhomchik: "Пётр Пархомчик"
+ BLR_alexander_rogozhnik: "Александр Рогожник"
+ BLR_alexander_chervyakov: "Александр Червяков"
+ BLR_irina_kostevich: "Ирина Костевич"
+ BLR_igor_brylo: "Игорь Брыло"
+ BLR_sergey_bartosh: "Сергей Бартош"
+ BLR_sergey_kovalchuk: "Сергей Ковальчук"
+ BLR_igor_karpenko: "Игорь Карпенко"
+ BLR_andrey_ivanez: "Андрей Иванец"
+ BLR_vadim_sinavsky: "Вадим Синавский"
+ BLR_yuriy_seliverstov: "Юрий Селиверстов"
+ #Оппозиция
+ BLR_sergey_tikhanovsky: "Сергей Тихановский"
+ BLR_viktor_babariko: "Виктор Бабарико"
+ BLR_nikolay_statkevich: "Николай Статкевич"
+ BLR_pavel_severinez: "Павел Северинец"
+ BLR_mariya_kolesnikova: "Мария Колесникова"
+ BLR_olga_kovalkova: "Ольга Ковалькова"
+ BLR_pavel_latushko: "Павел Латушко"
+ #Военные
+ BLR_victor_khrenin: "Виктор Хренин"
+ BLR_victor_gulevich: "Виктор Гулевич"
+ BLR_alexander_volfovich: "Александр Вольфович"
+ BLR_stanislav_zas: "Станислав Зась"
+ BLR_oleg_belokonev: "Олег Белоконев"
+ BLR_ivan_tertel: "Иван Тертель"
+ BLR_valery_vakulchik: "Валерий Вакульчик"
+ BLR_yuriy_karaev: "Юрий Караев"
+ BLR_vladimir_belyi: "Владимир Белый"
+ BLR_alexander_naumenko: "Александр Науменко"
+ BLR_vadim_shadura: "Вадим Шадура"
+ 
+ #Казахстан
+ kassym_jomart_tokayev: "Касым-Жомарт Токаев"
+ 
+ #ДНР
+ denis_pushilin: "Денис Пушилин"
+ alexander_khodakovsky: "Александр Ходаковский"
+ alexey_dikiy: "Алексей Дикий"
+ konstantin_kuzmin: "Константин Кузмин" 
+ vladimir_joga: "Владимир Жога"
+ edward_basurin: "Эдуард Басурин"
+ artem_joga: "Артем Жога"
+ strelkov_xyle: "Игорь Гиркин"
+ alexey_dikiy: "Алексей Дикий"
+ 
+ #ЛНР
+ leonid_pasechnik: "Леонид Пасечник"
+ vladimir_polupoltinnykh: "Владимир Полуполтинных"
+ nikolai_kulchanovsky: "Николай Кульчановский"
+ andrey_marochko: "Андрей Марочко"
+ esedulla_abachev: "Эседулла Абачев"
+ 
+ #ХеНР
+ vladimir_saldo: "Владимир Сальдо"
+ 
+ #ЗНР
+ evgenii_balitskii: "Евгений Балицкий"
+ 
+ #ХаНР
+ vitalii_ganchev: "Виталий Ганчёв"
+ 
+ #ННР
+ yurii_granaturov: "Юрий Гранатуров"
+ yurii_barbashkov: "Юрий Барбашков"
+ 
+ #ОНР
+ genadii_turhanov: "Генадий Турханов"
+ 
+ #Белгород
+ BLG_civil_military_administration_ukraine: "Белгородская областная военная администрация"
+ BLG_vyacheslav_gladkov: "Вячеслав Гладков"
+ 
+ #ДнНР
+ ivan_culichenko: "Иван Куличенко"
+ 
+ #Чечня
+ ramzan_kadyrov: "Рамзан Кадыров"
+ chychiev_myslim: "Хучиев Магомедович"
+ byarovich_daaev: "Хож-Бауди Буарович "
+ masaev_rizvan: "Масаев Магомедович"
+ beckchan_elim: "Бекхан Элимсолтоевич"
+ hasan_hakimov: "Хакимов Сулейманович"
+ sultan_tagaev: "Тагаев Хумаидович"
+ alchanov_ruslan: "Алханов Руслан"
+ chamzat_kadyrov: "Хамзат Кадыров"
+ magomed_kadyrov: "Хас-Магомед Кадыров"
+ chergikov_idris: "Идрис Черхигов"
+ ibragim_zakriev: "Ибрагим Закриев"
+ islam_kadyrov: "Ислам Кадыров"
+ 
+ #Абхазия
+ aslan_bzhaniya: "Аслан Бжания"
+
+ #Украина
+ volodymir_zelenskyy: "Владимир Зеленский"
+ UKR_Boiko_Yurii: "Юрий Бойко"
+ UKR_genshtab_VSY: "Генштаб ВСУ"
+ UKR_pravy_sektor: "«Правый сектор»"
+ UKR_Peter_Nikolaevich: "Пётр Симоненко"
+ UKR_Oleg_Tyagnibok: "Олег Тягнибок"
+ UKR_Andriy_Tarasenko: "Сергей Тарасенко"
+ andriy_biletsky: "Андрей Белецкий"
+ andriy_ilyenko: "Андрей Ильенко"
+ vitaly_kim: "Виталий Ким"
+ ermak: "Андрей Ермак"
+ prytula: "Сергей Притула"
+ denys_shmyhal: "Денис Шмыгаль"
+ dmytro_kuleba: "Дмитро Кулеба"
+ mikhail_zabrodsky: "Михаил Забродский"
+ alexey_reznikov: "Алексей Резников"
+ yuri_gusev: "Юрий Гусев"
+ alexey_arestovich: "Алексей Арестович"
+ mykola_oleshuk: "Микола Олещук"
+ vyacheslav_shamko: "Вячеслав Шамко"
+ dmytro_marchenko: "Дмитро Марченко"
+ kyryl_budanov: "Кирило Буданов"
+ kryvonos_sergey: "Сергей Кривонос"
+ SNBO_leader: "Совет национальной безопасности и обороны Украины"
+ #Приднестровье
+ Vadim: "Вадим Красносельский"
+ obrychkov_oleg: "Олег Обручков"
+ zelenkov_dmitry: "Дмитрий Зеленков"
+ hasheev_stanislav: "Станислав Хажеев"
+ paylesko_ryslan: "Руслан Паулеско"
+ #SLO
+ Chaputova: "Зузана Чапутова"
+ #SER
+ Vuchich: "Александр Вучич"
+ #CRO
+ Milanovich: "Зоран Миланович"
+ #CZE
+ Zman: "Милош Земан"
+ #BOS
+ Zeljko_Komsic: "Желько Комшич"
+ #BUL
+ Radev: "Румен Радев"
+ #HUN
+ Katalin: "Каталин Новак"
+ Ader: "Янош Адер"
+ #POL
+ Andj: "Анджей Дуда"
+ #LIT
+ Gitan: "Гитанас Науседа"
+ #ROM
+ Claus: "Клаус Йоханнис"
+ #MOL
+ Maya: "Майя Санду"
+ #Военные
+ balan_mikola: "Николай Балан"
+ valeriy_zaluzhnyy: "Валерий Залужный"
+ sergey_shaptala: "Сергей Шаптала"
+ mikhail_drapatiy: "Михаил Драпатый"
+ anatoliy_bargilevich: "Анатолий Баргилевич"
+ evghenyy_moiysyk: "Евгений Мойсюк"
+ mikola_balan: "Николай Балан"
+ denys_prokopenko: "Денис Прокопенко"
+ viktor_bokyi: "Виктор Бокий"
+ skibyuk_igor: "Скибюк Игорь"
+ yuriy_sodol: "Юрий Содоль"
+ volodymir_karpenko: "Владимир Карпенко"
+ oleksandrovich_kyrylenko: "Александрович Кириленко"
+ volodymir_koval: "Владимир Коваль"
+ sergey_naev: "Сергей Наев"
+ oleksandr_nesterenko: "Александр Нестеренко"
+ oleksandr_pavlyuk: "Александр Павлюк"
+ ihor_palahnyuk: "Игорь Палагнюк"
+ oleksandr_sirskyy: "Александр Сырский"
+ serhiy_stanislavovych: "Сергей Собко"
+ ihor_tantsyura: "Игорь Танцюра"
+ serhiy_shaptala: "Сергей Шаптала"
+ volodymyr_shvedyuk: "Владимир Шведюк"
+ dmytro_shumskyy: "Дмитрий Шумский"
+ oleksandr_tarnavskiy: "Александр Тарнавский"
+ 
+ #НАТО
+ jens_stoltenberg: "Йенс Столтенберг"
+ tod_walters: "Тод Уолтерс"
+ tim_radford: "Тим Рэдфорд"
+ 
+ #Латвия
+ egils_levits: "Эгилс Левитс"
+
+ #Бахмут
+ reva: "Алексей Рева"
+ slesarev: "Валерий Слесарев"
+ sechkin: "Генадий Сечкин"
+
+ #ЧВК
+ evgeniy_prigozhin: "Евгений Пригожин"
+ dmitry_utkin: "Дмитрий Уткин"
+ mikhail_mizintsev: "Михаил Мизинцев"
+ alexander_kuznetsov: "Александр Кузнецов"
+ anton_elizarov: "Антон Елизаров"
+ council_commanders_PMC: "Совет командиров ЧВК «Вагнер»"
+ pavel_prigozhin: "Павел Пригожин"
+ Andrey_Troshev: "Андрей Трошев"
+#void
+BOR_void: "Пустота"

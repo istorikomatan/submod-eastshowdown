@@ -1,0 +1,26 @@
+state = {
+	id = 381
+	name = "STATE_381"
+	manpower = 46850
+
+	state_category = town
+
+	provinces = {
+		7834 9858 
+	}
+
+	history = {
+		owner = BUL
+		
+		victory_points = { 7834 19 }
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			nuclear_reactor = 1
+		}
+		
+		add_core_of = BUL
+	}
+
+}

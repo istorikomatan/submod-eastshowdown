@@ -1,0 +1,197 @@
+#background sprite is in frontendmainviewbg.gfx
+
+spriteTypes = {
+
+
+	containerWindowType = {
+		name ="frontend_background_tile_01"
+		position = { x=-934 y =0 }	
+		size = { 
+			width = 52 
+			height = 800 
+			preserve_aspect_ratio = yes
+		}
+		Orientation = center
+		Origo = center
+		clipping = no 
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_frontend_bg_tile_01"
+			alwaystransparent = yes
+		}
+	}
+
+
+
+
+	textSpriteType = {
+		name = "GFX_main_lobby_button"
+		textureFile = "gfx/interface/main_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_single_player_lobby_button"
+		textureFile = "gfx/interface/single_player_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_multi_player_lobby_button"
+		textureFile = "gfx/interface/multi_player_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_career_player_lobby_button"
+		textureFile = "gfx/interface/career_player_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_sp_lobby_button"
+		textureFile = "gfx/interface/sp_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_sp_new_lobby_button"
+		textureFile = "gfx/interface/sp_new_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_sp_load_lobby_button"
+		textureFile = "gfx/interface/sp_load_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+
+
+	textSpriteType = {
+		name = "GFX_settings_lobby_button"
+		textureFile = "gfx/interface/settings_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_sp_tutorial_lobby_button"
+		textureFile = "gfx/interface/sp_tutorial_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_sp_back_lobby_button"
+		textureFile = "gfx/interface/sp_back_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	
+
+	textSpriteType = {
+		name = "GFX_exit_lobby_button"
+		textureFile = "gfx/interface/exit_lobby_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "es_discord"
+		texturefile = "gfx/interface/icon_discord.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "es_moddb"
+		texturefile = "gfx/interface/icon_moddb.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "es_github"
+		texturefile = "gfx/interface/icon_github.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "es_vk"
+		texturefile = "gfx/interface/icon_vk.dds"
+		noOfFrames = 1
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_main_lobby_button_highlight"
+		textureFile = "gfx/interface/main_lobby_button_transparent.dds"
+
+		animation = {
+			animationmaskfile = "gfx/interface/main_lobby_button_white.dds"
+			animationtexturefile = "gfx/interface/main_lobby_button_highlight.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes
+			animationtime = 1	
+			animationdelay = 0.5
+			animationblendmode = "normal"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_main_lobby_divider"
+		textureFile = "gfx/interface/main_lobby_divider.dds"
+	}
+
+	spriteType = {
+		name = "GFX_frontend_mod_logo"
+		texturefile = "gfx/interface/logo_mod.dds"
+	}
+
+	spriteType = {
+		name = "GFX_alpha_stamp"
+		texturefile = "gfx/interface/alpha_stamp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_socialview_icon"
+		texturefile = "gfx/interface/icons/pi_icon.dds"
+	}
+	spriteType = {
+		name = "reddit"
+		texturefile = "gfx/interface/icon_reddit.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_subscription_widget"
+		textureFile = "gfx/interface/sub/main/subscription_widget.dds"
+		noOfFrames = 7
+		animation_rate_fps = 0.15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		effectFile = "gfx/FX/buttonstate_fade_frames_to_black.lua"
+	}
+
+	spriteType = {
+		name = "GFX_subscription_widget_active"
+		textureFile = "gfx/interface/sub/main/subscription_widget_active.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_test_anim1"
+		textureFile = "gfx/interface/test_animation/test1.dds"
+		noOfFrames = 23
+		animation_rate_fps = 23
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0
+		
+		}
+
+}
