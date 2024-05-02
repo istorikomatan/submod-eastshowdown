@@ -17532,18 +17532,20 @@ UKR_IL_Territorial_Defense_Ukraine_category = {
 				}
 				clamp_variable = {  var = global.ukr_information_war_var_sum  min = 0 max = 100 }
 				clamp_variable = {  var = global.rus_information_war_var_sum  min = 0 max = 100 }
-				
-  554 = {
-    create_unit = {
-        division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
-   
-        owner =  LFR
-        
-        prioritize_location = 10472
-        count = 1
-    }
-
-
+				554 = {
+					create_unit = {
+						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 10472
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 10472
+						count = 1
+					}
+				}
 			}
 		}
 	}

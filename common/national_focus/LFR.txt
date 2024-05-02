@@ -17,7 +17,7 @@ focus_tree = {
         id = LFR_start
         icon = GFX_focus_my_focus_icon
         cost = 2.50
-        x = 17
+        x = 4
         y = 0
         available = {
             NOT = {
@@ -30,46 +30,47 @@ focus_tree = {
         completion_reward = {
             add_political_power = 30
             add_war_support = 0.05
-            set_popularities = {
-                democratic = 32
-                neutrality = 21
-                fascism = 27
-                communism = 20
-            }
-            set_politics = {
-                ruling_party = democratic
-                elections_allowed = no
-                long_name = LFR_party_long
-                name = LFR_party
-            }
-            set_party_name = {
-                ideology = neutrality
-                long_name = LFR_n_l
-                name = LFR_n
-            }
-            set_party_name = {
-                ideology = nationalism
-                long_name = LFR_nac_l
-                name = LFR_nac
-            }
-            set_party_name = {
-                ideology = communism
-                long_name = LFR_c_l
-                name = LFR_c
-            }
+            add_ideas = rus_oppos
         }
     }
     
     focus = {
-        id = LFR_hyeta
+        id = LFR_podgotovka
         icon = GFX_focus_my_focus_icon
         prerequisite = { focus = LFR_start }
-        x = 15
-        y = 5
+        x = 0
+        y = 1
         relative_position_id = LFR_start
         cost = 2.50
         completion_reward = {
-            add_command_power = 15
-        }
-    }
-}
+			add_timed_idea = {
+				idea = podgotovka_lfr
+				days = 30
+			}
+			
+			add_offsite_building = {
+				type = arms_factory
+				level = 8
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}	
+			
+	
+		}
+	}
+focus = { 
+        id = LFR_podgotovka2 
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = LFR_podgotovka } 
+		x = 0 
+		y = 1
+		relative_position_id = LFR_podgotovka 
+		cost = 1.6
+
+
+		completion_reward = { 
+
+	}		
+    }	
