@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_Cesar"
+		texturefile = "gfx\leaders\LFR\Cesar_LFR.dds"
+	}
+}
