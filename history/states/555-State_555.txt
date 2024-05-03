@@ -1,0 +1,29 @@
+state = {
+	id = 555
+	name = "Яворовский полигон-2"
+	manpower = 1000
+
+	state_category = small_town
+
+	provinces = {
+		19563
+	}
+
+	history = {
+		owner = RVC
+		
+	
+		victory_points = { 19563 2 }
+		
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		
+		add_core_of = RVC
+	}
+
+	buildings_max_level_factor = 0.75
+}
