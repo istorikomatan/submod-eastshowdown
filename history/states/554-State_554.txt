@@ -1,19 +1,19 @@
 state = {
 	id = 554
-	name = "STATE_554"
-	manpower = 5000
+	name = "Яворовский полигон"
+	manpower = 1000
 
 	state_category = small_town
 
 	provinces = {
-		 10472 
+		19560
 	}
 
 	history = {
 		owner = LFR
 		
 	
-		victory_points = { 10472 2 }
+		victory_points = { 19560 2 }
 		
 		
 		buildings = {
