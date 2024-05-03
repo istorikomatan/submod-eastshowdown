@@ -2,7 +2,7 @@ add_namespace = LFR
 
 country_event = {
     id = LFR.1
-	months = 16 
+	days = 380
     title = "War Event"
     desc = "This is a war declaration event."
     picture = GFX_report_event_default

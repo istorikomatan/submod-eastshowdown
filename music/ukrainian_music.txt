@@ -112,3 +112,10 @@ music = {
 		factor = 1
 	}
 }
+music = {
+	song = "anthem_of_LFR"
+	
+	chance = {
+		factor = 1
+	}
+}

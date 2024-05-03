@@ -45,6 +45,7 @@ WUR = "countries/WestUkraine.txt"
 
 UKR = "countries/Ukraine.txt"
 LFR = "countries/Legion Freedom Russia.txt"
+RVC = "countries/Russian volunteer corps.txt"
 
 #Ukrainian People's Republic
 
