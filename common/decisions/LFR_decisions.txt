@@ -1,41 +1,45 @@
 LFR_budget_category = {
-	LFR_get_money = {
-		activation = {
-			has_completed_focus = LFR_podgotovka2 
-			original_tag = LFR
-		}
-		available = {
-			NOT = {
-				has_completed_focus = LFR_podgotovka2 
-			}
-		}
-		icon = generic_formable_nations  
-		fire_only_once = no
-		days_mission_timeout = 30
-		timeout_effect = {
-			add_to_variable = {	
-				var = LFR_budget_var
-				value = 1000
-				tooltip = LFR_budget_var_add
-			}
-		}
-	}	
-	LFR_get_money_2 = {
-		activation = {
-			has_completed_focus = LFR_podgotovka2 
-			original_tag = LFR
-		}
-		icon = generic_formable_nations  
-		fire_only_once = no
-		days_mission_timeout = 30
-		timeout_effect = {
-			add_to_variable = {	
-				var = LFR_budget_var
-				value = 7000
-				tooltip = LFR_budget_var_add_2
-			}
-		}
-	}
+    LFR_get_money = {
+        activation = {
+            has_completed_focus = LFR_start 
+            original_tag = LFR
+        }
+        available = {
+            NOT = {
+                has_completed_focus = LFR_start
+            }
+        }
+        icon = generic_formable_nations  
+        fire_only_once = no
+        days_mission_timeout = 30
+        timeout_effect = {
+            add_to_variable = {    
+                var = LFR_budget_var
+                value = 1000
+                tooltip = LFR_budget_var_add
+            }
+        }
+        name = LFR_Get_Money_Category_Name
+        description = LFR_Get_Money_Category_Description
+    }   
+    LFR_get_money_2 = {
+        activation = {
+            has_completed_focus = LFR_start
+            original_tag = LFR
+        }
+        icon = generic_formable_nations  
+        fire_only_once = no
+        days_mission_timeout = 30
+        timeout_effect = {
+            add_to_variable = {    
+                var = LFR_budget_var
+                value = 7000
+                tooltip = LFR_budget_var_add_2
+            }
+        }
+        name = LFR_Get_Money_2_Category_Name
+        description = LFR_Get_Money_2_Category_Description
+    }
 
 	LFR_get_ammo = {
 		activation = {
