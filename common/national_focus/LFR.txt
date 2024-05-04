@@ -15,7 +15,7 @@ focus_tree = {
     
     focus = {
         id = LFR_start
-        icon = GFX_focus_my_focus_icon
+        icon = GFX_start
         cost = 2.50
         x = 4
         y = 0
@@ -36,7 +36,7 @@ focus_tree = {
     
     focus = {
         id = LFR_podgotovka
-        icon = GFX_focus_my_focus_icon
+        icon = GFX_start2
         prerequisite = { focus = LFR_start }
         x = 0
         y = 1
