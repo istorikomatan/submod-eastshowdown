@@ -1,6 +1,6 @@
 UKR_Lend_leas1_category = {
 	UKR_order_weapons_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_large_batch_of_small_arms
@@ -39,7 +39,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_ammo_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		days_remove = 30
 		cost = 9
 		fire_only_once = no
@@ -114,7 +114,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_tanks_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_We_need_more_tanks
@@ -155,7 +155,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Mraps_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_We_need_more_MRAPS
@@ -196,7 +196,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_m777_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_We_need_m777
@@ -236,7 +236,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_IFV_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_We_need_more_IFV
@@ -283,7 +283,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Patiot_IRIS_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = no
 		available = {
 			has_completed_focus = UKR_We_need_Patriot_and_Iris
@@ -319,7 +319,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Himars_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Urgent_need_for_Himars
@@ -350,7 +350,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Paladin_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_M109_Paladin
@@ -386,7 +386,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_support_equipment_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Receiving_a_large_batch_of_drones
@@ -428,7 +428,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Brandleys_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = no
 		available = {
 			has_completed_focus = UKR_Getting_Brandleys
@@ -469,7 +469,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Marder_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = no
 		available = {
 			has_completed_focus = UKR_Getting_Marder
@@ -510,7 +510,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Straikers_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = no
 		available = {
 			has_completed_focus = UKR_Request_Straikers
@@ -551,7 +551,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Leoprads_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_Leopards
@@ -598,7 +598,7 @@ UKR_Lend_leas1_category = {
 	}
 	#Челленджер
 	UKR_order_Challengers_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_Challengers
@@ -642,7 +642,7 @@ UKR_Lend_leas1_category = {
 	}
 	#Леклерк
 	UKR_order_Leclercs_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_Leclercs
@@ -685,7 +685,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_Abrams_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_Abrams
@@ -732,7 +732,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_mig29_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_We_need_migs29
@@ -772,7 +772,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_su25_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_We_need_su_25
@@ -812,7 +812,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_mi24_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_We_need_mi_24b
@@ -852,7 +852,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_f16_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_an_F-16
@@ -892,7 +892,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_ah64_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_an_AH-64_Apache
@@ -932,7 +932,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_eurofighters_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Request_Eurofighter_Typhoon
@@ -972,7 +972,7 @@ UKR_Lend_leas1_category = {
 		}
 	}
 	UKR_order_bayraktar_in_Ukraine = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_lend_leas_NTO
 		fire_only_once = yes
 		available = {
 			has_completed_focus = UKR_Receiving_a_large_batch_of_drones
@@ -3163,250 +3163,6 @@ UKR_derusification = {
 				name = VICTORY_POINTS_18383_SALTOV
 			}
 		}
-	}
-}
-
-UKR_Extraordinary_measures = {
-	UKR_EM = {
-		icon = decision_category_generic_arms_trade
-		available = {
-			NOT = {
-				has_war_with = RUS
-			}
-		}
-		visible = {
-			has_war_with = RUS
-		}
-		activation = {
-			OR = {
-				has_war = yes
-			}
-			NOT = {
-				has_country_flag = UKR_EM_end
-			}
-		}
-		remove_effect = {
-			set_country_flag = UKR_EM_end
-		}
-		days_mission_timeout = 30
-		days_remove = 0
-		allowed = {
-			original_tag = UKR
-		}
-	}
-	UKR_EM_donetsk_roads = {
-		icon = decision_category_generic_arms_trade
-		visible = {
-			original_tag = UKR
-		}
-		cost = 10
-		days_remove = 1
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 165
-						state = 149
-						state = 182
-						state = 213
-						state = 237
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = blocked_roads
-					days = 20
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -35
-			}
-		}
-		fire_only_once = yes
-	}
-	UKR_EM_lugansk_roads = {
-		icon = decision_category_generic_arms_trade
-		visible = {
-			original_tag = UKR
-		}
-		cost = 10
-		days_remove = 1
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 116
-						state = 145
-						state = 125
-						state = 176
-						state = 154
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = blocked_roads
-					days = 20
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -35
-			}
-		}
-		fire_only_once = yes
-	}
-	UKR_EM_zaporojie_roads = {
-		icon = decision_category_generic_arms_trade
-		visible = {
-			original_tag = UKR
-		}
-		cost = 10
-		days_remove = 1
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 246
-						state = 242
-						state = 226
-						state = 223
-						state = 208
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = blocked_roads
-					days = 20
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -35
-			}
-		}
-		fire_only_once = yes
-	}
-	UKR_EM_kherson_roads = {
-		icon = decision_category_generic_arms_trade
-		visible = {
-			original_tag = UKR
-		}
-		cost = 10
-		days_remove = 1
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 240
-						state = 413
-						state = 251
-						state = 264
-						state = 262
-						state = 253
-						state = 231
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = blocked_roads
-					days = 20
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -35
-			}
-		}
-		fire_only_once = yes
-	}
-	UKR_EM_sumy_roads = {
-		icon = decision_category_generic_arms_trade
-		visible = {
-			original_tag = UKR
-		}
-		cost = 10
-		days_remove = 1
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 57
-						state = 66
-						state = 82
-						state = 72
-						state = 89
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = blocked_roads
-					days = 20
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -35
-			}
-		}
-		fire_only_once = yes
-	}
-	UKR_EM_chernihiv_roads = {
-		icon = decision_category_generic_arms_trade
-		visible = {
-			original_tag = UKR
-		}
-		cost = 10
-		days_remove = 1
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 80
-						state = 69
-						state = 56
-						state = 60
-						state = 59
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = blocked_roads
-					days = 20
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -35
-			}
-		}
-		fire_only_once = yes
-	}
-	UKR_EM_kharkov_roads = {
-		icon = decision_category_generic_arms_trade
-		visible = {
-			original_tag = UKR
-		}
-		cost = 10
-		days_remove = 1
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 101
-						state = 103
-						state = 107
-						state = 100
-						state = 130
-						state = 133
-						state = 138
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = blocked_roads
-					days = 20
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = -35
-			}
-		}
-		fire_only_once = yes
 	}
 }
 
@@ -10237,6 +9993,176 @@ UKR_Bombing_Russia = {
 }
 
 UKR_New_brigades_category = {
+    UKR_reserve_corps = {
+		icon = GFX_UKR_reserve_corps
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 2000
+		}
+		visible = {
+			tag = UKR
+		}
+		days_remove = 10
+		cost = 50
+		remove_effect = {
+			custom_effect_tooltip = UKR_reserve_corps_cet
+			hidden_effect = {
+				131 = {
+					create_unit = {
+						division = "name = \"1-y striletskiy batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 5162
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"2-y tankovy batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 5162
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"3-y tankovy batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Batalion T-64\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 5162
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Mekhanizovany batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 5162
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"1-y striletskiy batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2336
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"2-y tankovy batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2336
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"3-y tankovy batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2336
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Mekhanizovany batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2336
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"1-y striletskiy batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2046
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"2-y tankovy batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2046
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"3-y tankovy batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2046
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Mekhanizovany batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2046
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"6-y okremy striletskiy batalyon\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 9321
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"45-ya okrema artilerіys'ka bryhada\" division_template = \"Artileriyskiy divizion\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 860
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"38-ya okrema artilerіys'ka bryhada\" division_template = \"Tazheliy artileriyskiy divizion\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 860
+						count = 1
+					}
+				}
+				124 = {
+					create_unit = {
+						division = "name = \"96-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 7874
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"97-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 7874
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"98-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 7874
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"1-oy mekhanizovany batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2865
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"2-oy mekhanizovany batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2865
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"3-oy mekhanizovany batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2865
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"1-oy tankovy batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 2865
+						count = 1
+					}
+				}
+				115 = {
+					create_unit = {
+						division = "name = \"105-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 15418
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"106-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
+						owner = UKR
+						prioritize_location = 15418
+						count = 1
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+	}
 	UKR_Form_Kraken = {
 		icon = GFX_decision_UKR_Form_Kraken
 		available = {
@@ -11014,298 +10940,146 @@ UKR_New_brigades_category = {
 			}
 		}
 		fire_only_once = yes
-	}	
-
-	UKR_Form_4_tankova = {
-		icon = GFX_UKR_Form_4_tankova
-		visible = {
-			tag = UKR
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		days_remove = 7
-		cost = 50
-		remove_effect = {
-			custom_effect_tooltip = New_brigades_tt
-			hidden_effect = {
-			    118 = {
-					create_unit = {
-						division = "name = \"1-y striletskiy batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 2516
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"2-y tankovy batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 2516
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"3-y tankovy batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Batalion T-64\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 2516
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"Mekhanizovany batalyon 4-oy okremoy tankovoy bryhady imeni Ivana Vygovskogo\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 2516
-						count = 1
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-	}
-
-
-	UKR_Form_5_tankova = {
-		icon = GFX_UKR_Form_5_tankova
-		visible = {
-			tag = UKR
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		days_remove = 7
-		cost = 50
-		remove_effect = { 
-			custom_effect_tooltip = New_brigades_tt
-			hidden_effect = {
-			    118 = {
-					create_unit = {
-						division = "name = \"1-y striletskiy batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 6432
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"2-y tankovy batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 6432
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"3-y tankovy batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 6432
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"Mekhanizovany batalyon 5-oy okremoy tankovoy bryhady\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 6432
-						count = 1
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-	}
-
-	UKR_Form_14_tankova = {
-		icon = GFX_UKR_Form_14_tankova
-		visible = {
-			tag = UKR
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		days_remove = 7
-		cost = 50
-		remove_effect = { 
-			custom_effect_tooltip = New_brigades_tt
-			hidden_effect = {
-			    118 = {
-					create_unit = {
-						division = "name = \"1-y striletskiy batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 129
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"2-y tankovy batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 129
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"3-y tankovy batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Batalion T-72\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 129
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"Mekhanizovany batalyon 14-oy okremoy tankovoy bryhady\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 129
-						count = 1
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-	}
-
-	UKR_Form_6_striletskiy_bat = {
-		icon = GFX_UKR_Form_6_striletskiy_bat
-		visible = {
-			tag = UKR
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		days_remove = 7
-		cost = 50
-		remove_effect = { 
-			custom_effect_tooltip = New_brigades_tt
-			hidden_effect = {
-			    118 = {
-					create_unit = {
-						division = "name = \"6-y okremy striletskiy batalyon\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 6432
-						count = 1
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-	}
-
-
-	UKR_Form_60_mechanized = {
-		icon = GFX_UKR_Form_60_mechanized
-		visible = {
-			tag = UKR
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		days_remove = 7
-		cost = 50
-		remove_effect = { 
-			custom_effect_tooltip = New_brigades_tt
-			hidden_effect = {
-			    118 = {
-					create_unit = {
-						division = "name = \"96-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 8665
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"97-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 8665
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"98-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 8665
-						count = 1
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-	}
-
-	UKR_Form_62_mechanized = {
-		icon = GFX_UKR_Form_62_mechanized
-		visible = {
-			tag = UKR
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		days_remove = 7
-		cost = 50
-		remove_effect = { 
-			custom_effect_tooltip = New_brigades_tt
-			hidden_effect = {
-			    118 = {
-					create_unit = {
-						division = "name = \"1-oy mekhanizovany batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 15469
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"2-oy mekhanizovany batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 15469
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"3-oy mekhanizovany batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 15469
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"1-oy tankovy batalyon 62-a mekhanizovana bryhada\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 15469
-						count = 1
-					}
-				}
-			}
-		}
-		fire_only_once = yes
-	}
-
-	UKR_Form_63_mechanized = {
-		icon = GFX_UKR_Form_63_mechanized
-		visible = {
-			tag = UKR
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 2000
-		}
-		days_remove = 7
-		cost = 50
-		remove_effect = { 
-			custom_effect_tooltip = New_brigades_tt
-			hidden_effect = {
-			    118 = {
-					create_unit = {
-						division = "name = \"105-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 12599
-						count = 1
-					}
-					create_unit = {
-						division = "name = \"106-oy okremy mekhanizovany batalyon\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.3 start_equipment_factor = 1"
-						owner = UKR
-						prioritize_location = 12599
-						count = 1
-					}
-				}
-			}
-		}
-		fire_only_once = yes
 	}
 }
 
 UKR_information_war = {
+    UKR_psychological_operation_bet = {
+		icon = UKR_discrediting_Russia
+		fire_only_once = no
+		cost = 40
+		available = {
+			tag = UKR
+		}
+		visible = {
+			tag = UKR
+			NOT = {
+				has_country_flag = UKR_psychological_operation
+			}
+			has_completed_focus = Information_war
+		}
+		complete_effect = {
+		    custom_effect_tooltip = UKR_psychological_operation_cet
+		    hidden_effect = {
+			    if = {
+					limit = {
+						has_country_flag = UKR_foreign_journalism
+					}
+					add_to_variable = { var = UKR_monthly_increase_var_add value = -2.5 }
+					clear_variable = UKR_inf_war_making_bet_political_power_factor
+					clear_variable = UKR_inf_war_making_bet_war_support_weekly_factor
+				}
+				if = {
+					limit = {
+						has_country_flag = UKR_military_personnel
+					}
+					clear_variable = UKR_inf_war_making_bet_war_support_factor
+					clear_variable = UKR_inf_war_making_bet_weekly_manpower
+					clear_variable = UKR_inf_war_making_bet_command_power_gain_mult
+				}
+			    clr_country_flag = UKR_foreign_journalism
+				clr_country_flag = UKR_military_personnel
+				set_country_flag = UKR_psychological_operation
+				add_to_variable = {
+					var = UKR_monthly_increase_var_add
+					value = 1.5
+				}
+				RUS = { 
+					add_dynamic_modifier = { modifier = UKR_propaganda_debuff }
+					set_variable = { var = UKR_propaganda_debuff_political_power_factor value = -0.1 }
+				}
+			}
+		}	
+	}
+	UKR_foreign_journalism_bet = {
+		icon = UKR_discrediting_Russia
+		fire_only_once = no
+		cost = 40
+		available = {
+			tag = UKR
+		}
+		visible = {
+			tag = UKR
+			NOT = {
+				has_country_flag = UKR_foreign_journalism
+			}
+			has_completed_focus = Western_news_branches_in_Ukraine
+		}
+		complete_effect = {
+		    custom_effect_tooltip = UKR_foreign_journalism_cet
+		    hidden_effect = {
+			    if = {
+					limit = {
+						has_country_flag = UKR_psychological_operation
+					}
+					add_to_variable = { var = UKR_monthly_increase_var_add value = -1.5 }
+					RUS = { 
+						remove_dynamic_modifier = { modifier = UKR_propaganda_debuff }
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = UKR_military_personnel
+					}
+					clear_variable = UKR_inf_war_making_bet_war_support_factor
+					clear_variable = UKR_inf_war_making_bet_weekly_manpower
+					clear_variable = UKR_inf_war_making_bet_command_power_gain_mult
+				}
+			    clr_country_flag = UKR_psychological_operation
+				clr_country_flag = UKR_military_personnel
+				set_country_flag = UKR_foreign_journalism
+				add_to_variable = {
+					var = UKR_monthly_increase_var_add
+					value = 2.5
+				}
+				add_to_variable = { UKR_inf_war_making_bet_political_power_factor = 0.05 }
+				add_to_variable = { UKR_inf_war_making_bet_war_support_weekly_factor = 0.005 }
+			}
+		}	
+	}
+	UKR_military_personnel_bet = {
+		icon = UKR_discrediting_Russia
+		fire_only_once = no
+		cost = 40
+		available = {
+			tag = UKR
+		}
+		visible = {
+			tag = UKR
+			NOT = {
+				has_country_flag = UKR_military_personnel
+			}
+			has_completed_focus = Sponsor_loyal_telegram_channels
+		}
+		complete_effect = {
+		    custom_effect_tooltip = RUS_military_personnel_bet_cet
+		    hidden_effect = {
+			    if = {
+					limit = {
+						has_country_flag = UKR_psychological_operation
+					}
+					add_to_variable = { var = UKR_monthly_increase_var_add value = -1.5 }
+					RUS = { 
+						remove_dynamic_modifier = { modifier = UKR_propaganda_debuff }
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = UKR_foreign_journalism
+					}
+					add_to_variable = { var = UKR_monthly_increase_var_add value = -2.5 }
+					clear_variable = UKR_inf_war_making_bet_political_power_factor
+					clear_variable = UKR_inf_war_making_bet_war_support_weekly_factor
+				}
+				clr_country_flag = UKR_psychological_operation
+				clr_country_flag = UKR_foreign_journalism
+				set_country_flag = UKR_military_personnel
+				add_to_variable = { var = UKR_inf_war_making_bet_war_support_factor value = 0.075 }
+				add_to_variable = { var = UKR_inf_war_making_bet_weekly_manpower value = 100 }
+				add_to_variable = { var = UKR_inf_war_making_bet_command_power_gain_mult value = 0.05 }
+			}
+		}	
+	}
 	UKR_discrediting_government_Russia = {
 		icon = UKR_discrediting_Russia
 		fire_only_once = no
@@ -11332,42 +11106,8 @@ UKR_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = 2
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 		}
 	}
@@ -11412,42 +11152,8 @@ UKR_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = 2
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 		}
 	}
@@ -11478,42 +11184,8 @@ UKR_information_war = {
 					var = global.rus_information_war_var_sum
 					value = -3
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 		}
 	}
@@ -11547,42 +11219,8 @@ UKR_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = 5
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 		}
 	}
@@ -11606,6 +11244,10 @@ UKR_information_war = {
 			custom_effect_tooltip = IW_0_5_var_add_EM_tt
 			hidden_effect = {
 				set_country_flag = UKR_Expand_presence_press_CF
+				add_to_variable = {
+					var = UKR_monthly_increase_var_add
+					value = 1
+				}
 			}
 		}
 	}
@@ -11629,6 +11271,10 @@ UKR_information_war = {
 			custom_effect_tooltip = IW_0_5_var_add_EM_tt
 			hidden_effect = {
 				set_country_flag = UKR_International_organizations_CF
+				add_to_variable = {
+					var = UKR_monthly_increase_var_add
+					value = 1
+				}
 			}
 			add_stability = 0.05
 		}
@@ -11660,42 +11306,8 @@ UKR_information_war = {
 					var = global.rus_information_war_var_sum
 					value = -5
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 		}
 	}
@@ -11731,42 +11343,8 @@ UKR_information_war = {
 					var = global.rus_information_war_var_sum
 					value = -3.5
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 		}
 	}
@@ -11784,6 +11362,7 @@ UKR_information_war = {
 		visible = {
 	       original_tag = UKR
 		   has_war_with = RUS
+		   has_completed_focus = Information_war
 	    }
 		
 		complete_effect = {
@@ -11797,42 +11376,8 @@ UKR_information_war = {
 					var = global.rus_information_war_var_sum
 					value = -5
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 			increase_escalation_by_1 = yes
 		}
@@ -11852,6 +11397,7 @@ UKR_information_war = {
 		visible = {
 	       original_tag = UKR
 		   has_war_with = RUS
+		   has_completed_focus = Information_war
 	    }
 		
 		remove_effect = {
@@ -11865,42 +11411,8 @@ UKR_information_war = {
 					var = global.rus_information_war_var_sum
 					value = -4
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 				random_list = {
 			    	90 = { }
 			    	5 = { country_event = { id = re_event_u.8 days = 2 } }
@@ -11928,6 +11440,7 @@ UKR_information_war = {
 			WGN = {
 				has_country_flag = WGN_death_prigozhin_utkin
 			}
+			has_completed_focus = Information_war
 		}
 		complete_effect = {
 			add_to_variable = {	
@@ -11940,42 +11453,8 @@ UKR_information_war = {
 					var = global.rus_information_war_var_sum
 					value = -5
 				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum > 100 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 100
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.rus_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.rus_information_war_var_sum
-						value = 0
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { global.ukr_information_war_var_sum < 0 }
-					}
-					set_variable = {	
-						var = global.ukr_information_war_var_sum
-						value = 0
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
 			}
 			RUS = {
 				add_stability = -0.05
@@ -11994,8 +11473,9 @@ UKR_information_war = {
 			original_tag = UKR
 		}
 		visible = {
-	       original_tag = UKR
-		   has_war_with = RUS
+	        original_tag = UKR
+		    has_war_with = RUS
+			has_completed_focus = Information_war
 	    }
 		
 		complete_effect = {
@@ -12051,143 +11531,32 @@ UKR_information_war = {
 	}
 	UKR_monthly_increase_information_influence = {
 		activation = {
-			OR = {
-				has_country_flag = UKR_Expand_presence_press_CF
-				has_country_flag = UKR_International_organizations_CF
+		    OR = {
+				check_variable = { UKR_monthly_increase_var_add > 0 }
+				check_variable = { UKR_monthly_increase_var_add < 0 }
 			}
 		}
 		available = {
-			NOT = {
-				OR = {
-					has_country_flag = UKR_Expand_presence_press_CF
-					has_country_flag = UKR_International_organizations_CF
-				}
-			}
+		    check_variable = { UKR_monthly_increase_var_add = 0 }
 		}
 		icon = UKR_discrediting_Russia
 		fire_only_once = no
 		hidden = yes
-		days_mission_timeout = 30
+		days_mission_timeout = 7
 		timeout_effect = {
-			if = {
-				limit = {
-					OR = {
-						UKR = {
-							has_country_flag = UKR_Expand_presence_press_CF
-						}
-						UKR = {
-							has_country_flag = UKR_International_organizations_CF
-						}
-					}
-					NOT = {
-						UKR = {
-							has_country_flag = UKR_Expand_presence_press_CF
-							has_country_flag = UKR_International_organizations_CF
-						}
-					}
-				}
-				add_to_variable = {
-					var = global.ukr_information_war_var_sum
-					value = 0.5
-					tooltip = IW_0_5_var_add_tt
-				}
-				hidden_effect = {
-					add_to_variable = {	
-						var = global.rus_information_war_var_sum
-						value = -0.5
-					}
-					if = {
-						limit = {
-							check_variable = { global.rus_information_war_var_sum > 100 }
-						}
-						set_variable = {	
-							var = global.rus_information_war_var_sum
-							value = 100
-						}
-					}
-					if = {
-						limit = {
-							check_variable = { global.ukr_information_war_var_sum > 100 }
-						}
-						set_variable = {	
-							var = global.ukr_information_war_var_sum
-							value = 100
-						}
-					}
-					if = {
-						limit = {
-							check_variable = { global.rus_information_war_var_sum < 0 }
-						}
-						set_variable = {	
-							var = global.rus_information_war_var_sum
-							value = 0
-						}	
-					}
-					if = {
-						limit = {
-							check_variable = { global.ukr_information_war_var_sum < 0 }
-						}
-						set_variable = {	
-							var = global.ukr_information_war_var_sum
-							value = 0
-						}
-					}
-				}
+			add_to_variable = {
+				var = global.ukr_information_war_var_sum
+				value = UKR_monthly_increase_var_add
+				tooltip = IW_monthly_increase_var_add_tt
 			}
-			if = {
-				limit = {
-					UKR = {
-						has_country_flag = UKR_Expand_presence_press_CF
-						has_country_flag = UKR_International_organizations_CF
-					}
+			hidden_effect = {
+				subtract_from_variable = {
+					var = global.rus_information_war_var_sum
+					value = UKR_monthly_increase_var_add
 				}
-				add_to_variable = {
-					var = global.ukr_information_war_var_sum
-					value = 1
-					tooltip = IW_1_var_add_tt
-				}
-				hidden_effect = {
-					add_to_variable = {	
-						var = global.rus_information_war_var_sum
-						value = -1
-					}
-					if = {
-						limit = {
-							check_variable = { global.rus_information_war_var_sum > 100 }
-						}
-						set_variable = {	
-							var = global.rus_information_war_var_sum
-							value = 100
-						}
-					}
-					if = {
-						limit = {
-							check_variable = { global.ukr_information_war_var_sum > 100 }
-						}
-						set_variable = {	
-							var = global.ukr_information_war_var_sum
-							value = 100
-						}
-					}
-					if = {
-						limit = {
-							check_variable = { global.rus_information_war_var_sum < 0 }
-						}
-						set_variable = {	
-							var = global.rus_information_war_var_sum
-							value = 0
-						}	
-					}
-					if = {
-						limit = {
-							check_variable = { global.ukr_information_war_var_sum < 0 }
-						}
-						set_variable = {	
-							var = global.ukr_information_war_var_sum
-							value = 0
-						}
-					}
-				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				activate_mission = UKR_monthly_increase_information_influence
 			}
 		}
 	}
@@ -12639,7 +12008,98 @@ UKR_prisoners_of_war = {
 	}
 }
 
+UKR_economic_decision_category = {
+    UKR_rent_of_civil_enterprises = {
+		icon = GFX_UKR_economic_decision_2_decisions
+		
+		cost = 50
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 15
+		
+		ai_will_do = {
+	    	factor = 30
+        }
+
+		visible = { has_completed_focus = Agree_on_the_construction_of_factories_abroad }
+		
+		modifier = {
+			consumer_goods_factor = 0.035
+		}
+		remove_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
+		}
+	}
+    UKR_rent_of_military_enterprises = {
+		icon = GFX_UKR_economic_decision_2_decisions
+		
+		cost = 50
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 15
+		
+		ai_will_do = {
+	    	factor = 30
+        }
+
+		visible = { has_completed_focus = Agree_on_the_construction_of_factories_abroad }
+		
+		modifier = {
+			consumer_goods_factor = 0.045
+		}
+		remove_effect = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+}
+
 UKR_strengthening_Ukrainian_cities_category = {
+    UKR_general_mobilization = {
+		icon = GFX_UKR_president_ukraine_emblem
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+	    	factor = 3000
+        }
+
+		visible = {
+		    has_war_with = RUS
+		}
+
+		available = {
+			
+		}
+		complete_effect = {
+		    add_command_power = 30
+			swap_ideas = {
+				remove_idea = limited_conscription
+				add_idea = extensive_conscription
+			}
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = low_economic_mobilisation
+			}
+			hidden_effect = {
+			    set_country_flag = UKR_general_mobilization_cf
+				news_event = {
+					id = news.178
+					hours = 15
+				}
+				swap_ideas = {
+					remove_idea = export_focus
+					add_idea = limited_exports
+				}
+			}
+		}
+	}
 	UKR_North_Defense_of_Konotop = {
 		icon = GFX_RUS_strengthening_the_front_line
 		
@@ -16830,16 +16290,812 @@ UKR_strengthening_Ukrainian_cities_category = {
 			}
 		}
 	}
+	UKR_EM = {
+		icon = GFX_UKR_VSY_defense
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+		visible = {
+			has_war_with = RUS
+		}
+		activation = {
+			OR = {
+				has_war = yes
+			}
+			NOT = {
+				has_country_flag = UKR_EM_end
+			}
+		}
+		remove_effect = {
+			set_country_flag = UKR_EM_end
+		}
+		days_mission_timeout = 30
+		days_remove = 0
+		allowed = {
+			original_tag = UKR
+		}
+	}
+	UKR_EM_donetsk_roads = {
+		icon = GFX_UKR_EM_s
+		visible = {
+			original_tag = UKR
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 165
+						state = 149
+						state = 182
+						state = 213
+						state = 237
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = RUS
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = DPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = LPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = CHE
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = WGN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -35
+			}
+		}
+		fire_only_once = yes
+	}
+	UKR_EM_lugansk_roads = {
+		icon = GFX_UKR_EM_s
+		visible = {
+			original_tag = UKR
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 116
+						state = 145
+						state = 125
+						state = 176
+						state = 154
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = RUS
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = DPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = LPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = CHE
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = WGN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -35
+			}
+		}
+		fire_only_once = yes
+	}
+	UKR_EM_zaporojie_roads = {
+		icon = GFX_UKR_EM_s
+		visible = {
+			original_tag = UKR
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 246
+						state = 242
+						state = 226
+						state = 223
+						state = 208
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = RUS
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = DPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = LPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = CHE
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = WGN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -35
+			}
+		}
+		fire_only_once = yes
+	}
+	UKR_EM_kherson_roads = {
+		icon = GFX_UKR_EM_s
+		visible = {
+			original_tag = UKR
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 240
+						state = 413
+						state = 251
+						state = 264
+						state = 262
+						state = 253
+						state = 231
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = RUS
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = DPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = LPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = CHE
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = WGN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -35
+			}
+		}
+		fire_only_once = yes
+	}
+	UKR_EM_sumy_roads = {
+		icon = GFX_UKR_EM_s
+		visible = {
+			original_tag = UKR
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 57
+						state = 66
+						state = 82
+						state = 72
+						state = 89
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = RUS
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = DPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = LPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = CHE
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = WGN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -35
+			}
+		}
+		fire_only_once = yes
+	}
+	UKR_EM_chernihiv_roads = {
+		icon = GFX_UKR_EM_s
+		visible = {
+			original_tag = UKR
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 80
+						state = 69
+						state = 56
+						state = 60
+						state = 59
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = RUS
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = DPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = LPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = CHE
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = WGN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -35
+			}
+		}
+		fire_only_once = yes
+	}
+	UKR_EM_kharkov_roads = {
+		icon = GFX_UKR_EM_s
+		visible = {
+			original_tag = UKR
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 101
+						state = 103
+						state = 107
+						state = 100
+						state = 130
+						state = 133
+						state = 138
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = RUS
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = DPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = LPR
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = CHE
+				}
+				add_dynamic_modifier = {
+					modifier = blocked_roads
+					days = 20
+					scope = WGN
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -35
+			}
+		}
+		fire_only_once = yes
+	}
 }
 
 UKR_volunteers_decision_category = {
+    UKR_volunteer_movement_agitation = {
+		icon = GFX_UKR_volunteers_fees
+		visible = {
+			original_tag = UKR
+		}
+		cost = 25
+		
+		complete_effect = {
+			custom_effect_tooltip = Volunteer_1_bonus
+			hidden_effect = {
+			    add_to_variable = { UKR_volunteerACT = 10 }
+				UKR_Volunteer_movement_scripted_effects = yes
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 15
+	}
+	UKR_volunteer_movement_support_for_volunteering = {
+		icon = GFX_UKR_volunteers_fees
+		visible = {
+			original_tag = UKR
+		}
+		cost = 30
+		days_remove = 10
+		modifier = {
+			consumer_goods_factor = 0.025
+		}
+		remove_effect = {
+			add_stability = 0.05
+			add_to_variable = {
+				var = global.ukr_information_war_var_sum
+				value = 3.5
+				tooltip = IW_3_5_var_add_tt
+			}
+			custom_effect_tooltip = Volunteer_2_bonus
+			hidden_effect = {
+				add_to_variable = {
+					var = global.rus_information_war_var_sum
+					value = -3.5
+				}
+				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
+				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				add_to_variable = { UKR_volunteerACT = 25 }
+				UKR_Volunteer_movement_scripted_effects = yes
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 20
+	}
+    UKR_volunteer_movement_infantry_weapons = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
 
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_equipment_to_stockpile = {  
+			    type = UKR_infantry_equipment_2
+				amount = UKR_volunteer_movement_infantry_weapons_d_var
+				producer = UKR 
+			}
+			add_equipment_to_stockpile = {  
+			    type = ukr_infantry_anti_tank_equipment_0
+				amount = UKR_volunteer_movement_infantry_weapons_1_d_var
+				producer = UKR 
+			}
+			add_equipment_to_stockpile = {  
+			    type = ukr_infantry_anti_air_equipment_0
+				amount = UKR_volunteer_movement_infantry_weapons_1_d_var
+				producer = UKR 
+			}
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_infantry_weapons
+				UKR_Volunteer_movement_scripted_effects = yes
+			}
+		}
+    }
+	UKR_volunteer_movement_NTO_infantry_weapons = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_equipment_to_stockpile = {  
+			    type = nto_infantry_equipment_3
+				amount = UKR_volunteer_movement_NTO_infantry_weapons_d_var
+				producer = NTO 
+			}
+			add_equipment_to_stockpile = {  
+			    type = nto_infantry_anti_tank_equipment_2
+				amount = UKR_volunteer_movement_NTO_infantry_weapons_1_d_var
+				producer = NTO 
+			}
+			add_equipment_to_stockpile = {  
+			    type = nto_infantry_anti_air_equipment_2
+				amount = UKR_volunteer_movement_NTO_infantry_weapons_1_d_var
+				producer = NTO 
+			}
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_NTO_infantry_weapons
+			}
+		}
+    }
+	UKR_volunteer_movement_support_weapons = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_equipment_to_stockpile = {  
+			    type = support_equipment_1
+				amount = UKR_volunteer_movement_support_d_var
+				producer = UKR 
+			}
+			add_equipment_to_stockpile = {  
+			    type = engineering_equipment_0
+				amount = UKR_volunteer_movement_infantry_weapons_1_d_var
+				producer = UKR 
+			}
+			add_equipment_to_stockpile = {  
+			    type = ARV_equipment_0
+				amount = UKR_volunteer_movement_infantry_weapons_1_d_var
+				producer = UKR 
+			}
+			add_equipment_to_stockpile = {  
+			    type = AMV_equipment_0
+				amount = UKR_volunteer_movement_infantry_weapons_1_d_var
+				producer = UKR 
+			}
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_support_weapons
+			}
+		}
+    }
+	UKR_volunteer_movement_ammunition_weapons = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				var = ammunition_variable
+				value = UKR_volunteer_movement_ammunition_d_var
+				tooltip = ammunition_add_cet
+			}
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_ammunition_weapons
+			}
+		}
+    }
+	UKR_volunteer_movement_ammunition_weapons_1 = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+			add_to_variable = {
+				var = ammunition_variable
+				value = UKR_volunteer_movement_ammunition_d_var
+				tooltip = ammunition_add_cet
+			}
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_ammunition_weapons
+			}
+		}
+    }
+	UKR_volunteer_movement_motorization = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+		    add_equipment_to_stockpile = {
+				type = motorized_equipment_1	
+				amount = UKR_volunteer_movement_motorization_eq_d_var
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = bronemashina1_chassis
+				variant_name = "\"Дозор-Б\""
+				amount = UKR_volunteer_movement_motorization_d_var
+				producer = UKR
+			} 
+			add_equipment_to_stockpile = {
+				type = bronemashina3_chassis
+				variant_name = "\"Новатор\""
+				amount = UKR_volunteer_movement_NTO_motorization_d_var
+				producer = UKR
+			} 
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_motorization
+			}
+		}
+    }
+	UKR_volunteer_movement_NTO_motorization = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+		    add_equipment_to_stockpile = {
+				type = motorized_equipment_1	
+				amount = UKR_volunteer_movement_motorization_d_var
+				producer = NTO
+			}
+			add_equipment_to_stockpile = {
+				type = bronemashina1_chassis
+				variant_name = "M1025 HMMWV"
+				amount = UKR_volunteer_movement_NTO_motorization_d_var
+				producer = NTO
+			} 
+			add_equipment_to_stockpile = {
+				type = bronemashina2_chassis
+				variant_name = "M1145 HMMWV с CROWS"
+				amount = UKR_volunteer_movement_NTO_drones_d_var
+				producer = NTO
+			}
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_NTO_motorization
+			}
+		}
+    }
+	UKR_volunteer_movement_drones = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+		    add_equipment_to_stockpile = {
+				type = URK_uav_recon_equipment_spectator
+				amount = UKR_volunteer_movement_drones_d_var
+				producer = UKR
+			}
+		    add_equipment_to_stockpile = {
+				type = UKR_uav_strike_equipment_gorlitsa
+				amount = UKR_volunteer_movement_NTO_drones_d_var
+				producer = UKR
+			} 
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_drones
+			}
+		}
+    }
+	UKR_volunteer_movement_NTO_drones = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+		    add_equipment_to_stockpile = {
+				type = NTO_uav_recon_equipment_rq7
+				amount = UKR_volunteer_movement_NTO_drones_d_var
+				producer = NTO
+			}
+		    add_equipment_to_stockpile = {
+				type = NTO_uav_strike_equipment_rq1
+				amount = UKR_volunteer_movement_NTO_drones_5_d_var
+				producer = NTO
+			} 
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_NTO_drones
+			}
+		}
+    }
+	UKR_volunteer_movement_NTO_drones_Bayraktar = {
+        icon = GFX_UKR_volunteers_fees
+		
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 21
+		selectable_mission = no
+
+		available = {
+			NOT = {
+				has_war_with = RUS
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+		    add_equipment_to_stockpile = {
+				type = NTO_uav_strike_bayraktar
+				amount = UKR_volunteer_movement_NTO_drones_d_var
+				producer = NTO
+			}
+			hidden_effect = {
+				activate_mission = UKR_volunteer_movement_NTO_drones_Bayraktar
+			}
+		}
+    }
 }
 
 UKR_derussification_decision_category = {
 
 		UKR_limit_sales_russian_literature = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -16863,7 +17119,7 @@ UKR_derussification_decision_category = {
 	}
 
 		UKR_let_out_zradozers = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -16886,7 +17142,7 @@ UKR_derussification_decision_category = {
 	}
 
 		UKR_chomy_nie_dierzavnoy = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -16909,7 +17165,7 @@ UKR_derussification_decision_category = {
 	}
 
 		UKR_invest_into_dublaz = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -16937,7 +17193,7 @@ UKR_derussification_decision_category = {
 	}
 
 		UKR_bayraktarshyna = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -16962,7 +17218,7 @@ UKR_derussification_decision_category = {
 	}
 
 		UKR_discredit_russian_authors_of_the_past= {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -16993,7 +17249,7 @@ UKR_derussification_decision_category = {
 	}
 
 		UKR_limit_russian_language = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -17023,7 +17279,7 @@ UKR_derussification_decision_category = {
 	}
 
 	UKR_translate_book_into_ukrainian = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_derussification
 		fire_only_once = yes
 		available = {
 
@@ -17053,7 +17309,7 @@ UKR_derussification_decision_category = {
 	####
 
 	UKR_rename_lva_tolstogo = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_decommunization
 		fire_only_once = yes
 		available = {
 
@@ -17077,7 +17333,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_rename_druzby_narodyv = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_decommunization
 		fire_only_once = yes
 		available = {
 
@@ -17101,7 +17357,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_rename_sela = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_decommunization
 		fire_only_once = yes
 		available = {
 
@@ -17125,7 +17381,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_pushkin_bye_bye = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_decommunization
 		fire_only_once = yes
 		available = {
 
@@ -17151,7 +17407,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_nikolay_shors = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_decommunization
 		fire_only_once = yes
 		available = {
 
@@ -17179,7 +17435,7 @@ UKR_derussification_decision_category = {
 
 	########
 	UKR_good_russian_dead_russian = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17212,7 +17468,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_upc_mp = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17245,7 +17501,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_east_and_west = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17278,7 +17534,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_russia_historical_enemy = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17304,7 +17560,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_mordor = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17326,44 +17582,11 @@ UKR_derussification_decision_category = {
 				value = 5
 				tooltip = LL_OF_UKRZTIN_tt
 			}
-		}
-		}
-
-	UKR_farion = {
-		icon = decision_category_generic_arms_trade
-		fire_only_once = yes
-		available = {
-
-		}
-		visible = {
-			has_country_flag = dec_Derussification_unlock
-			check_variable = {
-				level_of_ukrainization_var > 99
-			}
-		}
-		days_remove = 20
-		cost = 25
-		ai_will_do = {
-			factor = 10
-		}
-		remove_effect = {
-			add_to_variable = {
-				var = level_of_ukrainization_var
-				value = 5
-				tooltip = LL_OF_UKRZTIN_tt
-			}
-			custom_effect_tooltip = RUS_propoganda_myzskoy_druzbi
-
-			add_to_variable = {
-				var = global.ukr_information_war_var_sum
-				value = -1.5
-				tooltip = IW_minus_1_5_var_add_tt
-			}	
 		}
 		}
 
 	UKR_rename_rayony = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17389,7 +17612,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_new_level_of_dyblaz = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17415,7 +17638,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_create_books = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17441,7 +17664,7 @@ UKR_derussification_decision_category = {
 		}
 
 	UKR_movies = {
-		icon = decision_category_generic_arms_trade
+		icon = GFX_UKR_ukrainization
 		fire_only_once = yes
 		available = {
 
@@ -17474,7 +17697,7 @@ UKR_derussification_decision_category = {
 	}
 	
 UKR_IL_Territorial_Defense_Ukraine_category = {
-  UKR_Legion_Freedom_Russia = {
+    UKR_Legion_Freedom_Russia = {
 		icon = GFX_UKR_Legion_Freedom_Russia
 		fire_only_once = yes
 		available = {
@@ -17486,7 +17709,7 @@ UKR_IL_Territorial_Defense_Ukraine_category = {
 		visible = {
 			has_country_flag = IL_Territorial_Defense_Ukraine_cf
 		}
-		days_remove = 1
+		days_remove = 20
 		cost = 25
 		ai_will_do = {
 			factor = 100
@@ -17536,13 +17759,13 @@ UKR_IL_Territorial_Defense_Ukraine_category = {
 					create_unit = {
 						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
 						owner = LFR
-						prioritize_location = 10472
+						prioritize_location = 19560
 						count = 1
 					}
 					create_unit = {
 						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
 						owner = LFR
-						prioritize_location = 10472
+						prioritize_location = 19560
 						count = 1
 					}
 				}
