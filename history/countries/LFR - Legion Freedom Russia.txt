@@ -32,12 +32,12 @@ traits = {
 }
 }
 
-recruit_character = igor_vlasenko
-recruit_character = moa_sovet
-recruit_character = alexey_smislov
-recruit_character = vladimir_emilianov
-recruit_character = ivan_nesterenko
 recruit_character = LFR_Cesar
+
+set_power_balance = {
+		id = LFR_power_balance
+		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
+	}
 
 set_politics = {
 				ruling_party = democratic
