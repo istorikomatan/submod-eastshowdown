@@ -9,6 +9,8 @@ set_convoys = 195
 
 create_intelligence_agency = yes
 
+puppet = LFR
+
 set_technology = {
 	centimetric_radar  = 1
 	decimetric_radar = 1

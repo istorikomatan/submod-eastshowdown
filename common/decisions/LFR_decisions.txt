@@ -16,6 +16,7 @@ LFR_budget_category = {
             add_to_variable = {    
                 var = LFR_budget_var
                 value = 100
+                value = 1000
                 tooltip = LFR_budget_var_add
             }
         }
