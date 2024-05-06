@@ -923,3 +923,41 @@ LFR_budget_category = {
 			}
 		}
 	}
+		}
+LFR_recruits_category = {
+LFR_new_type_brigade = {
+		cost = 50
+		days_remove = 1
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			
+				check_variable = { manpower > 1999 }
+			}
+		
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove LFR_new_type_brigade"
+			add_stability = -0.06
+			add_manpower = -2000 
+			modify_legion_support = yes
+			554 = {
+					create_unit = {
+						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+				}
+			
+		}
+	}	
+		}
+			}
