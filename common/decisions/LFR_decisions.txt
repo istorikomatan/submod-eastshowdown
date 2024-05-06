@@ -927,7 +927,7 @@ LFR_budget_category = {
 LFR_recruits_category = {
 LFR_new_type_brigade = {
 		cost = 50
-		days_remove = 1
+		days_remove = 45
 		ai_will_do = {
 			factor = 100
 		}
@@ -942,6 +942,7 @@ LFR_new_type_brigade = {
 			add_stability = -0.06
 			add_manpower = -2000 
 			modify_legion_support = yes
+			hidden_effect = {
 			554 = {
 					create_unit = {
 						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
@@ -956,7 +957,7 @@ LFR_new_type_brigade = {
 						count = 1
 					}
 				}
-			
+			}
 		}
 	}	
 		}
