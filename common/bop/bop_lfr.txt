@@ -75,7 +75,6 @@ LFR_power_balance = {
 		id = right_side
 
 		icon = GFX_bop_LFR_army
-		
 
 		range = {
 			id = LFR_right_side_range
