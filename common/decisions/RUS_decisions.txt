@@ -5503,22 +5503,9 @@ RUS_information_war = {
 					limit = {
 						has_country_flag = RUS_psychological_operation
 					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = -1.5 }
 					UKR = {
 						remove_dynamic_modifier = { modifier = RUS_propaganda_debuff }
 					}
-				}
-				if = {
-					limit = {
-						has_country_flag = RUS_internal_support
-					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = 1.5 }
-				}
-				if = {
-					limit = {
-						has_country_flag = RUS_war_on_fakes
-					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = -2 }
 				}
 			    clr_country_flag = RUS_internal_support
 				clr_country_flag = RUS_war_on_fakes
@@ -5554,18 +5541,6 @@ RUS_information_war = {
 		complete_effect = {
 		    custom_effect_tooltip = RUS_psychological_operation_cet
 		    hidden_effect = {
-			    if = {
-					limit = {
-						has_country_flag = RUS_internal_support
-					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = 1.5 }
-				}
-				if = {
-					limit = {
-						has_country_flag = RUS_war_on_fakes
-					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = -2 }
-				}
 			    clr_country_flag = RUS_internal_support
 				clr_country_flag = RUS_war_on_fakes
 				clr_country_flag = RUS_military_personnel
@@ -5577,7 +5552,8 @@ RUS_information_war = {
 				clear_variable = RUS_inf_war_making_bet_weekly_manpower
 				clear_variable = RUS_inf_war_making_bet_training_time_army_factor
 				clear_variable = RUS_inf_war_making_bet_command_power_gain_mult
-				add_to_variable = { var = RUS_monthly_increase_var_add value = 1.5 }
+				set_variable = { var = RUS_monthly_increase_inf_war_sum value = 1.5 }
+				add_to_variable = { var = RUS_monthly_increase_inf_war_sum value = RUS_monthly_increase_inf_war_num_1 }
 				UKR = { 
 					add_dynamic_modifier = { modifier = RUS_propaganda_debuff }
 					set_variable = { var = RUS_propaganda_debuff_political_power_factor value = -0.1 }
@@ -5606,16 +5582,9 @@ RUS_information_war = {
 					limit = {
 						has_country_flag = RUS_psychological_operation
 					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = -1.5 }
 					UKR = {
 						remove_dynamic_modifier = { modifier = RUS_propaganda_debuff }
 					}
-				}
-				if = {
-					limit = {
-						has_country_flag = RUS_war_on_fakes
-					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = -2 }
 				}
 			    clr_country_flag = RUS_military_personnel
 				clr_country_flag = RUS_war_on_fakes
@@ -5630,7 +5599,8 @@ RUS_information_war = {
 				clear_variable = RUS_inf_war_making_bet_command_power_gain_mult
 				add_to_variable = { var = RUS_inf_war_making_bet_political_power_factor value = 0.1 }
 				add_to_variable = { var = RUS_inf_war_making_bet_stability_factor value = 0.05 }
-				add_to_variable = { var = RUS_monthly_increase_var_add value = -1.5 }
+				set_variable = { var = RUS_monthly_increase_inf_war_sum value = -1.5 }
+				add_to_variable = { var = RUS_monthly_increase_inf_war_sum value = RUS_monthly_increase_inf_war_num_1 }
 			}
 		}	
 	}
@@ -5655,16 +5625,9 @@ RUS_information_war = {
 					limit = {
 						has_country_flag = RUS_psychological_operation
 					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = -1.5 }
 					UKR = {
 						remove_dynamic_modifier = { modifier = RUS_propaganda_debuff }
 					}
-				}
-				if = {
-					limit = {
-						has_country_flag = RUS_internal_support
-					}
-					add_to_variable = { var = RUS_monthly_increase_var_add value = 1.5 }
 				}
 			    clr_country_flag = RUS_military_personnel
 				clr_country_flag = RUS_internal_support
@@ -5680,7 +5643,8 @@ RUS_information_war = {
 				add_to_variable = { var = RUS_inf_war_making_bet_political_power_cost value = 1.5 }
 				add_to_variable = { var = RUS_inf_war_making_bet_stability_factor value = 0.025 }
 				add_to_variable = { var = RUS_inf_war_making_bet_war_support_factor value = 0.025 }
-				add_to_variable = { var = RUS_monthly_increase_var_add value = 2 }
+				set_variable = { var = RUS_monthly_increase_inf_war_sum value = 2 }
+				add_to_variable = { var = RUS_monthly_increase_inf_war_sum value = RUS_monthly_increase_inf_war_num_1 }
 			}
 		}	
 	}
@@ -5714,8 +5678,42 @@ RUS_information_war = {
 					var = global.rus_information_war_var_sum
 					value = 2
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -5766,8 +5764,42 @@ RUS_information_war = {
 					var = global.rus_information_war_var_sum
 					value = 2
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -5802,8 +5834,42 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -3
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -5841,8 +5907,42 @@ RUS_information_war = {
 					var = global.rus_information_war_var_sum
 					value = 5
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -5877,8 +5977,42 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -2.5
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -5929,8 +6063,42 @@ RUS_information_war = {
 					var = global.rus_information_war_var_sum
 					value = 3
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -5981,8 +6149,42 @@ RUS_information_war = {
 					var = global.rus_information_war_var_sum
 					value = 5
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -6019,8 +6221,42 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -5
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}	
 	}
@@ -6056,8 +6292,42 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -4
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}	
 	}
@@ -6093,8 +6363,42 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -5
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -6111,6 +6415,7 @@ RUS_information_war = {
 		visible = {
 	       original_tag = RUS
 		   has_war_with = UKR
+		   has_completed_focus = RUS_Intensify_advocacy
 	    }
 
 		available = {
@@ -6132,8 +6437,42 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -4
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 				random_list = {
 			        70 = { }
 			        15 = { country_event = { id = re_event_r.7 days = 3 } }
@@ -6174,8 +6513,33 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -5
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
 				if = {
 					limit = {
 						check_variable = { global.ukr_information_war_var_sum < 0 }
@@ -6202,6 +6566,7 @@ RUS_information_war = {
 		visible = {
 	       original_tag = RUS
 		   has_war_with = UKR
+		   has_completed_focus = RUS_Intensify_advocacy
 	    }
 
 		available = {
@@ -6219,15 +6584,50 @@ RUS_information_war = {
 				tooltip = IW_3_var_add_tt
 			}
 			hidden_effect = {
+			    add_to_variable = { RUS_monthly_increase_inf_war_num_1 = 0.5 }
+				add_to_variable = { RUS_monthly_increase_inf_war_sum = 0.5 }
 				add_to_variable = {	
 					var = global.ukr_information_war_var_sum
 					value = -3
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
-				add_to_variable = { var = RUS_monthly_increase_var_add value = 1 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
-			custom_effect_tooltip = IW_1_var_add_EM_tt
+			custom_effect_tooltip = IW_0_5_var_add_EM_tt
 		}	
 	}
 	RUS_Throw_fakes_VSU = {
@@ -6263,8 +6663,42 @@ RUS_information_war = {
 					var = global.ukr_information_war_var_sum
 					value = -4
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 				random_list = {
 			    	90 = { }
 			    	5 = { country_event = { id = re_event_r.8 days = 2 } }
@@ -6309,28 +6743,58 @@ RUS_information_war = {
 	}
 	RUS_monthly_increase_information_influence = {
 		activation = {
-		    OR = {
-				check_variable = { RUS_monthly_increase_var_add > 0 }
-				check_variable = { RUS_monthly_increase_var_add < 0 }
-			}
+		    has_completed_focus = RUS_Intensify_advocacy
 		}
 		available = {
-			check_variable = { RUS_monthly_increase_var_add = 0 }
+			NOT = {
+				has_completed_focus = RUS_Intensify_advocacy
+			}
 		}
 		icon = RUS_discrediting_Ukraine
 		fire_only_once = no
 		hidden = yes
 		days_mission_timeout = 7
 		timeout_effect = {
-		    add_to_variable = {
-				var = global.rus_information_war_var_sum
-				value = RUS_monthly_increase_var_add
-				tooltip = IW_monthly_increase_var_rus_add_tt
-			}
+		    custom_effect_tooltip = RUS_monthly_increase_information_influence_cet
 			hidden_effect = {
-			    subtract_from_variable = {
-					var = global.ukr_information_war_var_sum
-					value = RUS_monthly_increase_var_add
+				if = {
+					limit = {
+						has_country_flag = RUS_internal_support
+					}
+					add_to_variable = {	
+						var = global.rus_information_war_var_sum
+						value = -1.5
+					}
+					add_to_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 1.5
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = RUS_dknn
+					}
+					add_to_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0.5
+					}
+					add_to_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = -0.5
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = RUS_war_on_fakes
+					}
+					add_to_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 2
+					}
+					add_to_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = -2
+					}
 				}
 				if = {
 					limit = {
@@ -6345,9 +6809,42 @@ RUS_information_war = {
 						value = -1.5
 					}
 				}
-				clamp_variable = { var = global.ukr_information_war_var_sum  min = 0 max = 100 }
-				clamp_variable = { var = global.rus_information_war_var_sum  min = 0 max = 100 }
-				activate_mission = RUS_monthly_increase_information_influence
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum > 100 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.rus_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.rus_information_war_var_sum
+						value = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { global.ukr_information_war_var_sum < 0 }
+					}
+					set_variable = {	
+						var = global.ukr_information_war_var_sum
+						value = 0
+					}
+				}
 			}
 		}
 	}
@@ -6367,7 +6864,7 @@ RUS_SVO_deccat = {
 		visible = {
 	        original_tag = RUS
 		    has_country_flag = CIS_general_staff
-			has_completed_focus = RUS_Blitzkrieg_has_stalled
+			always = no
 	    }
 
 		available = {
@@ -7547,150 +8044,6 @@ RUS_SVO_deccat = {
 			custom_effect_tooltip = SVO_landing_Herson_ce_tt
 		}
 	}
-	RUS_do_SVO_landing_Kharkov = {
-		icon = GFX_RUS_VDV
-		
-		cost = 30
-		fire_only_once = yes
-		days_remove = 10
-		
-		ai_will_do = {
-	    	factor = 100
-        }
-
-		visible = {
-	        original_tag = RUS
-			has_completed_focus = RUS_expand_the_preparation_of_amphibious_operations
-			NOT = {
-				has_completed_focus = RUS_SMO
-			}
-	    }
-
-		available = {
-			original_tag = RUS
-			custom_trigger_tooltip = {
-				tooltip = SVO_choosing_plan_trigger_command_power_20_tt
-				command_power > 19
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				add_command_power = -20
-			}
-		}
-		remove_effect = {
-			set_country_flag = SVO_landing_Kharkov
-			custom_effect_tooltip = SVO_landing_Kharkov_ce_tt
-		}
-	}
-	RUS_do_SVO_landing_Odessa = {
-		icon = GFX_RUS_VDV
-		
-		cost = 30
-		fire_only_once = yes
-		days_remove = 10
-		
-		ai_will_do = {
-	    	factor = 100
-        }
-
-		visible = {
-	        original_tag = RUS
-			has_completed_focus = RUS_expand_the_preparation_of_amphibious_operations
-			NOT = {
-				has_completed_focus = RUS_SMO
-			}
-	    }
-
-		available = {
-			original_tag = RUS
-			custom_trigger_tooltip = {
-				tooltip = SVO_choosing_plan_trigger_command_power_20_tt
-				command_power > 19
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				add_command_power = -20
-			}
-		}
-		remove_effect = {
-			set_country_flag = SVO_landing_Odessa
-			custom_effect_tooltip = SVO_landing_Odessa_ce_tt
-		}
-	}
-	RUS_do_SVO_landing_Nikolaev = {
-		icon = GFX_RUS_VDV
-		
-		cost = 30
-		fire_only_once = yes
-		days_remove = 10
-		
-		ai_will_do = {
-	    	factor = 100
-        }
-
-		visible = {
-	        original_tag = RUS
-			has_completed_focus = RUS_expand_the_preparation_of_amphibious_operations
-			NOT = {
-				has_completed_focus = RUS_SMO
-			}
-	    }
-
-		available = {
-			original_tag = RUS
-			custom_trigger_tooltip = {
-				tooltip = SVO_choosing_plan_trigger_command_power_20_tt
-				command_power > 19
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				add_command_power = -20
-			}
-		}
-		remove_effect = {
-			set_country_flag = SVO_landing_Nikolaev
-			custom_effect_tooltip = SVO_landing_Nikolaev_ce_tt
-		}
-	}
-	RUS_do_SVO_landing_Zaporozhye = {
-		icon = GFX_RUS_VDV
-		
-		cost = 30
-		fire_only_once = yes
-		days_remove = 10
-		
-		ai_will_do = {
-	    	factor = 100
-        }
-
-		visible = {
-	        original_tag = RUS
-			has_completed_focus = RUS_expand_the_preparation_of_amphibious_operations
-			NOT = {
-				has_completed_focus = RUS_SMO
-			}
-	    }
-
-		available = {
-			original_tag = RUS
-			custom_trigger_tooltip = {
-				tooltip = SVO_choosing_plan_trigger_command_power_20_tt
-				command_power > 19
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				add_command_power = -20
-			}
-		}
-		remove_effect = {
-			set_country_flag = SVO_landing_Zaporozhye
-			custom_effect_tooltip = SVO_landing_Zaporozhye_ce_tt
-		}
-	}
 	RUS_do_SVO_landing_zmiiniy = {
 		icon = GFX_RUS_Marine_Corps
 		
@@ -7775,47 +8128,6 @@ RUS_SVO_deccat = {
 		remove_effect = {
 			set_country_flag = SVO_landing_berdyansk
 			custom_effect_tooltip = SVO_landing_berdyansk_ce_tt
-		}
-	}
-	RUS_operational_center_of_airborne_operations = {
-		icon = GFX_RUS_VDV
-		
-		cost = 40
-		fire_only_once = yes
-		
-		ai_will_do = {
-	    	factor = 100
-        }
-
-		visible = {
-	        original_tag = RUS
-			OR = {
-				has_country_flag = { flag = SVO_send_troops_to_the_republic_of_donbass  days > 7 }
-				has_country_flag = { flag = SVO_offensive_towards_novorossia  days > 7 }
-				has_country_flag = { flag = SVO_from_border_to_border  days > 7 }
-				has_country_flag = { flag = SVO_concentrated_attack_on_kyiv  days > 7 }
-				has_country_flag = { flag = SVO_offensive_on_kiev  days > 7 }
-				has_country_flag = { flag = SVO_full_scale_invasion  days > 7 }
-			}
-			NOT = {
-				has_completed_focus = RUS_SMO
-			}
-	    }
-
-		available = {
-			original_tag = RUS
-			custom_trigger_tooltip = {
-				tooltip = SVO_choosing_plan_trigger_command_power_50_tt
-				command_power > 49
-			}
-		}
-		complete_effect = {
-		    custom_effect_tooltip = RUS_operational_center_of_airborne_operations_cet
-			hidden_effect = {
-				add_command_power = -50
-				set_country_flag = RUS_expand_the_preparation_of_amphibious_operations_cf
-				mark_focus_tree_layout_dirty = yes
-			}
 		}
 	}
 	SVO_full_scale_invasion_timeout = {
@@ -8630,7 +8942,7 @@ RUS_Storm_Z_categories = {
 							x = 0
 							y = 2
 						}
-						artillery = {
+						artillery_nig = {
 							x = 1
 							y = 0
 						}		#не баг
@@ -10278,7 +10590,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10289,7 +10601,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_equipment_2
-				amount = 750
+				amount = 1000
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10314,7 +10626,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10325,7 +10637,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = support_equipment
-				amount = 1000
+				amount = 1500
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10350,7 +10662,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10361,7 +10673,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_equipment_3
-				amount = 450
+				amount = 500
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10386,7 +10698,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10397,7 +10709,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_anti_tank_equipment_1
-				amount = 400
+				amount = 800
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10422,7 +10734,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10433,7 +10745,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_anti_air_equipment_1
-				amount = 400
+				amount = 800
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10458,7 +10770,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10495,7 +10807,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10506,7 +10818,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_equipment_2
-				amount = 750
+				amount = 1000
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10531,7 +10843,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10542,7 +10854,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = support_equipment
-				amount = 1000
+				amount = 1500
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10567,7 +10879,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10578,7 +10890,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_equipment_3
-				amount = 450
+				amount = 500
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10603,7 +10915,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10614,7 +10926,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_anti_tank_equipment_1
-				amount = 400
+				amount = 800
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10639,7 +10951,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10650,7 +10962,7 @@ RUS_real_man_business_categories = {
 		timeout_effect = {
 			add_equipment_to_stockpile = {  
 			    type = infantry_anti_air_equipment_1
-				amount = 400
+				amount = 800
 				producer = RUS 
 			}
 			hidden_effect = {
@@ -10675,7 +10987,7 @@ RUS_real_man_business_categories = {
 
 		available = {
 			NOT = {
-				has_war_with = UKR
+				has_completed_focus = RUS_People_Front
 			}
 		}
 
@@ -10698,288 +11010,6 @@ RUS_real_man_business_categories = {
 					16 = { activate_mission = RUS_fees_of_voenkory_RPG }
 					16 = { activate_mission = RUS_fees_of_voenkory_PZRK }
 					16 = { activate_mission = RUS_fees_of_voenkory_car }
-				}
-			}
-		}
-    }
-	RUS_fees_of_EDRO_AK = {
-        icon = GFX_RUS_raids_against_neutrality
-		
-		is_good = yes
-		fire_only_once = no
-		days_mission_timeout = 21
-		selectable_mission = no
-
-		available = {
-			NOT = {
-				has_war_with = UKR
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		timeout_effect = {
-		    add_equipment_to_stockpile = {  
-			    type = infantry_equipment_3
-				amount = 150
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_equipment_2
-				amount = 300
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_anti_air_equipment_1
-				amount = 80
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_anti_tank_equipment_1
-				amount = 80
-				producer = RUS 
-			}
-			hidden_effect = {
-				random_list = {
-					50 = { activate_mission = RUS_fees_of_EDRO_AK }
-					50 = { activate_mission = RUS_fees_of_EDRO_support }
-				}
-			}
-		}
-    }
-	RUS_fees_of_EDRO_support = {
-        icon = GFX_RUS_raids_against_neutrality
-		
-		is_good = yes
-		fire_only_once = no
-		days_mission_timeout = 21
-		selectable_mission = no
-
-		available = {
-			NOT = {
-				has_war_with = UKR
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		timeout_effect = {
-			add_equipment_to_stockpile = {  
-			    type = support_equipment
-				amount = 250
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = engineering_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = ARV_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = AMV_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			hidden_effect = {
-				random_list = {
-					50 = { activate_mission = RUS_fees_of_EDRO_AK }
-					50 = { activate_mission = RUS_fees_of_EDRO_support }
-				}
-			}
-		}
-    }
-	RUS_fees_of_LDPR_AK = {
-        icon = GFX_RUS_raids_against_fascism
-		
-		is_good = yes
-		fire_only_once = no
-		days_mission_timeout = 21
-		selectable_mission = no
-
-		available = {
-			NOT = {
-				has_war_with = UKR
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		timeout_effect = {
-			add_equipment_to_stockpile = {  
-			    type = infantry_equipment_3
-				amount = 150
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_equipment_2
-				amount = 300
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_anti_air_equipment_1
-				amount = 80
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_anti_tank_equipment_1
-				amount = 80
-				producer = RUS 
-			}
-			hidden_effect = {
-				random_list = {
-					50 = { activate_mission = RUS_fees_of_LDPR_AK }
-					50 = { activate_mission = RUS_fees_of_LDPR_support }
-				}
-			}
-		}
-    }
-	RUS_fees_of_LDPR_support = {
-        icon = GFX_RUS_raids_against_fascism
-		
-		is_good = yes
-		fire_only_once = no
-		days_mission_timeout = 21
-		selectable_mission = no
-
-		available = {
-			NOT = {
-				has_war_with = UKR
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		timeout_effect = {
-			add_equipment_to_stockpile = {  
-			    type = support_equipment
-				amount = 250
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = engineering_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = ARV_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = AMV_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			hidden_effect = {
-				random_list = {
-					50 = { activate_mission = RUS_fees_of_LDPR_AK }
-					50 = { activate_mission = RUS_fees_of_LDPR_support }
-				}
-			}
-		}
-    }
-	RUS_fees_of_KPRF_AK = {
-        icon = GFX_RUS_raids_against_Communists
-		
-		is_good = yes
-		fire_only_once = no
-		days_mission_timeout = 21
-		selectable_mission = no
-
-		available = {
-			NOT = {
-				has_war_with = UKR
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		timeout_effect = {
-			add_equipment_to_stockpile = {  
-			    type = infantry_equipment_3
-				amount = 150
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_equipment_2
-				amount = 300
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_anti_air_equipment_1
-				amount = 80
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = infantry_anti_tank_equipment_1
-				amount = 80
-				producer = RUS 
-			}
-			hidden_effect = {
-				random_list = {
-					50 = { activate_mission = RUS_fees_of_KPRF_AK }
-					50 = { activate_mission = RUS_fees_of_KPRF_support }
-				}
-			}
-		}
-    }
-	RUS_fees_of_KPRF_support = {
-        icon = GFX_RUS_raids_against_Communists
-		
-		is_good = yes
-		fire_only_once = no
-		days_mission_timeout = 21
-		selectable_mission = no
-
-		available = {
-			NOT = {
-				has_war_with = UKR
-			}
-		}
-
-		activation = {
-			always = no
-		}
-
-		timeout_effect = {
-			add_equipment_to_stockpile = {  
-			    type = support_equipment
-				amount = 250
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = engineering_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = ARV_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			add_equipment_to_stockpile = {  
-			    type = AMV_equipment_0
-				amount = 70
-				producer = RUS 
-			}
-			hidden_effect = {
-				random_list = {
-					50 = { activate_mission = RUS_fees_of_KPRF_AK }
-					50 = { activate_mission = RUS_fees_of_KPRF_support }
 				}
 			}
 		}
