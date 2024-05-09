@@ -9,4 +9,12 @@ spriteTypes = {
 		name = "GFX_bop_RUS_rusarmy"
 		texturefile = "gfx/interface/bop/bop_RUS_rusarmy.dds"
 	}
+	spriteType = {
+		name = "GFX_bop_LFR_army"
+		texturefile = "gfx/interface/bop/bop_LFR_army.dds"
+		}
+		spriteType = {
+		name = "GFX_bop_RDK_army"
+		texturefile = "gfx/interface/bop/bop_RDK_army.dds"
+	}
 }
