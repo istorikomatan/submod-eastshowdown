@@ -16,7 +16,6 @@ LFR_budget_category = {
             add_to_variable = {    
                 var = LFR_budget_var
                 value = 100
-                value = 1000
                 tooltip = LFR_budget_var_add
             }
         }
@@ -119,86 +118,7 @@ LFR_budget_category = {
 			custom_effect_tooltip = WGN_ammunition_supply_every_month
 		}
 	}
-	LFR_get_ammo_low = {
-		activation = {
-			original_tag = LFR
-			NOT = {
-				has_war_with = UKR
-			}
-			hidden_trigger = { #Проверяем, что у РФ боеприпасов больше в 10 раз, чем может поместиться на складах у Вагнера
-				#Высчитываем, сколько место осталось у Вагнера на складах
-				set_temp_variable = { ammo_needed = ammunition_free_space }
-				
-				#Ограничиваем максимумом в 50к
-				clamp_temp_variable = {
-					var = ammo_needed
-					min = 0
-					max = 10
-				}
-				
-				#У РФ должно быть в 10 раз больше боеприпасов, чем у Вагнера свободно
-				multiply_temp_variable = {
-					var = ammo_needed
-					value = 10
-				}
-				
-				UKR = {
-					check_variable = { ammunition_variable > ammo_needed }
-				}
-			}
-		}
-			
-		available = {
-			NOT = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = LFR_russia_have_ammo
-						#Высчитываем, сколько место осталось у Вагнера на складах
-						set_temp_variable = { ammo_needed = ammunition_free_space }
-						
-						#Ограничиваем максимумом в 50к
-						clamp_temp_variable = {
-							var = ammo_needed
-							min = 0
-							max = 10
-						}
-						
-						#У РФ должно быть в 10 раз больше боеприпасов, чем у Вагнера свободно
-						multiply_temp_variable = {
-							var = ammo_needed
-							value = 10
-						}
-						
-						UKR = {
-							check_variable = { ammunition_variable > ammo_needed }
-						}
-					}
-				}
-			}
-		}
-		icon = generic_formable_nations  
-		fire_only_once = no
-		days_mission_timeout = 30
-		timeout_effect = {
-			#Высчитываем, сколько место осталось у Вагнера на складах
-			set_temp_variable = { ammo_needed = ammunition_free_space }
-
-			#Ограничиваем максимумом в 50к
-			clamp_temp_variable = {
-			  var = ammo_needed
-			  min = 0
-			  max = 10
-			}
-			
-			#Передаём боеприпасы
-			add_to_variable = { ammunition_variable = ammo_needed }
-			UKR = {
-				subtract_from_variable = { ammunition_variable = ammo_needed }
-			}
-			
-			custom_effect_tooltip = WGN_ammunition_supply_every_month
-		}
-	}
+	
 
 
 	LFR_buy_vepr = {
@@ -923,3 +843,425 @@ LFR_budget_category = {
 			}
 		}
 	}
+		}
+LFR_recruits_category = {
+    LFR_popularity = {
+        cost = 20
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 1
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 100
+			
+		}
+		remove_effect = {
+		subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 1
+				tooltip = LFR_budget_var_remove17
+				}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 100
+				
+        
+    } 
+
+}
+} 
+LFR_ad  = {
+        cost = 70
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 10
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 200
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 10
+				tooltip = LFR_budget_var_remove9
+				}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 200
+				}
+}
+}
+LFR_popularity1  = {
+        cost = 120
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 19
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 300
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 19
+				tooltip = LFR_budget_var_remove18
+				}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 300
+				}
+}
+}
+LFR_ad1  = {
+        cost = 170
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 28
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 400
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 28
+				tooltip = LFR_budget_var_remove19
+				}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 400
+				}
+}
+}
+LFR_popularity2  = {
+        cost = 220
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 37
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 500
+				
+		
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 37
+				tooltip = LFR_budget_var_remove20
+				}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 500
+				}
+}
+}
+LFR_ad2  = {
+        cost = 270
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 46
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 600
+				
+			}
+
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 46
+				tooltip = LFR_budget_var_remove21
+				}
+				
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 600
+				}
+}
+}
+LFR_popularity3  = {
+        cost = 320
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 55
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 700
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 55
+				tooltip = LFR_budget_var_remove22
+				}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 700
+				}
+}
+}
+LFR_ad3  = {
+        cost = 370
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 64
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			
+				add_manpower = 800
+				
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 64
+				tooltip = LFR_budget_var_remove2
+				
+			}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 800
+				}
+}
+}
+LFR_popularity4  = {
+        cost = 420
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 73
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 73
+				tooltip = LFR_budget_var_remove24
+				add_manpower = 900
+				
+			}
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 73
+				tooltip = LFR_budget_var_remove24
+				}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 900
+				}
+}
+}
+FR_ad4  = {
+        cost = 500
+        days_remove = 45
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 300
+				compare = greater_than_or_equals
+			}
+        }
+		complete_effect = {
+			subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 300
+				tooltip = LFR_budget_var_remove3
+				add_manpower = 2000
+				
+			}
+}
+remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 300
+				tooltip = LFR_budget_var_remove3
+				add_manpower = 2000
+				
+			}
+add_to_variable = {    
+                var = LFR_recruits_var
+                value = 2000
+				}
+}
+}
+LFR_new_type_brigade = {
+        cost = 150
+        days_remove = 10
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 30
+				compare = greater_than_or_equals
+			}
+			
+			check_variable = {
+				var = LFR_recruits_var
+				value = 3500
+				compare = greater_than_or_equals
+			}
+			}
+			complete_effect = {
+			subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 30
+				tooltip = LFR_budget_var_remove15
+				}
+				add_manpower = -3500
+				subtract_from_variable = {	
+				var = LFR_recruits_var
+				value = 3500
+				tooltip = LFR_recruits_var_remove1
+				}
+554 = {
+					create_unit = {
+						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+				}
+				
+				
+			}
+}
+
+LFR_new_type_brigade1 = {
+        cost = 200
+        days_remove = 10
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+            original_tag = LFR
+            check_variable = {
+				var = LFR_budget_var
+				value = 46
+				compare = greater_than_or_equals
+			}
+			
+			check_variable = {
+				var = LFR_recruits_var
+				value = 4000
+				compare = greater_than_or_equals
+			}
+			}
+			complete_effect = {
+			subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 30
+				tooltip = LFR_budget_var_remove21
+				}
+				add_manpower = -4000
+				subtract_from_variable = {	
+				var = LFR_recruits_var
+				value = 4000
+				}
+554 = {
+					create_unit = {
+						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+				}
+				
+				
+			}
+}
+}
