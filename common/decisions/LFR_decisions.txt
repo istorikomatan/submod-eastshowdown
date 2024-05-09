@@ -860,14 +860,16 @@ LFR_recruits_category = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 100
+			
+		}
+		remove_effect = {
+		subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 1
 				tooltip = LFR_budget_var_remove17
-				add_manpower = 100
-			}
-		}
-		remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 100
@@ -892,15 +894,17 @@ LFR_ad  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 200
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 10
 				tooltip = LFR_budget_var_remove9
-				add_manpower = 200
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 200
@@ -922,15 +926,17 @@ LFR_popularity1  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 300
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 19
 				tooltip = LFR_budget_var_remove18
-				add_manpower = 300
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 300
@@ -952,15 +958,17 @@ LFR_ad1  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 400
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 28
 				tooltip = LFR_budget_var_remove19
-				add_manpower = 400
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 400
@@ -982,15 +990,17 @@ LFR_popularity2  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 500
+				
+		
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 37
 				tooltip = LFR_budget_var_remove20
-				add_manpower = 500
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 500
@@ -1012,15 +1022,18 @@ LFR_ad2  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
-				var = LFR_budget_var
-				value = 46
-				tooltip = LFR_budget_var_remove21
+			
 				add_manpower = 600
 				
 			}
-}
+
 remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 46
+				tooltip = LFR_budget_var_remove21
+				}
+				
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 600
@@ -1042,15 +1055,17 @@ LFR_popularity3  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 700
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 55
 				tooltip = LFR_budget_var_remove22
-				add_manpower = 700
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 700
@@ -1072,15 +1087,17 @@ LFR_ad3  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
-				var = LFR_budget_var
-				value = 64
-				tooltip = LFR_budget_var_remove23
+			
 				add_manpower = 800
 				
-			}
 }
 remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 64
+				tooltip = LFR_budget_var_remove2
+				
+			}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 800
@@ -1111,6 +1128,11 @@ LFR_popularity4  = {
 			}
 }
 remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 73
+				tooltip = LFR_budget_var_remove24
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 900
@@ -1141,6 +1163,13 @@ FR_ad4  = {
 			}
 }
 remove_effect = {
+subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 300
+				tooltip = LFR_budget_var_remove3
+				add_manpower = 2000
+				
+			}
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 2000
@@ -1216,7 +1245,7 @@ LFR_new_type_brigade1 = {
 			subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 30
-				tooltip = LFR_budget_var_remove15
+				tooltip = LFR_budget_var_remove21
 				}
 				add_manpower = -4000
 				subtract_from_variable = {	

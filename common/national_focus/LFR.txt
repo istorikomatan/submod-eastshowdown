@@ -16,8 +16,7 @@ focus_tree = {
     focus = {
         id = LFR_start
         icon = GFX_start
-        cost = 2.50
-        cost = 1
+        cost = 1.6
         x = 4
         y = 0
         available = {
@@ -138,8 +137,7 @@ focus = {
             }
         }
         completion_reward = {
-		set_cosmetic_tag = LFR_new
-            
+			set_cosmetic_tag = LFR_l
         }
     }
 focus = {
