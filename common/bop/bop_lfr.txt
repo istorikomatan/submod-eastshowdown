@@ -15,7 +15,7 @@ LFR_power_balance = {
 	}
 	side = {
 		id = left_side
-		icon = GFX_bop_RUS_wagner
+		icon = GFX_bop_RDK_army
 
 		range = {
 			id = LFR_left_side_range
@@ -73,8 +73,8 @@ LFR_power_balance = {
 	}
 	side = {
 		id = right_side
-
 		icon = GFX_bop_LFR_army
+		
 
 		range = {
 			id = LFR_right_side_range

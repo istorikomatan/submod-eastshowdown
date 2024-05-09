@@ -6,7 +6,7 @@ state = {
 	state_category = rural
 
 	provinces = {
-		228 489 973 1675 1867 2602 3003 3317 3703 3848 3932 5240 5423 5443 7980 9584 9946 10309 10503 10613 11070 11776 12344 12418 12546 12732 13943 14004 14941 15037 15073 
+		228 489 973  1867 2602 3003 3317 3703 3848 3932 5240 5423 5443 7980 9584 9946  10503 10613 11070 11776 12344 12418 12546 12732 13943 14004 14941 15037 15073 
 	}
 
 	history = {
@@ -16,7 +16,6 @@ state = {
 		victory_points = { 3003 15 }
 		victory_points = { 3317 4 }
 		victory_points = { 3932 3 }
-		victory_points = { 10309 4 }
 		victory_points = { 10503 15 }
 		victory_points = { 10613 3 }
 		
@@ -24,8 +23,6 @@ state = {
 			infrastructure = 3
 			industrial_complex = 1
 
-			1675 = { bunker = 1 }
-			10309 = { bunker = 1 }
 		}
 		
 		add_core_of = UKR

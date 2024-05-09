@@ -860,23 +860,30 @@ LFR_recruits_category = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 100
+			
+		}
+		remove_effect = {
+		subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 1
 				tooltip = LFR_budget_var_remove17
-				add_manpower = 100
-			}
-		}
-		remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 100
+                value = 90
 				
         
     } 
+	add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 10
+				tooltip = LFR_saboteurs_var_add1	
 
 }
 } 
+}
 LFR_ad  = {
         cost = 70
         days_remove = 45
@@ -892,19 +899,26 @@ LFR_ad  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 200
+				
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 10
 				tooltip = LFR_budget_var_remove9
-				add_manpower = 200
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 200
+                value = 180
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 20
+			tooltip = LFR_saboteurs_var_add2		
+
+}				
 }
 }
 LFR_popularity1  = {
@@ -922,19 +936,27 @@ LFR_popularity1  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 300
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 19
 				tooltip = LFR_budget_var_remove18
-				add_manpower = 300
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 300
+                value = 270
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 30
+					tooltip = LFR_saboteurs_var_add3
+
+}				
 }
 }
 LFR_ad1  = {
@@ -952,20 +974,29 @@ LFR_ad1  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 400
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 28
 				tooltip = LFR_budget_var_remove19
-				add_manpower = 400
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 400
+                value = 360
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 40
+					tooltip = LFR_saboteurs_var_add4
+
+}					
 }
+
 }
 LFR_popularity2  = {
         cost = 220
@@ -982,19 +1013,28 @@ LFR_popularity2  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 500
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 37
 				tooltip = LFR_budget_var_remove20
-				add_manpower = 500
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 500
+                value = 450
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 50
+					tooltip = LFR_saboteurs_var_add5
+					
+
+}					
 }
 }
 LFR_ad2  = {
@@ -1012,19 +1052,27 @@ LFR_ad2  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+		
+				add_manpower = 600
+				
+			
+}
+remove_effect = {
+	subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 46
 				tooltip = LFR_budget_var_remove21
-				add_manpower = 600
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 600
+                value = 540
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 60
+				tooltip = LFR_saboteurs_var_add6
+
+}	
 }
 }
 LFR_popularity3  = {
@@ -1042,19 +1090,27 @@ LFR_popularity3  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 700
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 55
 				tooltip = LFR_budget_var_remove22
-				add_manpower = 700
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 700
+                value = 630
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 70
+					tooltip = LFR_saboteurs_var_add7
+
+}					
 }
 }
 LFR_ad3  = {
@@ -1072,19 +1128,27 @@ LFR_ad3  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 800
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 64
 				tooltip = LFR_budget_var_remove23
-				add_manpower = 800
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 800
+                value = 720
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 80
+				tooltip = LFR_saboteurs_var_add8
+
+}		
 }
 }
 LFR_popularity4  = {
@@ -1102,19 +1166,27 @@ LFR_popularity4  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 900
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 73
 				tooltip = LFR_budget_var_remove24
-				add_manpower = 900
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 900
+                value = 810
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 90
+				tooltip = LFR_saboteurs_var_add9
+
+}						
 }
 }
 FR_ad4  = {
@@ -1132,19 +1204,27 @@ FR_ad4  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
+			
+				add_manpower = 2000
+				
+			
+}
+remove_effect = {
+subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 300
 				tooltip = LFR_budget_var_remove3
-				add_manpower = 2000
-				
-			}
-}
-remove_effect = {
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 2000
+                value = 1800
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 200
+				tooltip = LFR_saboteurs_var_add10
+
+}						
 }
 }
 LFR_new_type_brigade = {
