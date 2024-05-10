@@ -1,0 +1,24 @@
+ideas = {
+country = {
+LFR_sabatage_idea = {
+add_timed_idea = {
+			idea = LFR_sabatage_idea
+			days 15
+			}
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 2
+			
+			}
+			add_timed_idea = {
+			idea = LFR_sabatage_idea
+			days 15
+			}
+			}
+			}
+			}

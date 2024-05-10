@@ -1316,3 +1316,60 @@ LFR_new_type_brigade1 = {
 			}
 }
 }
+LFR_sabotage_category = {
+    LFR_sabotage = {
+        cost = 55
+        days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+        available = {
+            original_tag = LFR
+            AND = {
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 50
+                LFR = {
+					add_political_power = 2
+                    add_stability = 0.1
+                    add_war_support = 0.1
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.015
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea
+			days = 15
+       272 = {
+				damage_building = {
+					type = infrastructure 
+					damage = 1
+				}
+				}
+				}
+				}
+				}
+				
+            }
+}
+

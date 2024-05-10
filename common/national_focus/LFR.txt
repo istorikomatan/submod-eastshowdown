@@ -16,7 +16,8 @@ focus_tree = {
     focus = {
         id = LFR_start
         icon = GFX_start
-        cost = 1.6
+        cost = 2.50
+        cost = 1
         x = 4
         y = 0
         available = {
@@ -137,7 +138,8 @@ focus = {
             }
         }
         completion_reward = {
-			set_cosmetic_tag = LFR_l
+		set_cosmetic_tag = LFR_new
+            
         }
     }
 focus = {
@@ -156,3 +158,21 @@ focus = {
             
         }
     }
+	focus = {
+    id = LFR_hhh
+    icon = GFX_hhh
+    prerequisite = { focus = LFR_lfr }
+    x = 0
+    y = 2
+    relative_position_id = LFR_lfr
+    cost = 1
+    bypass = {
+        NOT = { has_war_with = RUS }
+    }
+    allow_branch = {
+        has_war_with = RUS
+    }
+    completion_reward = {
+        set_country_flag = LFR_hhh_completed_flag
+    }
+}
