@@ -158,3 +158,20 @@ focus = {
             
         }
     }
+	focus = {
+    id = LFR_hhh
+    icon = GFX_hhh
+    prerequisite = { focus = LFR_lfr }
+    x = 0
+    y = 2
+    relative_position_id = LFR_lfr
+    cost = 1
+    bypass = {
+        NOT = { has_war_with = RUS }
+    }
+    allow_branch = {
+        has_war_with = RUS
+    }
+    completion_reward = {
+    }
+}

@@ -1,5 +1,4 @@
-capital = 554
-oob = LFR_2022
+capital = 555
 set_research_slots = 2
 
 set_stability = 0.8
@@ -18,52 +17,12 @@ set_popularities = {
 }
 
 set_politics = {
-				ruling_party = democratic
+				ruling_party = nationalism
 				elections_allowed = no
-				long_name = LFR_party_long
-				name = LFR_party
+				long_name = RVC_party_long
+				name = RVC_party
 }
-create_country_leader =  {
-name = "LFR_Cesar"
-decs= "Максимилиа́н Алекса́ндрович Андро́нников (позывной — Цезарь) — русский оппозиционер национал-либерального толка,  заместитель командира Легиона «Свобода России» по военно-гражданскому сотрудничеству. Также являлся членом Съезда народных депутатов -  оппозиционное собрание бывших депутатов разных уровней и созывов из России, претендующее на то, чтобы стать переходным парламентом "Свободной России""
-picture = "Cesar_LFR.dds"
-idealogy = authoritarian_democracy
-traits = {
-}
-}
-create_field_marshal = {
- name = "LFR_Cesar_1"
- picture = "LSR_Cesar.dds"
- traits={ army_capicity }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			}
-create_field_marshal = {
- name = "RDK_kapustin"
- picture = "RDK_kapustin.dds"
- traits={ army_capicity }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			}
-recruit_character = LFR_Cesar
 
-set_power_balance = {
-		id = LFR_power_balance
-		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
-	}
-
-set_politics = {
-				ruling_party = democratic
-				elections_allowed = no
-				long_name = LFR_party_long
-				name = LFR_party
-}
 set_popularities = {
                 democratic = 32
                 neutrality = 21
@@ -72,18 +31,18 @@ set_popularities = {
 }
 set_party_name = {
                 ideology = neutrality
-                long_name = LFR_n_long
-                name = LFR_n
+                long_name = RVC_n_long
+                name = RVC_n
 }
 set_party_name = {
                 ideology = nationalism
-                long_name = LFR_nac_long
-                name = LFR_nac
+                long_name = _nac_long
+                name = RVC_nac
 }
 set_party_name = {
                 ideology = communism
-                long_name = LFR_c_long
-                name = LFR_c
+                long_name = RVC_c_long
+                name = RVC_c
 }
 add_opinion_modifier = {
 	target = RUS
@@ -120,7 +79,7 @@ add_opinion_modifier = {
 }
 add_named_threat = {
 	threat = 5.1
-	name = LFR_crisis
+	name = RVC_crisis
 }
 create_equipment_variant = {
 	name = "\"Дозор-Б\" с \"Корд\""
@@ -975,7 +934,7 @@ create_equipment_variant = {
 add_equipment_production = {
 	equipment = {
 		type = motorized_equipment_1
-		creator = "LFR"
+		creator = "RVC"
 	}
 	requested_factories = 3
 	progress = 0.6
@@ -984,7 +943,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
 		type = support_equipment_1
-		creator = "LFR"
+		creator = "RVC"
 	}
 	requested_factories = 3
 	progress = 0.6
@@ -992,8 +951,8 @@ add_equipment_production = {
 }
 add_equipment_production = {
 	equipment = {
-		type = LFR_mortar_2_eq
-		creator = "LFR"
+		type = RVC_mortar_2_eq
+		creator = "RVC"
 	}
 	requested_factories = 2
 	progress = 0.6
@@ -1001,8 +960,8 @@ add_equipment_production = {
 }
 add_equipment_production = {
 	equipment = {
-		type = LFR_atgm_3_eq
-		creator = "LFR"
+		type = RVC_atgm_3_eq
+		creator = "RVC"
 	}
 	requested_factories = 2
 	progress = 0.6
@@ -1010,8 +969,8 @@ add_equipment_production = {
 }
 add_equipment_production = {
 	equipment = {
-		type = LFR_infantry_anti_air_equipment_2
-		creator = "LFR"
+		type = RVC_infantry_anti_air_equipment_2
+		creator = "RVC"
 	}
 	requested_factories = 2
 	progress = 0.6
@@ -1019,8 +978,8 @@ add_equipment_production = {
 }
 add_equipment_production = {
 	equipment = {
-		type = LFR_infantry_anti_tank_equipment_2
-		creator = "LFR"
+		type = RVC_infantry_anti_tank_equipment_2
+		creator = "RVC"
 	}
 	requested_factories = 2
 	progress = 0.6
@@ -1028,8 +987,8 @@ add_equipment_production = {
 }
 add_equipment_production = {
 	equipment = {
-		type = LFR_infantry_anti_tank_equipment_0
-		creator = "LFR"
+		type = RVC_infantry_anti_tank_equipment_0
+		creator = "RVC"
 	}
 	requested_factories = 1
 	progress = 0.6
@@ -1037,8 +996,8 @@ add_equipment_production = {
 }
 add_equipment_production = {
 	equipment = {
-		type = LFR_infantry_equipment_3
-		creator = "LFR"
+		type = RVC_infantry_equipment_3
+		creator = "RVC"
 	}
 	requested_factories = 8
 	progress = 0.6
@@ -1046,8 +1005,8 @@ add_equipment_production = {
 }
 add_equipment_production = {
 	equipment = {
-		type = LFR_infantry_equipment_2
-		creator = "LFR"
+		type = RVC_infantry_equipment_2
+		creator = "RVC"
 	}
 	requested_factories = 3
 	progress = 0.6
@@ -1056,7 +1015,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
 		type = AMV_equipment_0
-		creator = "LFR"
+		creator = "RVC"
 	}
 	requested_factories = 2
 	progress = 0.6
@@ -1065,7 +1024,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
 		type = ARV_equipment_0
-		creator = "LFR"
+		creator = "RVC"
 	}
 	requested_factories = 2
 	progress = 0.6
@@ -1074,7 +1033,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
 		type = engineering_equipment_0
-		creator = "LFR"
+		creator = "RVC"
 	}
 	requested_factories = 2
 	progress = 0.6
@@ -1083,7 +1042,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
 		type = artillery_equipment_3
-		creator = "LFR"
+		creator = "RVC"
 	}
 	requested_factories = 4
 	progress = 0.6
@@ -1092,7 +1051,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = bmp1a_chassis
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "БМП-1У"
 	}
 	requested_factories = 3
@@ -1102,7 +1061,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = bmp2a_chassis
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "БМП-2Д"
 	}
 	requested_factories = 3
@@ -1112,7 +1071,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = bronemashina1_chassis
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "\"Дозор-Б\""
 	}
 	requested_factories = 4
@@ -1122,7 +1081,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = btr3_chassis
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "БТР-3"
 	}
 	requested_factories = 2
@@ -1132,7 +1091,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = btr4_chassis
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "БТР-4"
 	}
 	requested_factories = 3
@@ -1142,7 +1101,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = medium_sau_chassis_0
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "2С1"
 	}
 	requested_factories = 3
@@ -1152,7 +1111,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = t72_chassis_0
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "Т-72A/Б"
 	}
 	requested_factories = 3
@@ -1162,7 +1121,7 @@ add_equipment_production = {
 add_equipment_production = {
 	equipment = {
         type = t64_chassis_0
-		creator = "LFR" 
+		creator = "RVC" 
 		version_name = "Т-64БМ \"Булат\""
 	}
 	requested_factories = 3
@@ -1176,274 +1135,274 @@ add_equipment_to_stockpile = {
 	type = bronemashina1_chassis
 	variant_name = "\"Дозор-Б\" с \"Корд\""
 	amount = 1000
-	producer = LFR
+	producer = RVC
 } 
 add_equipment_to_stockpile = {
 	type = bronemashina1_chassis
 	variant_name = "\"Дозор-Б\""
 	amount = 5000
-	producer = LFR
+	producer = RVC
 } 
 add_equipment_to_stockpile = {
 	type = bronemashina1_chassis
 	variant_name = "\"Дозор-Б\" c 30мм автопушкой"
 	amount = 200
-	producer = LFR
+	producer = RVC
 } 
 add_equipment_to_stockpile = {
 	type = bronemashina2_chassis
 	variant_name = "HMMWV"
 	amount = 30
-	producer = LFR
+	producer = RVC
 } 
 add_equipment_to_stockpile = {
 	type = bronemashina2_chassis
 	variant_name = "HMMWV c \"Корд\""
 	amount = 40
-	producer = LFR
+	producer = RVC
 } 
 add_equipment_to_stockpile = {
 	type = bronemashina3_chassis
 	variant_name = "\"Новатор\""
 	amount = 50
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = mlrs1_chassis
 	variant_name = "БМ-21 \"Град\""
 	amount = 1000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = mlrs2_chassis
 	variant_name = "\"Ураган\""
 	amount = 200
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = bmp1a_chassis
 	variant_name = "БМП-1 БМ"
 	amount = 1000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = bmp1a_chassis
 	variant_name = "БМП-1Д"
 	amount = 50
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = bmp1a_chassis
 	variant_name = "БМП-1П"
 	amount = 500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = bmp1a_chassis
 	variant_name = "БМП-1У"
 	amount = 100
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = bmp2a_chassis
 	variant_name = "БМП-2 БМ"
 	amount = 700
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = bmp2a_chassis
 	variant_name = "БМП-2Д"
 	amount = 30
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t64_chassis_0
 	variant_name = "Т-64Б"
 	amount = 500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t72_chassis_0
 	variant_name = "Т-72A/Б"
 	amount = 550
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t64_chassis_0
 	variant_name = "Т-64БВ"
 	amount = 700
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t64_chassis_0
 	variant_name = "Т-64БМ \"Булат\""
 	amount = 100
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t80_chassis_0
 	variant_name = "Т-80БВ"
 	amount = 300
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t80_chassis_0
 	variant_name = "Т-80У"
 	amount = 50
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t80_chassis_0
 	variant_name = "Т-80УД"
 	amount = 30
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = t84_chassis_0
 	variant_name = "Т-84"
 	amount = 5
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = oplot_chassis_0
 	variant_name = "БМ \"Оплот\""
 	amount = 5
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = medium_sau_chassis_0
 	variant_name = "2С1"
 	amount = 950
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = medium_sau_chassis_0
 	variant_name = "МСТА-С"
 	amount = 60
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = btr1_chassis
 	variant_name = "БТР-70 БМ"
 	amount = 1000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = btr2_chassis
 	variant_name = "БТР-80 БМ"
 	amount = 600
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = btr3_chassis
 	variant_name = "БТР-3"
 	amount = 300
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = btr4_chassis
 	variant_name = "БТР-4"
 	amount = 100
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = heavy_sau_chassis_0
 	variant_name = "2С7 \"Пион\""
 	amount = 150
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type =  heavy_zrk1_chassis
 	variant_name = "Бук-М1"
 	amount = 70
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1	
 	amount = 37500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = train_equipment_1	
 	amount = 2500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1	
 	amount = 25000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_equipment_3	
+	type = RVC_infantry_equipment_3	
 	amount = 100000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_equipment_2	
+	type = RVC_infantry_equipment_2	
 	amount = 250000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_anti_tank_equipment_3	
+	type = RVC_infantry_anti_tank_equipment_3	
 	amount = 15000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_anti_tank_equipment_2	
+	type = RVC_infantry_anti_tank_equipment_2	
 	amount = 7500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_anti_tank_equipment_1	
+	type = RVC_infantry_anti_tank_equipment_1	
 	amount = 35000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_anti_air_equipment_2	
+	type = RVC_infantry_anti_air_equipment_2	
 	amount = 2000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_anti_air_equipment_1	
+	type = RVC_infantry_anti_air_equipment_1	
 	amount = 7500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_infantry_anti_air_equipment_0	
+	type = RVC_infantry_anti_air_equipment_0	
 	amount = 12500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = engineering_equipment_0	
 	amount = 3500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = ARV_equipment_0	
 	amount = 3500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = AMV_equipment_0	
 	amount = 3500
-	producer = LFR
+	producer = RVC
 }
 
 
 add_equipment_to_stockpile = {
-	type = LFR_hel_transport_equipment_mi2	
+	type = RVC_hel_transport_equipment_mi2	
 	amount = 10
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_hel_transport_equipment_mi2	
+	type = RVC_hel_transport_equipment_mi2	
 	amount = 25
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_hel_strike_equipment_mi24	
+	type = RVC_hel_strike_equipment_mi24	
 	amount = 125
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = NTO_uav_strike_bayraktar	
@@ -1453,71 +1412,71 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = artillery_equipment_0	
 	amount = 1800
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1	
 	amount = 900
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_2	
 	amount = 750
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_3	
 	amount = 600
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_mortar_1_eq	
+	type = RVC_mortar_1_eq	
 	amount = 2000
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_mortar_2_eq	
+	type = RVC_mortar_2_eq	
 	amount = 400
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_atgm_1_eq	
+	type = RVC_atgm_1_eq	
 	amount = 800
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_atgm_2_eq	
+	type = RVC_atgm_2_eq	
 	amount = 1500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
-	type = LFR_atgm_3_eq	
+	type = RVC_atgm_3_eq	
 	amount = 500
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = medium_zrk1_chassis
 	variant_name = "Тор-М1"
 	amount = 30
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = medium_zrk1_chassis
 	variant_name = "Оса"
 	amount = 220
-	producer = LFR
+	producer = RVC
 }
 add_equipment_to_stockpile = {
 	type = medium_zrk1_chassis
 	variant_name = "Тунгуска"
 	amount = 150
-	producer = LFR
+	producer = RVC
 }  
 add_equipment_to_stockpile = {
 	type = medium_zrk1_chassis
 	variant_name = "Стрела-10"
 	amount = 250
-	producer = LFR
+	producer = RVC
 } 
 
 
@@ -1660,4 +1619,3 @@ add_ideas = {
 	society_high
 	
 }
-

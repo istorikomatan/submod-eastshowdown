@@ -20,3 +20,14 @@ LFR_recruits_category = {
 		original_tag = LFR
 	}
 }
+LFR_sabotage_category = {
+	icon = generic_formable_nations
+
+	allowed = {
+		original_tag = LFR
+	}
+
+	visible = {
+		original_tag = LFR
+	}
+}
