@@ -1,6 +1,6 @@
 state = {
 	id = 555
-	name = "Порганичная зона Киевская область"
+	name = "STATE_555"
 	manpower = 100000
 
 	state_category = small_town

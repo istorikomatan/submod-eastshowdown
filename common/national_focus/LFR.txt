@@ -1,0 +1,181 @@
+focus_tree = {
+    id = LFR
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = LFR
+        }
+    }
+    default = no
+    
+    initial_show_position = {
+        focus = LFR_start
+    }
+    
+    focus = {
+        id = LFR_start
+        icon = GFX_start
+        cost = 1.6
+        x = 4
+        y = 0
+        available = {
+            NOT = {
+                has_war_with = RUS
+            }
+        }
+        completion_reward = {
+            add_political_power = 30
+            add_war_support = 0.05
+            add_ideas = rus_oppos
+        }
+    }
+    
+    focus = {
+        id = LFR_podgotovka
+        icon = GFX_start2
+        prerequisite = { focus = LFR_start }
+        x = 0
+        y = 1
+		available = {
+            NOT = {
+                has_war_with = RUS
+            }
+        }
+        relative_position_id = LFR_start
+        cost = 1.6
+        completion_reward = {
+			add_timed_idea = {
+				idea = podgotovka_lfr
+				days = 30
+			}
+			
+			add_offsite_building = {
+				type = arms_factory
+				level = 8
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+			add_offsite_building = {
+				type = ammunition_plant
+				level = 5
+			}				
+			add_offsite_building = {
+				type = ammunition_silo
+				level = 5
+			}
+	
+		}
+	}
+focus = { 
+        id = LFR_podgotovka2 
+		icon = GFX_start3
+		prerequisite = { focus = LFR_podgotovka } 
+		x = 0 
+		y = 1
+		relative_position_id = LFR_podgotovka 
+		cost = 2
+		available = {
+					NOT = {
+						has_war_with = RUS
+					}
+				}
+		completion_reward = { 
+			554 = {
+					create_unit = {
+						division = "name = \"1-ый механизированный батальон\" division_template = \"1-y mekhanizovanyy batalyon\" start_experience_factor = 0.6 start_equipment_factor = 1"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Пехотная рота\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.6 start_equipment_factor = 1"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+					add_timed_idea = {
+						idea = LFR_armed_population_idea
+						days = 90
+					}
+					
+					
+			}		
+		}	
+	}
+focus = {
+        id = LFR_start4
+        icon = GFX_start4
+		prerequisite = { focus = LFR_podgotovka2 } 
+		x = 0 
+		y = 1
+		relative_position_id = LFR_podgotovka2 
+		cost = 1
+        available = {
+            NOT = {
+                has_war_with = RUS
+            }
+        }
+        completion_reward = {
+            
+        }
+    }
+focus = {
+        id = LFR_lfr
+        icon = GFX_lfr
+		prerequisite = { focus = LFR_start4 }
+		mutually_exclusive = { focus = LFR_rdk }
+		x = -1 
+		y = 1
+		relative_position_id = LFR_start4
+		
+		cost = 1
+        available = {
+            NOT = {
+                has_war_with = RUS
+            }
+        }
+        completion_reward = {
+			set_cosmetic_tag = LFR_l
+
+        }
+    }
+focus = {
+        id = LFR_rdk
+        icon = GFX_rdk
+		prerequisite = { focus = LFR_start4 }
+		mutually_exclusive = { focus = LFR_lfr }		
+		x = 1 
+		y = 1
+		relative_position_id = LFR_start4 
+		cost = 1
+        available = {
+			always = no
+        }
+        completion_reward = {
+            
+        }
+    }
+	
+	
+	
+	
+	
+focus = {
+    id = LFR_hhh
+    icon = GFX_hhh
+    prerequisite = { focus = LFR_lfr }
+    x = 8
+    y = 2
+    cost = 1
+    bypass = { has_war_with = RUS }
+    allow_branch = {
+        has_war_with = RUS
+    }
+    completion_reward = {
+    
+		
+    }
+}
