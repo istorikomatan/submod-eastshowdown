@@ -2148,28 +2148,4 @@ spriteTypes = {
 		name = "GFX_Invite_Western_military_experts"
 		texturefile = "gfx/interface/goals/UKR/Invite_Western_military_experts.dds"
 	}
-	spriteType = {
-		name = "GFX_start"
-		texturefile = "gfx/interface/goals/LFR/start.dds"
-	}
-	spriteType = {
-		name = "GFX_start2"
-		texturefile = "gfx/interface/goals/LFR/start2.dds"
-	}
-	spriteType = {
-		name = "GFX_start3"
-		texturefile = "gfx/interface/goals/LFR/start3.dds"
-	}
-	spriteType = {
-		name = "GFX_start4"
-		texturefile = "gfx/interface/goals/LFR/start4.dds"
-	}
-	spriteType = {
-		name = "GFX_lfr"
-		texturefile = "gfx/interface/goals/LFR/lfr.dds"
-	}
-	spriteType = {
-		name = "GFX_rdk"
-		texturefile = "gfx/interface/goals/LFR/rdk.dds"
-	}
 }

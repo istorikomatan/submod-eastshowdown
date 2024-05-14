@@ -130,6 +130,7 @@ focus = {
 		x = -1 
 		y = 1
 		relative_position_id = LFR_start4
+		
 		cost = 1
         available = {
             NOT = {
@@ -138,6 +139,7 @@ focus = {
         }
         completion_reward = {
 			set_cosmetic_tag = LFR_l
+
         }
     }
 focus = {
@@ -156,3 +158,24 @@ focus = {
             
         }
     }
+	
+	
+	
+	
+	
+focus = {
+    id = LFR_hhh
+    icon = GFX_hhh
+    prerequisite = { focus = LFR_lfr }
+    x = 8
+    y = 2
+    cost = 1
+    bypass = { has_war_with = RUS }
+    allow_branch = {
+        has_war_with = RUS
+    }
+    completion_reward = {
+    
+		
+    }
+}

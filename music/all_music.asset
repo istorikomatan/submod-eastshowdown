@@ -85,11 +85,6 @@ music = {
 	file = "ukraine/sacred_war_ukr.ogg"
 	volume = 0.5
 }
-music = {
-	name = "anthem_of_LFR"
-	file = "ukraine/anthem_of_LFR.ogg"
-	volume = 0.5
-}
 #Russia
 music = {
 	name = "sacred_war_m"
