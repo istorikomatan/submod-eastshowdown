@@ -231,6 +231,12 @@ get_best_alliance_match_fascism_effect = { #arguably a trigger, but it does stuf
 		}
 	}
 }
+damage_of_province = {
+damage_building= {
+    type = railway
+    damage = 1
+    province =  3696
+    }
 
 get_best_alliance_match_communism_effect = { #arguably a trigger, but it does stuff so we keep it in here. If this is your first time seeing this, welcome to my personal hell.
 	if = {
