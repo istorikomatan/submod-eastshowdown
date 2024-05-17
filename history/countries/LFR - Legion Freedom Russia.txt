@@ -31,32 +31,13 @@ idealogy = authoritarian_democracy
 traits = {
 }
 }
-create_field_marshal = {
- name = "LFR_Cesar_1"
- picture = "LSR_Cesar.dds"
- traits={ army_capicity }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			}
-create_field_marshal = {
- name = "RDK_kapustin"
- picture = "RDK_kapustin.dds"
- traits={ army_capicity }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
-			}
-recruit_character = LFR_Cesar
 
-set_power_balance = {
-		id = LFR_power_balance
-		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
-	}
+recruit_character = igor_vlasenko
+recruit_character = moa_sovet
+recruit_character = alexey_smislov
+recruit_character = vladimir_emilianov
+recruit_character = ivan_nesterenko
+recruit_character = LFR_Cesar
 
 set_politics = {
 				ruling_party = democratic
