@@ -668,3 +668,7 @@ UKR_azovstal = {
 	army_org_factor = 0.2
 	attrition = -0.8
 }
+podgotovka_lfr1 = {
+	Production_speed_industrial_complex_factor = 0.06
+	Production_speed_arms_factory_factor = 0.06
+	}

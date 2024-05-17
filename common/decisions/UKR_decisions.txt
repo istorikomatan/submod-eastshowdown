@@ -17474,7 +17474,7 @@ UKR_derussification_decision_category = {
 	}
 	
 UKR_IL_Territorial_Defense_Ukraine_category = {
-    UKR_Legion_Freedom_Russia = {
+  UKR_Legion_Freedom_Russia = {
 		icon = GFX_UKR_Legion_Freedom_Russia
 		fire_only_once = yes
 		available = {
@@ -17486,7 +17486,7 @@ UKR_IL_Territorial_Defense_Ukraine_category = {
 		visible = {
 			has_country_flag = IL_Territorial_Defense_Ukraine_cf
 		}
-		days_remove = 20
+		days_remove = 1
 		cost = 25
 		ai_will_do = {
 			factor = 100
@@ -17532,17 +17532,17 @@ UKR_IL_Territorial_Defense_Ukraine_category = {
 				}
 				clamp_variable = {  var = global.ukr_information_war_var_sum  min = 0 max = 100 }
 				clamp_variable = {  var = global.rus_information_war_var_sum  min = 0 max = 100 }
-				112 = {
+				554 = {
 					create_unit = {
 						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
-						owner = UKR
-						prioritize_location = 1708
+						owner = LFR
+						prioritize_location = 10472
 						count = 1
 					}
 					create_unit = {
 						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
-						owner = UKR
-						prioritize_location = 1708
+						owner = LFR
+						prioritize_location = 10472
 						count = 1
 					}
 				}
