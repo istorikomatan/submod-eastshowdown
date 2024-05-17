@@ -180,34 +180,6 @@ FSB_murder_Kiev_Zelensky = {
 	icon = "GFX_phase_FSB_Kiev_Zelensky_small"
 	picture = "GFX_phase_FSB_Kiev_Zelensky"
 }
-cross_the_border_Zelensky = {
-	name = cross_the_border_Zelensky
-	desc = cross_the_border_Zelensky_desc
-	outcome = cross_the_border_Zelensky_outcome
-	icon = "GFX_phase_cross_the_border_Zelensky_small"
-	picture = "GFX_phase_cross_the_border_Zelensky"
-}
-collection_information = {
-	name = collection_information
-	desc = collection_information_desc
-	outcome =  collection_information_outcome
-	
-}
-NRA_hack_TV = {
-	name = NRA_hack_TV 
-	desc = NRA_hack_TV_desc
-	outcome = NRA_hack_TV_outcome
-	}
-	NRA_disable_TV = {
-	name = NRA_disable_TV 
-	desc = NRA_disable_TV_desc
-	outcome = NRA_disable_TV_outcome
-	}
-	NRA_disable_internet = {
-	name = NRA_disable_internet 
-	desc = NRA_disable_internet_desc
-	outcome = NRA_disable_internet_outcome
-	}
 
 territorial_defense_murder_Kiev_Zelensky = {
 	name = territorial_defense_murder_Kiev_Zelensky
