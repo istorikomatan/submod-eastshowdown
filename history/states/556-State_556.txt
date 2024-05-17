@@ -1,6 +1,6 @@
 state = {
 	id = 556
-	name = "STATE_556"
+	name = "Пограничная зона Чернигов"
 	manpower = 460900
 
 	state_category = large_town
