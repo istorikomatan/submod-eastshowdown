@@ -15,3 +15,10 @@ intelligence_agency = {
 	default = { tag = RUS }
 	available = { original_tag = RUS }
 }
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_lfr
+	names = { "NRA" }
+	
+	default = { tag = LFR }
+	available = { original_tag = LFR }

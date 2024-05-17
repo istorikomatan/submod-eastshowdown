@@ -1,0 +1,25 @@
+state = {
+	id = 560
+	name = "Пограничная зона Теткино"
+	manpower = 0
+
+	state_category = small_town
+
+	provinces = {
+	2661 12754 14702
+	}
+
+	history = {
+		owner = UKR
+		
+		
+		victory_points = { 14702  1 }
+		
+		
+		buildings = {
+		}
+		
+	}
+
+	buildings_max_level_factor = 0.75
+}
