@@ -1,0 +1,107 @@
+guiTypes = {
+    containerWindowType = {
+        name = "LFR_war_deccat_GUI",
+        size = { width = 482, height = 720 },
+        position = { x = 0, y = 0 },
+
+        iconType = {
+            name = "SVO_general_staff_icon",
+            position = { x = 287, y = 10 },
+            spriteType = "GFX_SVO_general_staff"
+        },
+
+        iconType = {
+            name = "SVO_general_staff_chief",
+            position = { x = 294, y = 120 },
+            spriteType = "GFX_SVO_general_staff_chiefe"
+        },
+
+        instantTextBoxType = {
+            name = "RUS_SVO_general_staff_chief_title",
+            position = { x = -215, y = 285 },
+            font = "hoi_18mbs",
+            text = "RUS_SVO_general_staff_chief_title_txt",
+            format = "centre",  -- исправлено на строку
+            maxWidth = 1145
+        },
+
+        iconType = {
+            name = "SVO_MO_icon",
+            position = { x = 65, y = 15 },
+            spriteType = "GFX_SVO_MO"
+        },
+
+        iconType = {
+            name = "SVO_MO_minister_defense",
+            position = { x = 72, y = 120 },
+            spriteType = "GFX_SVO_MO_minister_defense"
+        },
+
+        instantTextBoxType = {
+            name = "RUS_SVO_MO_minister_defense_title",
+            position = { x = -436, y = 285 },
+            font = "hoi_18mbs",
+            text = "RUS_SVO_MO_minister_defense_title_txt",
+            format = "centre",  -- исправлено на строку
+            maxWidth = 1145
+        },
+
+        instantTextBoxType = {
+            name = "RUS_SVO_loyalty_title",
+            position = { x = 5, y = 340 },
+            font = "hoi_18mbs",
+            text = "RUS_SVO_loyalty_title_txt",
+            format = "left",  -- исправлено на строку
+            maxWidth = 1145
+        },
+
+        instantTextBoxType = {
+            name = "RUS_SVO_priority_direction",
+            position = { x = 5, y = 360 },
+            font = "hoi_18mbs",
+            text = "RUS_SVO_priority_direction_title_txt",
+            format = "left",  -- исправлено на строку
+            maxWidth = 1145
+        },
+
+        instantTextBoxType = {
+            name = "RUS_SVO_priority_direction_1",
+            position = { x = 25, y = 380 },
+            font = "hoi_18mbs",
+            text = "RUS_SVO_priority_direction_1_title_txt",
+            format = "left",  -- исправлено на строку
+            maxWidth = 1145
+        },
+
+        instantTextBoxType = {
+            name = "RUS_SVO_military_objectives",
+            position = { x = 5, y = 420 },
+            font = "hoi_18mbs",
+            text = "RUS_SVO_military_objectives_title_txt",
+            format = "left",  -- исправлено на строку
+            maxWidth = 1145
+        },
+
+        instantTextBoxType = {
+            name = "RUS_SVO_military_objectives_1",
+            position = { x = 25, y = 440 },
+            font = "hoi_18mbs",
+            text = "RUS_SVO_military_objectives_1_title_txt",
+            format = "left",  -- исправлено на строку
+            maxWidth = 1145
+        },
+
+        containerWindowType = {
+            name = "LFR_war_open_gui_gui",
+            position = { x = 10, y = 510 },
+            buttonType = {
+                name = "LFR_war_open_gui_button",
+                position = { x = 0, y = 50 },
+                multiline = true,  -- исправлено на булево значение
+                spriteType = "GFX_RUS_SVO_staff_button",
+                pdx_tooltip = "RUS_SVO_open_staff_gui_button_tt",  -- исправлено на строку
+                pdx_tooltip_delayed = "RUS_SVO_open_staff_gui_button_tt_desc"  -- исправлено на строку
+            }
+        }
+    }
+}

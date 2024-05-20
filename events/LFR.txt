@@ -34,5 +34,51 @@ country_event = {
     }
 }
         }
+      }
+country_event = {
+    id = LFR.2
+    title = "Hack TV fail  "
+    desc = "Hack tv fail event."
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "ploxo"
+        ai_chance = {
+            base = 100
+        }
+       
+        }
+		}
+		country_event = {
+    id = LFR.3
+    title = "Disable TV fail  "
+    desc = "Disable tv fail event."
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "ploxo"
+        ai_chance = {
+            base = 100
+			
+        }
+        }
     }
-}
+	country_event = {
+    id = LFR.4
+    title = "Disable internet fail  "
+    desc = "Disable internet fail event."
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "ploxo"
+        ai_chance = {
+            base = 100
+			
+        }
+        }
+    }
+
+

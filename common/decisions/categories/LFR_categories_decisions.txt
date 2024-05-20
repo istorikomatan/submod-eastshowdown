@@ -9,3 +9,38 @@ LFR_budget_category = {
 		original_tag = LFR
 	}
 }
+LFR_recruits_category = {
+	icon = generic_formable_nations
+
+	allowed = {
+		original_tag = LFR
+	}
+
+	visible = {
+		original_tag = LFR
+	}
+	}
+LFR_sabotage_category = {
+    icon = generic_formable_nations
+
+    allowed = {
+        original_tag = LFR
+    }
+
+    visible = {
+        original_tag = LFR
+    }
+}
+
+cw_gui_debug_mode = {
+	icon = generic_political_actions
+	priority = 50
+	allowed = {
+		always = yes 
+	}
+	visible = {
+		is_debug = yes
+		        original_tag = LFR
+	}
+}
+

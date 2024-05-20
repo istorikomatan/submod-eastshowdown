@@ -196,3 +196,24 @@ murder_Zelensky_F = {
 	icon = "GFX_phase_murder_Zelensky_F_small"
 	picture = "GFX_phase_murder_Zelensky_F"
 }
+collection_information = {
+	name = collection_information
+	desc = collection_information_desc
+	outcome =  collection_information_outcome
+	
+}
+NRA_hack_TV = {
+	name = NRA_hack_TV 
+	desc = NRA_hack_TV_desc
+	outcome = NRA_hack_TV_outcome
+	}
+	NRA_disable_TV = {
+	name = NRA_disable_TV 
+	desc = NRA_disable_TV_desc
+	outcome = NRA_disable_TV_outcome
+	}
+	NRA_disable_internet = {
+	name = NRA_disable_internet 
+	desc = NRA_disable_internet_desc
+	outcome = NRA_disable_internet_outcome
+	}

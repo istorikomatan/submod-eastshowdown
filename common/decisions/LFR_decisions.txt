@@ -54,7 +54,7 @@ LFR_budget_category = {
 				clamp_temp_variable = {
 					var = ammo_needed
 					min = 0
-					max = 50
+					max = 10
 				}
 				
 				#У РФ должно быть в 10 раз больше боеприпасов, чем у Вагнера свободно
@@ -80,7 +80,7 @@ LFR_budget_category = {
 						clamp_temp_variable = {
 							var = ammo_needed
 							min = 0
-							max = 50
+							max = 10
 						}
 						
 						#У РФ должно быть в 10 раз больше боеприпасов, чем у Вагнера свободно
@@ -89,7 +89,7 @@ LFR_budget_category = {
 							value = 10
 						}
 						
-						RUS = {
+						UKR = {
 							check_variable = { ammunition_variable > ammo_needed }
 						}
 					}
@@ -106,7 +106,7 @@ LFR_budget_category = {
 			clamp_temp_variable = {
 			  var = ammo_needed
 			  min = 0
-			  max = 50
+			  max = 10
 			}
 			
 			#Передаём боеприпасы
@@ -115,7 +115,7 @@ LFR_budget_category = {
 				subtract_from_variable = { ammunition_variable = ammo_needed }
 			}
 			
-			custom_effect_tooltip = WGN_ammunition_supply_every_month
+			custom_effect_tooltip = LFR_ammunition_supply_every_month
 		}
 	}
 	
@@ -872,13 +872,18 @@ LFR_recruits_category = {
 				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 100
+                value = 90
 				
         
     } 
+	add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 10
+				tooltip = LFR_saboteurs_var_add1	
 
 }
 } 
+}
 LFR_ad  = {
         cost = 70
         days_remove = 45
@@ -897,7 +902,6 @@ LFR_ad  = {
 			
 				add_manpower = 200
 				
-			
 }
 remove_effect = {
 subtract_from_variable = {	
@@ -907,8 +911,14 @@ subtract_from_variable = {
 				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 200
+                value = 180
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 20
+			tooltip = LFR_saboteurs_var_add2		
+
+}				
 }
 }
 LFR_popularity1  = {
@@ -939,8 +949,14 @@ subtract_from_variable = {
 				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 300
+                value = 270
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 30
+					tooltip = LFR_saboteurs_var_add3
+
+}				
 }
 }
 LFR_ad1  = {
@@ -971,9 +987,16 @@ subtract_from_variable = {
 				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 400
+                value = 360
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 40
+					tooltip = LFR_saboteurs_var_add4
+
+}					
 }
+
 }
 LFR_popularity2  = {
         cost = 220
@@ -993,7 +1016,7 @@ LFR_popularity2  = {
 			
 				add_manpower = 500
 				
-		
+			
 }
 remove_effect = {
 subtract_from_variable = {	
@@ -1003,8 +1026,15 @@ subtract_from_variable = {
 				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 500
+                value = 450
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 50
+					tooltip = LFR_saboteurs_var_add5
+					
+
+}					
 }
 }
 LFR_ad2  = {
@@ -1022,22 +1052,27 @@ LFR_ad2  = {
 			}
         }
 		complete_effect = {
-			
+		
 				add_manpower = 600
 				
-			}
-
+			
+}
 remove_effect = {
-subtract_from_variable = {	
+	subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 46
 				tooltip = LFR_budget_var_remove21
 				}
-				
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 600
+                value = 540
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 60
+				tooltip = LFR_saboteurs_var_add6
+
+}	
 }
 }
 LFR_popularity3  = {
@@ -1068,8 +1103,14 @@ subtract_from_variable = {
 				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 700
+                value = 630
 				}
+add_to_variable = {
+					var = LFR_saboteurs_var
+					value = 70
+					tooltip = LFR_saboteurs_var_add7
+
+}					
 }
 }
 LFR_ad3  = {
@@ -1090,18 +1131,24 @@ LFR_ad3  = {
 			
 				add_manpower = 800
 				
+			
 }
 remove_effect = {
 subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 64
-				tooltip = LFR_budget_var_remove2
-				
-			}
+				tooltip = LFR_budget_var_remove23
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 800
+                value = 720
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 80
+				tooltip = LFR_saboteurs_var_add8
+
+}		
 }
 }
 LFR_popularity4  = {
@@ -1119,13 +1166,10 @@ LFR_popularity4  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
-				var = LFR_budget_var
-				value = 73
-				tooltip = LFR_budget_var_remove24
+			
 				add_manpower = 900
 				
-			}
+			
 }
 remove_effect = {
 subtract_from_variable = {	
@@ -1135,8 +1179,14 @@ subtract_from_variable = {
 				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 900
+                value = 810
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 90
+				tooltip = LFR_saboteurs_var_add9
+
+}						
 }
 }
 FR_ad4  = {
@@ -1154,26 +1204,27 @@ FR_ad4  = {
 			}
         }
 		complete_effect = {
-			subtract_from_variable = {	
-				var = LFR_budget_var
-				value = 300
-				tooltip = LFR_budget_var_remove3
+			
 				add_manpower = 2000
 				
-			}
+			
 }
 remove_effect = {
 subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 300
 				tooltip = LFR_budget_var_remove3
-				add_manpower = 2000
-				
-			}
+				}
 add_to_variable = {    
                 var = LFR_recruits_var
-                value = 2000
+                value = 1800
 				}
+add_to_variable = {
+				var = LFR_saboteurs_var
+				value = 200
+				tooltip = LFR_saboteurs_var_add10
+
+}						
 }
 }
 LFR_new_type_brigade = {
@@ -1245,7 +1296,7 @@ LFR_new_type_brigade1 = {
 			subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 30
-				tooltip = LFR_budget_var_remove21
+				tooltip = LFR_budget_var_remove15
 				}
 				add_manpower = -4000
 				subtract_from_variable = {	
@@ -1265,3 +1316,7833 @@ LFR_new_type_brigade1 = {
 			}
 }
 }
+LFR_sabotage_category = {
+    LFR_open_ksk = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotageksk
+		  set_country_flag = LFR_sabotagehui3
+		  }
+		  }
+		  LFR_rem_ksk = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui3
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui3
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui3
+		  clr_country_flag = LFR_sabotageksk
+		  }
+		  }
+	LFR_sabotage_ksk = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+    available = {
+        has_country_flag = LFR_sabotageksk
+        AND = {
+            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                306 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_ksk_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+       377 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_ksk_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       306 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_ksk_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       54 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_ksk_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       54 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_ksk = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_ksk_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_ksk_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_ksk_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotageksk
+    }
+        available = {
+		has_country_flag = LFR_sabotageksk
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 54
+				 controls_state = 306
+				   controls_state = 377
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_bel = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagebel
+		  set_country_flag = LFR_sabotagehui2
+		  }
+		  }
+		  LFR_rem_bel = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui2
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui2
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui2
+		  clr_country_flag = LFR_sabotagebel
+		  }
+		  }
+	LFR_sabotage_bel = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+    available = {
+        has_country_flag = LFR_sabotagebel
+        AND = {
+            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                371 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_bel_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+       336 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_bel_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       120 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_bel_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       122 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_bel_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       70 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_bel = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_bel_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_bel_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_bel_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagebel
+    }
+        available = {
+		has_country_flag = LFR_sabotagebel
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 70
+				 controls_state = 371
+				   controls_state = 336
+				   controls_state = 120
+				   controls_state = 122
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_cri = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagecri
+		  set_country_flag = LFR_sabotagehui
+		  }
+		  }
+		  LFR_rem_cri = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui1
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui1
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui
+		  clr_country_flag = LFR_sabotagecri
+		  }
+		  }
+	LFR_sabotage_cri = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+    available = {
+        has_country_flag = LFR_sabotagecri
+        AND = {
+            RUS = {
+                 controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                290 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_cri_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        314 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_cri_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       321 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_cri_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				   controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       309 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_cri_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       335 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_cri = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_cri_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_cri_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_cri_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagecri
+    }
+        available = {
+		has_country_flag = LFR_sabotagecri
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 280
+				 controls_state = 290
+				   controls_state = 304
+				   controls_state = 297
+				   controls_state = 303
+				   controls_state = 304
+				 controls_state = 321
+				   controls_state = 309
+				   controls_state = 314
+				   controls_state = 337
+				   controls_state = 335
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_chr = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagechr
+		  set_country_flag = LFR_sabotagehui4
+		  }
+		  }
+		  LFR_rem_chr = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui4
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui4
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui4
+		  clr_country_flag = LFR_sabotagechr
+		  }
+		  }
+	LFR_sabotage_chr = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+    available = {
+        has_country_flag = LFR_sabotagechr
+        AND = {
+            RUS = {
+                 controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                60 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_chr_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        69 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_chr_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       56 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_chr_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+               controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       556 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_chr_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+				controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       59 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_sum= {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_chr_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_chr_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+               controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_chr_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagechr
+    }
+        available = {
+		has_country_flag = LFR_sabotagechr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 59
+				 controls_state = 60
+				   controls_state = 56
+				   controls_state = 556
+				   controls_state = 69
+				   controls_state = 80
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_sum = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagesum
+		  set_country_flag = LFR_sabotagehui5
+		  }
+		  }
+		  LFR_rem_sum = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui5
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui5
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui5
+		  clr_country_flag = LFR_sabotagesum
+		  }
+		  }
+	LFR_sabotage_sum = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+    available = {
+        has_country_flag = LFR_sabotagesum
+        AND = {
+            RUS = {
+                 controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                82 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_sum_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        89 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_sum_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+              controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       57 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_sum_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+               controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       66 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_sum_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+				controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       72 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_sum = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_sum_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_sum_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+               controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_sum_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagesum
+    }
+        available = {
+		has_country_flag = LFR_sabotagesum
+            original_tag = LFR
+            AND = {
+			            RUS = {
+               controls_state = 57
+				 controls_state = 66
+				   controls_state = 72
+				   controls_state = 82
+				   controls_state = 89
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_kha = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagekha
+		  set_country_flag = LFR_sabotagehui6
+		  }
+		  }
+		  LFR_rem_kha = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui6
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui6
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui6
+		  clr_country_flag = LFR_sabotagekha
+		  }
+		  }
+	LFR_sabotage_kha = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+    available = {
+        has_country_flag = LFR_sabotagekha
+        AND = {
+            RUS = {
+                controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                139 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_kha_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        130 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_kha_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+              controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       107 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_kha_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+               controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       133 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_kha_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+				controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       103 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_kha = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_kha_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_kha_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+              controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_kha_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekha
+    }
+        available = {
+		has_country_flag = LFR_sabotagekha
+            original_tag = LFR
+            AND = {
+			            RUS = {
+              controls_state = 558
+				 controls_state = 101
+				   controls_state = 103
+				   controls_state = 100
+				   controls_state = 107
+				   controls_state = 130
+				   controls_state = 133
+				   controls_state = 138
+				   controls_state = 139
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_lpr{
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagelpr
+		  set_country_flag = LFR_sabotagehui7
+		  }
+		  }
+		  LFR_rem_lpr = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui7
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui7
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui7
+		  clr_country_flag = LFR_sabotagelpr
+		  }
+		  }
+	LFR_sabotage_lpr = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+    available = {
+        has_country_flag = LFR_sabotagelpr
+        AND = {
+            LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				  
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            LPR = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                194 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_lpr_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			         LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                LPR = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        293 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_lpr_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			            LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                LPR = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       183 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_lpr_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			            LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                LPR = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       172 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_lpr_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			           LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+               LPR = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       173 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_lpr = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			            LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			LPR = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_lpr_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			         LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			LPR = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_lpr_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			           LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			LPR = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_lpr_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagelpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagelpr
+            original_tag = LFR
+            AND = {
+			       LPR = {
+                controls_state = 293
+				 controls_state = 172
+				   controls_state = 173
+				   controls_state = 194
+				   controls_state = 183
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			LPR = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_dpr{
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagedpr
+		  set_country_flag = LFR_sabotagehui8
+		  }
+		  }
+		  LFR_rem_dpr = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui8
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui8
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui8
+		  clr_country_flag = LFR_sabotagedpr
+		  
+		  }
+		  }
+	LFR_sabotage_dpr = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+    available = {
+        has_country_flag = LFR_sabotagedpr
+        AND = {
+            DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				   
+				  
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            DPR = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                221 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_dpr_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			       DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                DPR = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        221 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_dpr_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			             DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                DPR = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       189 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		LFR_sabotage_dpr_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			            DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                DPR = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       189 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+LFR_sabotage_dpr_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			            DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+               DPR = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       205 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_dpr = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			           DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			DPR = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_dpr_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			          DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			DPR = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_dpr_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			           DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			DPR = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_dpr_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagedpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagedpr
+            original_tag = LFR
+            AND = {
+			        DPR = {
+                controls_state = 189
+				 controls_state = 205
+				   controls_state = 221
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			DPR = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_zpr = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagezpr
+		  set_country_flag = LFR_sabotagehui9
+		  }
+		  }
+		  LFR_rem_zpr = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui9
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui9
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui9
+		  clr_country_flag = LFR_sabotagezpr
+		  }
+		  }
+	 LFR_sabotage_zpr = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+    available = {
+        has_country_flag = LFR_sabotagezpr
+        AND = {
+            RUS = {
+                controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				 
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                242 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_zpr_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                    controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        226 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+ LFR_sabotage_zpr_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       223 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		 LFR_sabotage_zpr_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                  controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       223 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+ LFR_sabotage_zpr_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+				   controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       246 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_zpr = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                   controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_zpr_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                  controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_zpr_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_zpr_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagezpr
+    }
+        available = {
+		has_country_flag = LFR_sabotagezpr
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 246
+				 controls_state = 226
+				   controls_state = 223
+				   controls_state = 242
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_open_khe = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		available = {
+		  original_tag = LFR
+		  }
+		  remove_effect = {
+		  
+		  set_country_flag = LFR_sabotagekhe
+		  set_country_flag = LFR_sabotagehui10
+		  }
+		  }
+		  LFR_rem_khe = {
+	cost = 0
+	days_remove = 1
+        ai_will_do = {
+            factor = 100
+        }
+		visible = {
+		has_country_flag = LFR_sabotagehui10
+		}
+		available = {
+		  original_tag = LFR
+		  has_country_flag = LFR_sabotagehui10
+		  }
+		  remove_effect = {
+		  set_country_flag = LFR_sabotagehui10
+		  clr_country_flag = LFR_sabotagekhe
+		  }
+		  }
+	 LFR_sabotage_khe = {
+    cost = 55
+    days_remove = 15
+    ai_will_do = {
+        factor = 100
+    }
+    visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+    available = {
+        has_country_flag = LFR_sabotagekhe
+        AND = {
+            RUS = {
+                controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				 
+				
+            }
+            check_variable = {
+                var = LFR_budget_var
+                value = 5
+                compare = greater_than_or_equals
+            }
+            check_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+    }
+    complete_effect = {
+        random = {
+            chance = 50
+            LFR = {
+                add_stability = 0.1
+                add_war_support = 0.1
+                subtract_from_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                }
+                add_timed_idea = {
+                    idea = LFR_sabatage_idea
+                    days = 15
+                }
+            }
+            RUS = {
+                add_stability = -0.02
+                add_war_support = -0.015
+                add_timed_idea = {
+                    idea = RUS_sabatage_idea
+                    days = 15
+                }
+                264 = {
+                    damage_building = {
+                        type = rail_way
+                        damage = 1
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 50
+            subtract_from_variable = {
+                var = LFR_saboteurs_var
+                value = 10
+            }
+        }
+    }
+}
+
+
+
+ LFR_sabotage_khe_1 = {
+        cost = 70
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                   controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 64
+                LFR = {
+                    add_stability = 0.13
+                    add_war_support = 0.13
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6.5
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea1
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.017
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea1
+			days = 15
+			}
+        251 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 36
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				
+            }
+ LFR_sabotage_khe_2 = {
+        cost = 90
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+       visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 8.4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 60
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 8.4
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea2
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.02
+                    add_war_support = -0.02
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea2
+			days = 15
+			}
+       240 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 40
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+		 LFR_sabotage_khe_3 = {
+        cost = 140
+        days_remove = 30
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                  controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 9.2
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 30
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 45
+                LFR = {
+                    add_stability = 0.15
+                    add_war_support = 0.15
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 9.2
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea3
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea3
+			days = 15
+			}
+       262 = {
+				damage_building = {
+					type = rail_way 
+					damage = 2
+				}
+				}
+				}
+				}
+				random = {
+				chance = 55
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				
+            }
+ LFR_sabotage_khe_4 = {
+        cost = 300
+        days_remove = 20
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+				   controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 200
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+        complete_effect = {
+            random = {
+                chance = 30
+                LFR = {
+                    add_stability = 0.3
+                    add_war_support = 0.55
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 85
+				}
+					add_timed_idea = {
+			idea = LFR_sabatage_idea4
+			days = 15
+			}
+                }
+                RUS = {
+                    add_stability = -0.03
+                    add_war_support = -0.03
+                   add_timed_idea = {
+			idea = RUS_sabatage_idea4
+			days = 15
+			}
+       413 = {
+				damage_building = {
+					type = rail_way 
+					damage = 5
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				}
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 200
+				}
+				}
+				}
+				
+            }
+LFR_flyer_khe = {
+ cost = 10
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                   controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.05
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 1
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.05
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea5
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.1
+			}
+			}
+			RUS = {
+			add_war_support = -0.01
+			add_timed_idea = {
+			idea = RUS_sabatage_idea5
+			days = 15
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 1
+				}
+				}
+}
+}				
+
+
+LFR_flyer_khe_1 = {
+ cost = 50
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                  controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				   
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 10
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.5
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea6
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.15
+			}
+			}
+			RUS = {
+			add_war_support = -0.03
+			add_timed_idea = {
+			idea = RUS_sabatage_idea6
+			days = 15
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 10
+				}
+				}
+				}
+				}
+LFR_flyer_khe_2 = {
+ cost = 55
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.1
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 20
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 90
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.1
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea7
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.3
+			}
+			}
+			RUS = {
+			add_war_support = -0.05
+			add_timed_idea = {
+			idea = RUS_sabatage_idea7
+			days = 15
+			}
+				}
+				}
+				random = {
+				chance = 10
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 20
+				}
+				}
+				}
+				}
+LFR_flyer_khe_3 = {
+ cost = 60
+        days_remove = 15
+        ai_will_do = {
+            factor = 100
+        }
+        visible = {
+        has_country_flag = LFR_sabotagekhe
+    }
+        available = {
+		has_country_flag = LFR_sabotagekhe
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 240
+				 controls_state = 413
+				   controls_state = 262
+				   controls_state = 264
+				   controls_state = 251
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 0.15
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 25
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 95
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 0.15
+				}
+				add_timed_idea = {
+			idea = LFR_sabatage_idea8
+			days = 15
+			}
+			add_to_variable = {
+			var = LFR_budget_var
+			value = 0.4
+			}
+			}
+			RUS = {
+			add_war_support = -0.06
+			add_timed_idea = {
+			idea = RUS_sabatage_idea8
+			days = 15
+			}
+				}
+				}
+				random = {
+				chance = 5
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 25
+				}
+				}
+				}
+				}
+				LFR_bridge = {
+ cost = 60
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 266
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 100
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 30
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 4
+				}
+			}
+			RUS = {
+			266 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.175 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 100
+				}
+				}
+				}
+				}
+					LFR_bridge1 = {
+ cost = 120
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 262
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 75
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 31
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 5
+				}
+			}
+			RUS = {
+			262 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.176 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 69
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 75
+				}
+				}
+				}
+				}
+					LFR_bridge2 = {
+ cost = 60
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 208
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 2.5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 90
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 32
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 2.5
+				}
+			}
+			RUS = {
+			208 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.177 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 68
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 90
+				}
+				}
+				}
+				}
+				LFR_bridge3 = {
+ cost = 60
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 186
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 3
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 65
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 33
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 3
+				}
+			}
+			RUS = {
+			186 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.178 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 67
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 65
+				}
+				}
+				}
+				}
+				LFR_bridge4 = {
+ cost = 60
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 156
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 80
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 34
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 5
+				}
+			}
+			RUS = {
+			156 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.179 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 66
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 80
+				}
+				}
+				}
+				}
+				LFR_bridge5 = {
+ cost = 100
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 128
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 7
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 55
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 35
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 7
+				}
+			}
+			RUS = {
+			128 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.181 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 65
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 55
+				}
+				}
+				}
+				}
+				LFR_bridge6 = {
+ cost = 120
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 111
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 60
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 36
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6
+				}
+			}
+			RUS = {
+			111 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.180 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 64
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 60
+				}
+				}
+				}
+				}
+				LFR_bridge7 = {
+ cost = 90
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 123
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 80
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 37
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 4
+				}
+			}
+			RUS = {
+			123 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.182 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 63
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 80
+				}
+				}
+				}
+				}
+				
+				LFR_bridge8 = {
+ cost = 200
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 95
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 7
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 100
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 38
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 7
+				}
+			}
+			RUS = {
+			95 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.183 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 62
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 100
+				}
+				}
+				}
+				}
+				LFR_bridge9 = {
+ cost = 180
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 417
+				 controls_state = 424
+				 controls_state = 416
+				 controls_state = 418
+				 controls_state = 419
+				 
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 6
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 85
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 39
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 6
+				}
+			}
+			RUS = {
+			417 = {
+			set_demilitarized_zone = yes
+			}
+			424 = {
+			set_demilitarized_zone = yes
+			}
+			416 = {
+			set_demilitarized_zone = yes
+			}
+			418 = {
+			set_demilitarized_zone = yes
+			}
+			419 = {
+			set_demilitarized_zone = yes
+			}
+			country_event = { id = rus.184 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 61
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 85
+				}
+				}
+				}
+				}
+				LFR_bridge10 = {
+ cost = 150
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 421
+				 controls_state = 420
+				 
+				 
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 7
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 100
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 40
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 7
+				}
+			}
+			RUS = {
+			420 = {
+			set_demilitarized_zone = yes
+			}
+			421 = {
+			set_demilitarized_zone = yes
+			}
+			
+			country_event = { id = rus.185 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 60
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 100
+				}
+				}
+				}
+				}
+				LFR_bridge11 = {
+ cost = 80
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 425
+				 controls_state = 426
+				 
+				 
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 70
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 30
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 5
+				}
+			}
+			RUS = {
+			425 = {
+			set_demilitarized_zone = yes
+			}
+			426 = {
+			set_demilitarized_zone = yes
+			}
+			
+			country_event = { id = rus.186 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 70
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 70
+				}
+				}
+				}
+				}
+LFR_bridge12 = {
+ cost = 80
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 425
+				 controls_state = 434
+				 
+				 
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 55
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 31
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 4
+				}
+			}
+			RUS = {
+			425 = {
+			set_demilitarized_zone = yes
+			}
+			434 = {
+			set_demilitarized_zone = yes
+			}
+			
+			country_event = { id = rus.187 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 69
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 55
+				}
+				}
+				}
+				}
+				LFR_bridge13 = {
+ cost = 80
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 451
+				 controls_state = 435
+				 controls_state = 452
+				 
+				 
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 80
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 32
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 5
+				}
+			}
+			RUS = {
+			451 = {
+			set_demilitarized_zone = yes
+			}
+			435 = {
+			set_demilitarized_zone = yes
+			}
+			452 = {
+			set_demilitarized_zone = yes
+			}
+			
+			country_event = { id = rus.188 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 68
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 80
+				}
+				}
+				}
+				}
+				LFR_bridge14 = {
+ cost = 70
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 444
+				 controls_state = 453
+				 
+				 
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 3
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 60
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 33
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 3
+				}
+			}
+			RUS = {
+			444 = {
+			set_demilitarized_zone = yes
+			}
+			453 = {
+			set_demilitarized_zone = yes
+			}
+			
+			country_event = { id = rus.189 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 67
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 60
+				}
+				}
+				}
+				LFR_bridge15 = {
+ cost = 100
+        days_remove = 25
+        ai_will_do = {
+            factor = 100
+        }
+  
+        available = {
+		has_completed_focus = LFR_start
+            original_tag = LFR
+            AND = {
+			            RUS = {
+                 controls_state = 472
+				 controls_state = 475
+				 
+				 
+				
+            }
+                check_variable = {
+                    var = LFR_budget_var
+                    value = 4
+                    compare = greater_than_or_equals
+                }
+                check_variable = {
+                    var = LFR_saboteurs_var
+                    value = 65
+                    compare = greater_than_or_equals
+                }
+            }
+        }
+		
+	 complete_effect = {
+                       random = {
+                chance = 34
+                LFR = {
+					subtract_from_variable = {	
+				var = LFR_budget_var
+				value = 4
+				}
+			}
+			RUS = {
+			472 = {
+			set_demilitarized_zone = yes
+			}
+			475 = {
+			set_demilitarized_zone = yes
+			}
+			
+			country_event = { id = rus.189 days = 10}
+			
+			
+			
+				}
+				}
+				random = {
+				chance = 66
+				subtract_from_variable = {	
+				var = LFR_saboteurs_var
+				value = 65
+				}
+				}
+				}
+				}
+				}
+				}
+cw_gui_debug_mode = {
+	iw_gui_debug_open_new_gui = {
+
+		icon = generic_industry
+
+		available = {
+			is_ai = no
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = open_my_new_gui
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+
+
+
+
+				
+
+
+
+
+
+
+				
+
+
+
+
+
+
+				
+
+
+
+
+
+
+				
+
+
+
+
+
+
+				
+
+
+
+
+

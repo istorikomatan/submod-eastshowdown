@@ -1,0 +1,124 @@
+ideas = {
+country = {
+LFR_sabatage_idea = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.1
+			
+			}
+			}
+LFR_sabatage_idea1 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.5
+			
+			}
+
+			}
+LFR_sabatage_idea2 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 1.5
+			
+			}
+
+			}		
+LFR_sabatage_idea3 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 2
+			
+			}
+
+			}
+LFR_sabatage_idea4 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 20
+			
+			}
+
+			}		
+LFR_sabatage_idea5 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.2
+			stability_weekly = 0.005
+			
+			}
+
+			}		
+LFR_sabatage_idea6 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.4
+			stability_weekly = 0.006
+			
+			}
+
+			}	
+LFR_sabatage_idea7 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.6
+			stability_weekly = 0.007
+			
+			}
+
+			}
+LFR_sabatage_idea8 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.8
+			stability_weekly = 0.008
+			
+			}
+
+			}			
+			}
+			}

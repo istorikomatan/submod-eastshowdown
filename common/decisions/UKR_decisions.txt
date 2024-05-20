@@ -17536,13 +17536,13 @@ UKR_IL_Territorial_Defense_Ukraine_category = {
 					create_unit = {
 						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
 						owner = LFR
-						prioritize_location = 10472
+						prioritize_location = 19560
 						count = 1
 					}
 					create_unit = {
 						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
 						owner = LFR
-						prioritize_location = 10472
+						prioritize_location = 19560
 						count = 1
 					}
 				}

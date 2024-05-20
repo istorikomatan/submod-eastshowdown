@@ -84,6 +84,7 @@ scripted_gui = {
 
 		visible = {
 			tag = RUS
+			tag = LFR
 			has_country_flag = SVO_STAFF_WINDOW_OPEN
 		}
 		
