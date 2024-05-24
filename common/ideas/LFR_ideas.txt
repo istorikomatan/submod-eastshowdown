@@ -1,0 +1,219 @@
+ideas = {
+country = {
+LFR_sabatage_idea = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.1
+			
+			}
+			}
+LFR_sabatage_idea1 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.5
+			
+			}
+
+			}
+LFR_sabatage_idea2 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 1.5
+			
+			}
+
+			}		
+LFR_sabatage_idea3 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 2
+			
+			}
+
+			}
+LFR_sabatage_idea4 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 20
+			
+			}
+
+			}		
+LFR_sabatage_idea5 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.2
+			stability_weekly = 0.005
+			
+			}
+
+			}		
+LFR_sabatage_idea6 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.4
+			stability_weekly = 0.006
+			
+			}
+
+			}	
+LFR_sabatage_idea7 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.6
+			stability_weekly = 0.007
+			
+			}
+
+			}
+LFR_sabatage_idea8 = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			political_power_gain = 0.8
+			stability_weekly = 0.008
+			
+			}
+			}
+			LFR_opposition_abroad = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			 	
+
+drift_defence_factor = -0.3
+democratic_drift = 0.03
+war_support_factor = -0.07
+stability_factor = 0.03
+autonomy_gain = 0.01
+political_power_cost = 0.1
+			
+			}
+
+			}
+LFR_foringer_activ = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+army_org_factor = -0.05
+military_factory_donations  = 5
+			political_power_factor = 0.1
+industrial_capacity_factory = 0.1 			
+			}
+			}
+LFR_rebel_army = {
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+army_org_factor = 0.03
+training_time_factor = 0.2
+recruitable_population_factor = -0.95
+war_support_factor = 0.05
+stability_factor = -0.1
+surrender_limit = 1
+planning_speed = -0.25
+max_planning_factor = 0.4
+offence = 0.05
+defence = -0.1
+equipment_upgrade_xp_cost = 0.4
+supply_factor = 0.3
+ weekly_manpower = 10
+ army_leader_cost_factor = 1
+
+			}
+			}
+LFR_aftermath_meetings_2021 = { 
+allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			stability_factor = -0.075
+			drift_defence_factor = 0.1
+			monthly_population = 0.6
+			local_manpower = 0.3
+			democratic_acceptance = 30
+			
+			}
+			}
+			LFR_propaganda_campaign = { 
+allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			    stability_factor = -0.1
+    drift_defence_factor = -0.1
+    democratic_drift = 0.05
+    political_power_gain = 0.1
+    war_support = -0.05
+    army_morale_factor = -0.1
+    consumer_goods_factor = 0.05
+  roduction_factory_max_efficiency_factor = -0.05
+   intel_network_gain = 0.1
+    army_experience_gain = -0.05
+			
+			}
+			}
+			}
+			}

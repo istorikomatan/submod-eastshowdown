@@ -2172,4 +2172,24 @@ spriteTypes = {
 		name = "GFX_rdk"
 		texturefile = "gfx/interface/goals/LFR/rdk.dds"
 	}
+    spriteType = {
+        name = "GFX_meetings1"
+        texturefile = "gfx/interface/goals/LFR/meetings.dds"
+    }
+	  spriteType = {
+        name = "GFX_defence_kiev"
+        texturefile = "gfx/interface/goals/LFR/defence_kiev.dds"
+    }
+	 spriteType = {
+        name = "GFX_combat_actions"
+        texturefile = "gfx/interface/goals/LFR/combat_actions.dds"
+    }
+	spriteType = {
+        name = "GFX_contract"
+        texturefile = "gfx/interface/goals/LFR/contract.dds"
+    }
+	spriteType = {
+        name = "GFX_oposicia"
+        texturefile = "gfx/interface/goals/LFR/oposicia.dds"
+    }
 }

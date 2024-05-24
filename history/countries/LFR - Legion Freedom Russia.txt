@@ -7,9 +7,12 @@ set_stability = 0.8
 set_war_support = 1.0
 
 add_political_power = 100
-
+set_power_balance = {
+		id = LFR_power_balance
+		set_default = yes  # whether or not to reset the power balance to the initial value, default = no
+	}
 set_convoys = 0
-
+create_intelligence_agency = yes
 set_popularities = {
                 democratic = 32
                 neutrality = 21
@@ -31,12 +34,26 @@ idealogy = authoritarian_democracy
 traits = {
 }
 }
-
-recruit_character = igor_vlasenko
-recruit_character = moa_sovet
-recruit_character = alexey_smislov
-recruit_character = vladimir_emilianov
-recruit_character = ivan_nesterenko
+create_field_marshal = {
+ name = "LFR_Cesar_1"
+ picture = "LSR_Cesar.dds"
+ traits={ army_capicity }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			}
+create_field_marshal = {
+ name = "RDK_kapustin"
+ picture = "RDK_kapustin.dds"
+ traits={ army_capicity }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			}
 recruit_character = LFR_Cesar
 
 set_politics = {
@@ -1634,11 +1651,10 @@ set_technology = {
 }
 
 add_ideas = {
-	volunteer_only
-	closed_economy
-	medium_corruption_level
-	borders_closed
-	society_high
+	LFR_opposition_abroad
+	LFR_foringer_activ
+	LFR_rebel_army
+	LFR_aftermath_meetings_2021
 	
 }
 

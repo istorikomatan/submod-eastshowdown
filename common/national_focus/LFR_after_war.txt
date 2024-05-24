@@ -1,0 +1,196 @@
+focus_tree = {
+	id = LFR_after_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LFR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 20 y = 1200 }
+	focus = {
+		id = LFR_meetings
+		icon = GFX_meetings1 # Используйте правильное имя иконки
+		cost = 1
+		x = 4
+		y = 0
+		available = {
+			original_tag = LFR
+		}
+		completion_reward = {
+			RUS = { add_stability = -0.10 
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			country_event = {
+			id = LFR.5
+			}
+		}
+	}
+
+	focus = {
+		id = LFR_defence_kiev
+		icon = GFX_defence_kiev
+		cost = 1,60
+		prerequisite = {
+			focus = LFR_meetings
+		}
+		x = 0
+		y = 1
+		relative_position_id = LFR_meetings
+			available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = LFR_contract
+		icon = GFX_contract
+		cost = 2,00
+		prerequisite = {
+			focus = LFR_defence_kiev
+		}
+		x = 0
+		y = 1
+		relative_position_id = LFR_defence_kiev
+			available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = LFR_combat
+		icon = GFX_combat_actions
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_contract
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = LFR_oposicia
+		icon = GFX_oposicia
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_contract
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = LFR_one_oppocitia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_oposicia
+		}
+		mutually_exclusive = {
+			focus = LFR_forum
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = LFR_forum
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_oposicia
+		}
+		mutually_exclusive = {
+			focus = LFR_one_oppocitia
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = LFR_succses
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_forum
+		}
+		mutually_exclusive = {
+			focus = LFR_ne_prinili
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = LFR_dogovors_help
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_succses
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = LFR_ne_prinili
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_forum
+		}
+		mutually_exclusive = {
+			focus = LFR_succses
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = LFR_conkurencia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_ne_prinili
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = LFR_fin_help
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_dogovors_help
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = polit_ad
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_dogovors_help
+		}
+		x = 11
+		y = 7
+
+	}
+}

@@ -1,6 +1,116 @@
 add_namespace = LFR
-
 country_event = {
+    id = LFR.2
+    title = "Hack TV fail  "
+    desc = "Hack tv fail event."
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "ploxo"
+        ai_chance = {
+            base = 100
+        }
+       
+        }
+		}
+country_event = {
+    id = LFR.3
+    title = "Disable TV fail  "
+    desc = "Disable tv fail event."
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "ploxo"
+        ai_chance = {
+            base = 100
+			
+        }
+        }
+    }
+	country_event = {
+    id = LFR.4
+    title = "Disable internet fail  "
+    desc = "Disable internet fail event."
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "ploxo"
+        ai_chance = {
+            base = 100
+			
+        }
+        }
+    }
+	country_event = {
+    id = LFR.5
+    title = LFR.5.t
+    desc = LFR.5.desc
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	option = {
+        name = LFR.5.a
+		RUS = { add_stability = -0.05 }
+        add_political_power = 50
+        }
+		option = {
+        name = LFR.5.b
+		 RUS = { add_stability = -0.15 }
+        add_political_power = -50
+		add_timed_idea = {
+	idea =	LFR_propaganda_campaign
+days = 30 
+}    
+	}
+	
+	}
+	country_event = {
+    id = LFR.6
+    title = "volunteers  "
+    desc = "volunteers ebat"
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "gus_napishet"
+    country_event = { 
+	id = LFR.7
+	days = 14
+	}
+	
+        }
+    }
+	country_event = {
+    id = LFR.7
+    title = "volunters"
+    desc = "volunteers ebat"
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+			option = {
+        name = "gus_napishet"
+    554 = {
+					create_unit = {
+						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
+						owner = LFR
+						prioritize_location = 19560
+						count = 1
+					}
+				}
+	
+        }
+		hidden = yes
+    }
+	
+	country_event = {
     id = LFR.1
 	days = 380
     title = "War Event"
@@ -34,5 +144,5 @@ country_event = {
     }
 }
         }
-    }
-}
+      }
+
