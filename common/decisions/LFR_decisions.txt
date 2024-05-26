@@ -862,14 +862,14 @@ LFR_recruits_category = {
 		complete_effect = {
 			
 				add_manpower = 100
-			
-		}
-		remove_effect = {
-		subtract_from_variable = {	
+			subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 1
 				tooltip = LFR_budget_var_remove17
 				}
+		}
+		remove_effect = {
+		
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 90
@@ -901,14 +901,14 @@ LFR_ad  = {
 		complete_effect = {
 			
 				add_manpower = 200
-				
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 10
 				tooltip = LFR_budget_var_remove9
 				}
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 180
@@ -938,15 +938,15 @@ LFR_popularity1  = {
 		complete_effect = {
 			
 				add_manpower = 300
-				
-			
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 19
 				tooltip = LFR_budget_var_remove18
 				}
+			
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 270
@@ -976,15 +976,15 @@ LFR_ad1  = {
 		complete_effect = {
 			
 				add_manpower = 400
-				
-			
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 28
 				tooltip = LFR_budget_var_remove19
 				}
+			
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 360
@@ -1015,15 +1015,15 @@ LFR_popularity2  = {
 		complete_effect = {
 			
 				add_manpower = 500
-				
-			
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 37
 				tooltip = LFR_budget_var_remove20
 				}
+			
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 450
@@ -1054,15 +1054,15 @@ LFR_ad2  = {
 		complete_effect = {
 		
 				add_manpower = 600
-				
-			
-}
-remove_effect = {
-	subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 46
 				tooltip = LFR_budget_var_remove21
 				}
+			
+}
+remove_effect = {
+	
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 540
@@ -1092,15 +1092,15 @@ LFR_popularity3  = {
 		complete_effect = {
 			
 				add_manpower = 700
-				
-			
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 55
 				tooltip = LFR_budget_var_remove22
 				}
+			
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 630
@@ -1130,15 +1130,15 @@ LFR_ad3  = {
 		complete_effect = {
 			
 				add_manpower = 800
-				
-			
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 64
 				tooltip = LFR_budget_var_remove23
 				}
+			
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 720
@@ -1168,15 +1168,15 @@ LFR_popularity4  = {
 		complete_effect = {
 			
 				add_manpower = 900
-				
-			
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 73
 				tooltip = LFR_budget_var_remove24
 				}
+			
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 810
@@ -1206,15 +1206,15 @@ FR_ad4  = {
 		complete_effect = {
 			
 				add_manpower = 2000
-				
-			
-}
-remove_effect = {
-subtract_from_variable = {	
+				subtract_from_variable = {	
 				var = LFR_budget_var
 				value = 300
 				tooltip = LFR_budget_var_remove3
 				}
+			
+}
+remove_effect = {
+
 add_to_variable = {    
                 var = LFR_recruits_var
                 value = 1800
@@ -1303,11 +1303,11 @@ LFR_new_type_brigade1 = {
 				var = LFR_recruits_var
 				value = 4000
 				}
-554 = {
+517 = {
 					create_unit = {
 						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
 						owner = LFR
-						prioritize_location = 19560
+						prioritize_location = 18933 
 						count = 1
 					}
 				}
@@ -1319,7 +1319,7 @@ LFR_new_type_brigade1 = {
 LFR_sabotage_category = {
     LFR_open_ksk = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -1333,7 +1333,7 @@ LFR_sabotage_category = {
 		  }
 		  LFR_rem_ksk = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -1977,7 +1977,7 @@ LFR_flyer_ksk_3 = {
 				}
 				LFR_open_bel = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -1991,7 +1991,7 @@ LFR_flyer_ksk_3 = {
 		  }
 		  LFR_rem_bel = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -2653,7 +2653,7 @@ LFR_flyer_bel_3 = {
 				}
 				LFR_open_cri = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -2663,12 +2663,12 @@ LFR_flyer_bel_3 = {
 		  remove_effect = {
 		  
 		  set_country_flag = LFR_sabotagecri
-		  set_country_flag = LFR_sabotagehui
+		  set_country_flag = LFR_sabotagehui1
 		  }
 		  }
 		  LFR_rem_cri = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -3385,7 +3385,7 @@ LFR_flyer_cri_3 = {
 				}
 				LFR_open_chr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -3400,7 +3400,7 @@ LFR_flyer_cri_3 = {
 		  }
 		  LFR_rem_chr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -4072,7 +4072,7 @@ LFR_flyer_chr_3 = {
 				}
 				LFR_open_sum = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -4087,7 +4087,7 @@ LFR_flyer_chr_3 = {
 		  }
 		  LFR_rem_sum = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -4749,7 +4749,7 @@ LFR_flyer_sum_3 = {
 				}
 				LFR_open_kha = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -4764,7 +4764,7 @@ LFR_flyer_sum_3 = {
 		  }
 		  LFR_rem_kha = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -5462,9 +5462,9 @@ LFR_flyer_kha_3 = {
 				}
 				}
 				}
-				LFR_open_lpr{
+				LFR_open_lpr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -5479,7 +5479,7 @@ LFR_flyer_kha_3 = {
 		  }
 		  LFR_rem_lpr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -6142,9 +6142,9 @@ LFR_flyer_lpr_3 = {
 				}
 				}
 				}
-				LFR_open_dpr{
+				LFR_open_dpr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -6159,7 +6159,7 @@ LFR_flyer_lpr_3 = {
 		  }
 		  LFR_rem_dpr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -6808,7 +6808,7 @@ LFR_flyer_dpr_3 = {
 				}
 				LFR_open_zpr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -6823,7 +6823,7 @@ LFR_flyer_dpr_3 = {
 		  }
 		  LFR_rem_zpr = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -7478,7 +7478,7 @@ LFR_flyer_zpr_3 = {
 				}
 				LFR_open_khe = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -7493,7 +7493,7 @@ LFR_flyer_zpr_3 = {
 		  }
 		  LFR_rem_khe = {
 	cost = 0
-	days_remove = 1
+	days_remove = 0
         ai_will_do = {
             factor = 100
         }
@@ -8196,7 +8196,7 @@ LFR_flyer_khe_3 = {
 			266 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.175 days = 10}
+			country_event = { id = rus.184 days = 10}
 			
 			
 			
@@ -8252,7 +8252,7 @@ LFR_flyer_khe_3 = {
 			262 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.176 days = 10}
+			country_event = { id = rus.185 days = 10}
 			
 			
 			
@@ -8308,7 +8308,7 @@ LFR_flyer_khe_3 = {
 			208 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.177 days = 10}
+			country_event = { id = rus.186 days = 10}
 			
 			
 			
@@ -8364,7 +8364,7 @@ LFR_flyer_khe_3 = {
 			186 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.178 days = 10}
+			country_event = { id = rus.187 days = 10}
 			
 			
 			
@@ -8420,7 +8420,7 @@ LFR_flyer_khe_3 = {
 			156 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.179 days = 10}
+			country_event = { id = rus.188 days = 10}
 			
 			
 			
@@ -8476,7 +8476,7 @@ LFR_flyer_khe_3 = {
 			128 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.181 days = 10}
+			country_event = { id = rus.190 days = 10}
 			
 			
 			
@@ -8532,7 +8532,7 @@ LFR_flyer_khe_3 = {
 			111 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.180 days = 10}
+			country_event = { id = rus.189 days = 10}
 			
 			
 			
@@ -8588,7 +8588,7 @@ LFR_flyer_khe_3 = {
 			123 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.182 days = 10}
+			country_event = { id = rus.191 days = 10}
 			
 			
 			
@@ -8645,7 +8645,7 @@ LFR_flyer_khe_3 = {
 			95 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.183 days = 10}
+			country_event = { id = rus.192 days = 10}
 			
 			
 			
@@ -8718,7 +8718,7 @@ LFR_flyer_khe_3 = {
 			419 = {
 			set_demilitarized_zone = yes
 			}
-			country_event = { id = rus.184 days = 10}
+			country_event = { id = rus.193 days = 10}
 			
 			
 			
@@ -8781,7 +8781,7 @@ LFR_flyer_khe_3 = {
 			set_demilitarized_zone = yes
 			}
 			
-			country_event = { id = rus.185 days = 10}
+			country_event = { id = rus.194 days = 10}
 			
 			
 			
@@ -8844,7 +8844,7 @@ LFR_flyer_khe_3 = {
 			set_demilitarized_zone = yes
 			}
 			
-			country_event = { id = rus.186 days = 10}
+			country_event = { id = rus.195 days = 10}
 			
 			
 			
@@ -8907,7 +8907,7 @@ LFR_bridge12 = {
 			set_demilitarized_zone = yes
 			}
 			
-			country_event = { id = rus.187 days = 10}
+			country_event = { id = rus.196 days = 10}
 			
 			
 			
@@ -8974,7 +8974,7 @@ LFR_bridge12 = {
 			set_demilitarized_zone = yes
 			}
 			
-			country_event = { id = rus.188 days = 10}
+			country_event = { id = rus.197 days = 10}
 			
 			
 			
@@ -9037,7 +9037,7 @@ LFR_bridge12 = {
 			set_demilitarized_zone = yes
 			}
 			
-			country_event = { id = rus.189 days = 10}
+			country_event = { id = rus.198 days = 10}
 			
 			
 			
@@ -9100,7 +9100,7 @@ LFR_bridge12 = {
 			set_demilitarized_zone = yes
 			}
 			
-			country_event = { id = rus.189 days = 10}
+			country_event = { id = rus.199 days = 10}
 			
 			
 			
