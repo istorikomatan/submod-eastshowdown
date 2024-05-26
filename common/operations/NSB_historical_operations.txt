@@ -218,7 +218,7 @@ RUS_murder_Zelensky = { ### 1/50
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
 		random_list = {
-			70 = { RUS = { country_event = { id = rus.172 hours = 1}  set_country_flag = RUS_hacked_TV } } 
+			70 = { RUS = { country_event = { id = rus.181 hours = 1}  set_country_flag = RUS_hacked_TV } } 
 			30 = { LFR = { country_event = { id = LFR.2 hours = 1}   set_country_flag = LFR_hacked_TV_fail } } 
 		}
 	}
@@ -227,7 +227,7 @@ RUS_murder_Zelensky = { ### 1/50
 
 	outcome_extra_execute = {
 		random_list = {
-		50 = { RUS = { country_event = { id = rus.172 hours = 1}  set_country_flag = RUS_hacked_TV } } 
+		50 = { RUS = { country_event = { id = rus.181 hours = 1}  set_country_flag = RUS_hacked_TV } } 
 			50 = { LFR = { country_event = { id = LFR.2 hours = 1}   set_country_flag = LFR_hacked_TV_fail } } 
 		}
 	}
@@ -298,7 +298,7 @@ LFR_disable_internet = { ### 1/50
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
 		random_list = {
-			50 = { RUS = { country_event = { id = rus.174 hours = 1}  set_country_flag = RUS_disabled_internet } } 
+			50 = { RUS = { country_event = { id = rus.183 hours = 1}  set_country_flag = RUS_disabled_internet } } 
 			50 = { LFR = { country_event = { id = LFR.4 hours = 1}   set_country_flag = LFR_disabled_internet_fail } } 
 		}
 	}
@@ -307,7 +307,7 @@ LFR_disable_internet = { ### 1/50
 
 	outcome_extra_execute = {
 		random_list = {
-		50 = { RUS = { country_event = { id = rus.174 hours = 1}  set_country_flag = RUS_disabled_internet } } 
+		50 = { RUS = { country_event = { id = rus.183 hours = 1}  set_country_flag = RUS_disabled_internet } } 
 			50 = { LFR = { country_event = { id = LFR.4 hours = 1}   set_country_flag = LFR_disabled_internet_fail } } 
 		}
 	}
@@ -378,7 +378,7 @@ LFR_disable_TV = { ### 1/50
 	# outcome is an effect that runs when the operation has completed
 	outcome_execute = { # SCOPE_OPERATION
 		random_list = {
-			50 = { RUS = { country_event = { id = rus.173 hours = 1}  set_country_flag = RUS_disabled_TV } } 
+			50 = { RUS = { country_event = { id = rus.182 hours = 1}  set_country_flag = RUS_disabled_TV } } 
 			50 = { LFR = { country_event = { id = LFR.3 hours = 1}   set_country_flag = LFR_disabled_TV_fail } } 
 		}
 	}
@@ -387,7 +387,7 @@ LFR_disable_TV = { ### 1/50
 
 	outcome_extra_execute = {
 		random_list = {
-		50 = { RUS = { country_event = { id = rus.173 hours = 1}  set_country_flag = RUS_disabled_YV } } 
+		50 = { RUS = { country_event = { id = rus.182 hours = 1}  set_country_flag = RUS_disabled_YV } } 
 			50 = { LFR = { country_event = { id = LFR.3 hours = 1}   set_country_flag = LFR_disabled_TV_fail } } 
 		}
 	}
