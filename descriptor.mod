@@ -1,4 +1,4 @@
-name="East Showdown"
+name="East Showdown [Dev]"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/general"
@@ -73,5 +73,6 @@ tags={
 	"Graphics"
 }
 picture="showdown.jpg"
-supported_version="1.14.2"
+supported_version="1.13.7"
 remote_file_id="2948642461"
+path="mod/East-Showdown"

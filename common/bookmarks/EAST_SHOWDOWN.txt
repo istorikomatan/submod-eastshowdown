@@ -15,6 +15,8 @@ bookmarks = {
 				UKR_Agranary_of_Europe
 			}
 			focuses = {
+			    United_country
+				A_cry_for_help_to_the_West
 			}	
 		}
 		
@@ -28,6 +30,8 @@ bookmarks = {
 				economic_stagnation
 			}
 			focuses = {
+			    RUS_SMO
+				RUS_Putins_course
 			}
 		}
 		"NTO"={
@@ -68,7 +72,7 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				BLR_last_european_dictatorship
-				BLR_economic_dependence_on_russia
+				BLR_repressive_machine_2
 				BLR_destroyed_opposition
 			}
 			focuses = {
@@ -129,17 +133,6 @@ bookmarks = {
 				WGN_own_structure
 			}
 			focuses = {
-			}
-		}
-		"LFR"={
-			minor = yes
-			history = "LFR_EAST_SHOWDOWN_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
 			}
 		}
 		

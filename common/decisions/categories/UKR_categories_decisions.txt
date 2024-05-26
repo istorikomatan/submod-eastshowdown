@@ -86,7 +86,7 @@ UKR_Bombing_Russia = {
 }
 
 UKR_Lend_leas1_category = {
-	icon = decision_cat_picture_SWI_military_readiness_decisions
+	icon = GFX_UKR_Lend_leas1_category
 
 	allowed = {
 		original_tag = UKR
@@ -206,7 +206,7 @@ UKR_Return_the_Crimea_category = {
 
 
 UKR_New_brigades_category = {
-	icon = decision_category_icon_second_russoukrainian_war
+	icon = GFX_UKR_New_brigades_category
 	picture = decision_category_picture_new_brigades
 	has_country_flag = Focus_new_brigades_completed
 	allowed = {
@@ -231,7 +231,7 @@ UKR_destroy_oligarchate_category = {
 
 UKR_volunteers_decision_category = { 
 
-#	icon = GFX_decision_category_ETH_italo_ethiopian_war
+	icon = GFX_UKR_volunteers_decision_category
 	scripted_gui = ukr_volunteers_decision_ui
 	
 	allowed = {
@@ -242,11 +242,12 @@ UKR_volunteers_decision_category = {
 		has_war_with = RUS
 		has_country_flag = Volunteer_movement_focus_completed
 	}
-	visible_when_empty = yes 
+	visible_when_empty = yes
+	priority = 390
 }
 
 UKR_economic_decision_category = { 
-
+    icon = GFX_UKR_economic_decision_category
 	scripted_gui = ukr_economic_decision_ui
 	
 	priority = 400
@@ -269,17 +270,12 @@ UKR_strengthening_Ukrainian_cities_category = {
 
 	visible = {
 		has_war_with = RUS
-		OR = {
-			has_country_flag = UKR_West_dec
-			has_country_flag = UKR_North_dec
-			has_country_flag = UKR_East_dec
-			has_country_flag = UKR_South_dec
-		}
 	}
 	visible_when_empty = no 
 }
 
 UKR_derussification_decision_category = { 
+    icon = GFX_UKR_derussification_decision_category
 	priority = 400
 	allowed = {
 		original_tag = UKR

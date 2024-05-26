@@ -12,7 +12,7 @@ state = {
 	history = {
 		owner = UKR
 		
-		victory_points = { 1959 18 }
+		victory_points = { 1708 18 }
 		
 		buildings = {
 			infrastructure = 3

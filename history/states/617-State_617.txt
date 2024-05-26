@@ -1,0 +1,26 @@
+state = {
+	id = 617
+	name = "Яворовский полигон"
+	manpower = 1000
+
+	state_category = small_town
+
+	provinces = {
+		18933
+	}
+
+	history = {
+		owner = LFR
+		
+	
+		victory_points = { 18933 2 }
+		
+		
+		buildings = {
+		}
+		
+		add_core_of = LFR
+	}
+
+	buildings_max_level_factor = 0.75
+}

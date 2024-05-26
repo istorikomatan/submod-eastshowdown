@@ -44,7 +44,7 @@ division_template = {
 			x = 0
 			y = 4
 		}
-		artillery_nig = {
+		artillery = {
 			x = 0
 			y = 5
 		}
@@ -64,7 +64,7 @@ division_template = {
 }
 units = {
 	division = {
-		name = "Batalyon Svoboda "
+		name = "Batalyon Svoboda"
 		location = 9469
 		officer = {
 			name = "Petro Kuzik"
@@ -75,7 +75,7 @@ units = {
 			    }
 		    }
 		}
-		division_template = "Svoboda  "
+		division_template = "Svoboda"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}

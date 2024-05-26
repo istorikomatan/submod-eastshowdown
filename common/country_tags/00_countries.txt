@@ -20,7 +20,6 @@ CAU = "countries/RussianUkraine.txt"
 RUS = "countries/Russia.txt"
 RBA = "countries/Russia Back Areas.txt"
 RBZ = "countries/Russian Border Zone.txt"
-BLR = "countries/Belarus.txt"
 KAZ = "countries/Kazakhstan.txt"
 DGN = "countries/Dagestan.txt"
 MOA = "countries/MOA.txt"
@@ -45,8 +44,6 @@ WUR = "countries/WestUkraine.txt"
 
 UKR = "countries/Ukraine.txt"
 LFR = "countries/Legion Freedom Russia.txt"
-RVC = "countries/Russian volunteer corps.txt"
-
 #Ukrainian People's Republic
 
 KUB = "countries/Kuban.txt"
@@ -54,3 +51,7 @@ BLG = "countries/Belgorod.txt"
 CRI = "countries/Crimea.txt"
 ROS = "countries/Rostov.txt"
 
+
+#BLR
+BLR = "countries/Belarus.txt"
+BPR = "countries/DemBelarus.txt"
