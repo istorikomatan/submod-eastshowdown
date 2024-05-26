@@ -1,6 +1,6 @@
 capital = 554
 oob = LFR_2022
-set_research_slots = 2
+set_research_slots = 0
 
 set_stability = 0.8
 
@@ -139,7 +139,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_bronemashina1_AAB"
+	icon = "GFX_UKR_bronemashina1_AAB"
 }
 create_equipment_variant = {
 	name = "\"Дозор-Б\""
@@ -159,7 +159,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_bronemashina1_AAB"
+	icon = "GFX_UKR_bronemashina1_AAB"
 }
 create_equipment_variant = {
 	name = "\"Дозор-Б\" c 30мм автопушкой"
@@ -181,7 +181,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_bronemashina1_AAB"
+	icon = "GFX_UKR_bronemashina1_AAB"
 }
 create_equipment_variant = {
 	name = "HMMWV"
@@ -199,7 +199,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_bronemashina1_AAB"
+	icon = "GFX_UKR_bronemashina1_AAB"
 }
 create_equipment_variant = {
 	name = "HMMWV c \"Корд\""
@@ -219,7 +219,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_bronemashina2_AAB"
+	icon = "GFX_UKR_bronemashina2_AAB"
 }
 create_equipment_variant = {
 	name = "HMMWV c CROWS"
@@ -239,7 +239,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_bronemashina2_AAB"
+	icon = "GFX_UKR_bronemashina2_AAB"
 }
 create_equipment_variant = {
 	name = "\"Новатор\""
@@ -257,7 +257,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_bronemashina3_AAB"
+	icon = "GFX_UKR_bronemashina3_AAB"
 }
 create_equipment_variant = {
 	name = "Тор-М1"
@@ -901,7 +901,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_btr3_AAB"
+	icon = "GFX_UKR_btr3_AAB"
 }
 create_equipment_variant = {
 	name = "БТР-4"
@@ -926,7 +926,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_LFR_btr4_AAB"
+	icon = "GFX_UKR_btr4_AAB"
 }
 create_equipment_variant = {
 	name = "2С7 \"Пион\""

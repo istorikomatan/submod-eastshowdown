@@ -2738,4 +2738,12 @@ spriteType = {
 		name = "GFX_idea_UKR_Construction_of_new_factories_in_the_rear_idea"
 		texturefile = "gfx/interface/ideas/UKR/UKR_economy_status.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_LPR_Alchevsk_Metallurgical_Plant"
+		texturefile = "gfx/interface/ideas/DNB/LPR_Alchevsk_Metallurgical_Plant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LPR_Pervomaisky_Electromechanical_Plant"
+		texturefile = "gfx/interface/ideas/DNB/LPR_Pervomaisky_Electromechanical_Plant.dds"
+	}
 }

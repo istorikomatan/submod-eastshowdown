@@ -1,0 +1,8 @@
+objectTypes = {
+pdxmesh = {
+		name = "geo_m1511_UKR_mesh"
+		file = "gfx/models/units/vehicles/geo_m1151_UKR.mesh"
+animation = { id = "idle"			type = "geo_m1151_idle_animation" }
+		animation = { id = "move"			type = "geo_m1151_move_animation" }
+	}
+	}

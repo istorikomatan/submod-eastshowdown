@@ -9,6 +9,8 @@ set_convoys = 20
 give_military_access = CHE
 give_military_access = RUS
 
+create_intelligence_agency = yes
+
 #Military
 recruit_character = alexander_khodakovsky
 recruit_character = konstantin_kuzmin
@@ -17,6 +19,8 @@ recruit_character = vladimir_joga
 recruit_character = edward_basurin
 recruit_character = denis_pushilin
 recruit_character = alexey_dikiy
+recruit_character = denis_sinenkov
+recruit_character = roman_kutuzov
 
 set_technology = {
 	infantry_weapons = 1
@@ -153,13 +157,15 @@ set_technology = {
 }
 
 add_ideas = {
-	extensive_conscription
+	limited_conscription
 	low_economic_mobilisation
 	DNB_unsurrendered_republic
 	DNB_donbass_in_ruins
 	ukrainian_shellings
 	unrecognised_state
-	people_s_respublic
+	total_corruption_level
+	DPR_banditry_law_enforcement_agencies
+	DNB_assets_of_Russian_oligarchs
 }
 
 set_politics = {

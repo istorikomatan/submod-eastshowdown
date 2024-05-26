@@ -2219,4 +2219,8 @@ spriteTypes = {
         name = "GFX_oposicia"
         texturefile = "gfx/interface/goals/LFR/oposicia.dds"
     }
+	spriteType = {
+		name = "GFX_LPR_8_years_of_struggle"
+		texturefile = "gfx/interface/goals/LPR/LPR_8_years_of_struggle.dds"
+	}
 }

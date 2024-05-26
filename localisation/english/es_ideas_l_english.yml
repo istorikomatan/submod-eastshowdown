@@ -361,6 +361,16 @@ UKR_internal_refugees: "Internal refugees"
 UKR_escape_from_mobilization: "Fleeing conscriptsn"
 UKR_subsidies_for_affected_companies_idea: "Return of companies"
 UKR_Construction_of_new_factories_in_the_rear_idea: "Construction of enterprises"
+DPR_banditry_law_enforcement_agencies: "Banditry in law enforcement agencies"
+LPR_banditry_law_enforcement_agencies: "Banditry in law enforcement agencies"
+DNB_assets_of_Russian_oligarchs: "Assets of Russian oligarchs"
+LPR_crisis_2017: "The consequences of the 2017 crisis"
+LPR_NM_DNR_modifier: "People's Militia of the LPR"
+LPR_reorganization_2nd_korpus: "Reorganization of the 2nd Army Corps"
+LPR_military_training_camps: "Military training"
+
+LPR_Alchevsk_Metallurgical_Plant: "Alchevsk Metallurgical Plant"
+LPR_Pervomaisky_Electromechanical_Plant: "Pervomaisky Electromechanical Plant"
 ###MOA
 MOA_izvest_1: "Notoriety: §Rlow"
 MOA_izvest_2: "Notoriety: §Average"
@@ -390,7 +400,10 @@ why_we_fight_focus: "What are we fighting for?"
 why_we_fight_focus_2: "What are we fighting for?"
 why_we_fight_focus_3: "What are we fighting for?"
 DNB_russian_military_advisers: "Russian military advisors"
-
+DPR_get_ready_for_the_inevitable_idea: "Prepare for the inevitable"
+DPR_prepare_the_army_idea: "Prepare the army"
+DPR_patrools_idea: "Reinforced patrols"
+DPR_postmobilisation_pizdec_idea: "Mobilization shock"
  
 #NATO
 NTO_supply_of_the_eastern_european_army_0: "Supply of the Eastern European Army:§C Minimal§!"

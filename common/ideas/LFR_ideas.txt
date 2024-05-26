@@ -148,8 +148,7 @@ allowed = {
 			}
 			modifier = {
 army_org_factor = -0.05
-military_factory_donations  = 5
-			political_power_factor = 0.1
+political_power_factor = 0.1
 industrial_capacity_factory = 0.1 			
 			}
 			}
