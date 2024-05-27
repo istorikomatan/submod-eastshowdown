@@ -18,8 +18,8 @@ characters = {
 				small= "gfx/leaders/LFR/Small/LSR_Cesar.dds"
 			}
 	name = LFR_Cesar_1
-		field_marshal={
-			traits={ army_capicity }
+		field_marshal = {
+			traits = { army_capicity }
 			skill=3
 			attack_skill=2
 			defense_skill=4
@@ -27,21 +27,14 @@ characters = {
 			logistics_skill=5
 			
 		}
-		advisor = {
-            slot = high_command
-            idea_token = LFR_Cesar_1
-            ledger = army
-            allowed = { original_tag = LFR }
-            traits = { army_chief_offensive_2 }
-        }
 }
 LFR_kapustin = {
 			army={
 				large="gfx/leaders/LFR/RDK_kapustin.dds
 			}
 	name = RDK_kapustin
-		field_marshal={
-			traits={ army_capicity }
+		field_marshal = {
+			traits = { army_capicity }
 			skill=3
 			attack_skill=2
 			defense_skill=4
@@ -49,13 +42,5 @@ LFR_kapustin = {
 			logistics_skill=5
 			
 		}
-		advisor = {
-            slot = high_command
-            idea_token = RDK_kapustin
-            ledger = army
-            allowed = { original_tag = LFR }
-            traits = { army_chief_offensive_2 }
-        }
-}
 }
 }
