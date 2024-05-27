@@ -293,5 +293,67 @@ allowed = {
 				army_org_factor = 0.025
 			}
 	}
+	
+    LFR_kyiv_defense_morale_boost = {
+    allowed = {
+        original_tag = LFR
+    }
+   
+    modifier = {
+			war_support_factor = 0.1
+        	army_org_factor = 0.05
+			army_attack_factor = 0.05
+			army_defence_factor = 0.1
+    }
+}
+LFR_temp_defense_boost = {
+    allowed = {
+        original_tag = LFR
+    }
+
+    modifier = {
+        experience_gain_army_factor = 0.3
+		supply_consumption_factor = 0.05
+		army_defence_factor = 0.1
+    }
+}
+ LFR_better_supply_lines = {
+    
+    allowed = {
+        original_tag = LFR
+    }
+    
+    modifier = {
+        supply_consumption_factor  = -0.1
+    }
+}
+LFR_joint_operations = {
+    allowed = {
+        original_tag = LFR
+    }
+    
+    modifier = {
+        army_attack_factor = 0.05
+			army_defence_factor = 0.05
+    }
+}
+LFR_combat_efficiency = {
+    allowed = {
+        original_tag = LFR
+    }
+    modifier = {
+       army_attack_factor = 0.05
+        army_defence_factor = 0.05
+    }
+}
+LFR_improved_logistics
+    allowed = {
+        original_tag = LFR
+    }
+    modifier = {
+        supply_consumption_factor = -0.1
+    }
+}
+
 			}
 			}
