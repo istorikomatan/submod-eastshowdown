@@ -28,6 +28,7 @@ focus_tree = {
             add_political_power = 30
             add_war_support = 0.05
             add_ideas = rus_oppos
+			set_country_flag = LFR_gde_boepripasi
         }
     }
     

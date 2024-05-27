@@ -1,12 +1,12 @@
 LFR_budget_category = {
     LFR_get_money = {
         activation = {
-            has_completed_focus = LFR_start 
+            has_country_flag = LFR_gde_boepripasi
             original_tag = LFR
         }
         available = {
            NOT = {
-				has_completed_focus = LFR_start 
+				has_country_flag = LFR_gde_boepripasi
 			}
         }
         icon = generic_formable_nations  
@@ -24,12 +24,12 @@ LFR_budget_category = {
     }   
     LFR_get_money_2 = {
         activation = {
-            has_completed_focus = LFR_start
+            has_country_flag = LFR_gde_boepripasi
             original_tag = LFR
         }
 		 available = {
             NOT = {
-				has_completed_focus = LFR_start 
+				has_country_flag = LFR_gde_boepripasi
 			}
         }
         icon = generic_formable_nations  
