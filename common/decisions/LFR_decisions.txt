@@ -8168,7 +8168,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8224,7 +8224,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8280,7 +8280,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8336,7 +8336,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8392,7 +8392,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8448,7 +8448,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8504,7 +8504,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8560,7 +8560,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8617,7 +8617,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8673,7 +8673,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8746,7 +8746,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8809,7 +8809,7 @@ LFR_flyer_khe_3 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8872,7 +8872,7 @@ LFR_bridge12 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -8935,7 +8935,7 @@ LFR_bridge12 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -9002,7 +9002,7 @@ LFR_bridge12 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
@@ -9065,7 +9065,7 @@ LFR_bridge12 = {
         }
   
         available = {
-		has_completed_focus = LFR_start
+		has_country_flag = LFR_bridge
             original_tag = LFR
             AND = {
 			            RUS = {
