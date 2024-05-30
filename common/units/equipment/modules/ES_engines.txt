@@ -1,0 +1,204 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+
+################## Engine
+
+	tank_lengine_1 = {
+		abbreviation = "lengine_1"
+		category = tank_light_engine
+
+		add_stats = {
+			maximum_speed = 19 #30
+			build_cost_ic = 4
+			fuel_consumption = 1.5
+		}
+		dismantle_cost_ic = 4
+
+		xp_cost = 5
+	}
+
+	tank_lengine_2 = {
+		abbreviation = "lengine_2"
+		category = tank_light_engine
+
+		add_stats = {
+			maximum_speed = 22 #40
+			build_cost_ic = 6
+			fuel_consumption = 2
+		}
+		dismantle_cost_ic = 6
+
+		xp_cost = 10
+	}
+
+	tank_mengine_1 = {
+		abbreviation = "mengine_1"
+		category = tank_medium_engine
+
+		add_stats = {
+			maximum_speed = 18 #20
+			build_cost_ic = 6
+			fuel_consumption = 2
+		}
+		dismantle_cost_ic = 6
+
+		xp_cost = 10
+	}
+
+	tank_mengine_2 = {
+		abbreviation = "mengine_2"
+		category = tank_medium_engine
+
+		add_stats = {
+			maximum_speed = 22 #28
+			build_cost_ic = 8
+			fuel_consumption = 2.5
+		}
+		dismantle_cost_ic = 8
+
+		xp_cost = 15
+	}
+
+	tank_mengine_3 = {
+		abbreviation = "mengine_3"
+		category = tank_medium_engine
+
+		add_stats = {
+			maximum_speed = 25 #35
+			build_cost_ic = 10
+			fuel_consumption = 3
+		}
+		dismantle_cost_ic = 10
+
+		xp_cost = 20
+	}
+
+	tank_hengine_1 = {
+		abbreviation = "hengine_1"
+		category = tank_heavy_engine
+
+		add_stats = {
+			maximum_speed = 18 #14
+			build_cost_ic = 7
+			fuel_consumption = 4
+		}
+		dismantle_cost_ic = 7
+
+		xp_cost = 10
+	}
+
+	tank_hengine_2 = {
+		abbreviation = "hengine_2"
+		category = tank_heavy_engine
+
+		add_stats = {
+			maximum_speed = 20 #20
+			build_cost_ic = 10
+			fuel_consumption = 4.5
+		}
+		dismantle_cost_ic = 10
+
+		xp_cost = 15
+	}
+
+	tank_hengine_3 = {
+		abbreviation = "hengine_3"
+		category = tank_heavy_engine
+
+		add_stats = {
+			maximum_speed = 22 #25
+			build_cost_ic = 12
+			fuel_consumption = 5
+		}
+		multiply_stats = {
+			reliability = -0.02
+			breakthrough = 0.08
+			defense = 0.05
+		}
+		dismantle_cost_ic = 12
+
+		xp_cost = 20
+	}
+
+	tank_hengine_4 = {
+		abbreviation = "hengine_4"
+		category = tank_heavy_engine
+
+		add_stats = {
+			maximum_speed = 24 #30
+			build_cost_ic = 15
+			fuel_consumption = 6
+		}
+		multiply_stats = {
+			reliability = -0.02
+			breakthrough = 0.08
+			defense = 0.05
+		}
+		dismantle_cost_ic = 15
+
+		xp_cost = 25
+	}
+
+	tank_gtengine_1 = {
+		abbreviation = "gtengine_1"
+		category = tank_gt_engine
+
+		add_stats = {
+			maximum_speed = 20 #24
+			build_cost_ic = 13
+			fuel_consumption = 6
+		}
+		multiply_stats = {
+			reliability = -0.1
+			breakthrough = 0.15
+			defense = 0.1
+			supply_consumption = 0.05
+		}
+		dismantle_cost_ic = 13
+
+		xp_cost = 15
+	}
+
+	tank_gtengine_2 = {
+		abbreviation = "gtengine_2"
+		category = tank_gt_engine
+
+		add_stats = {
+			maximum_speed = 22 #27
+			build_cost_ic = 16
+			fuel_consumption = 7
+		}
+		multiply_stats = {
+			reliability = -0.1
+			breakthrough = 0.15
+			defense = 0.1
+			supply_consumption = 0.05
+		}
+		dismantle_cost_ic = 16
+
+		xp_cost = 20
+	}
+
+	tank_gtengine_3 = {
+		abbreviation = "gtengine_3"
+		category = tank_gt_engine
+
+		add_stats = {
+			maximum_speed = 24 #36
+			build_cost_ic = 21
+			fuel_consumption = 8
+		}
+		multiply_stats = {
+			reliability = -0.1
+			breakthrough = 0.15
+			defense = 0.1
+			supply_consumption = 0.05
+			fuel_consumption = 0.2
+		}
+		dismantle_cost_ic = 21
+
+		xp_cost = 25
+	}
+}

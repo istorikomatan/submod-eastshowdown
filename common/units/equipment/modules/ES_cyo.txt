@@ -1,0 +1,421 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+
+################# CYO
+
+	tank_cyo_t_1 = {
+		abbreviation = "cyo_t_1"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 1.5
+			breakthrough = 2
+			defense = 0.8
+		}
+		multiply_stats = {
+			reliability = -0.1
+			soft_attack = 0.04
+			hard_attack = 0.07
+			ap_attack = 0.05
+			air_attack = 0.01
+		}
+		dismantle_cost_ic = 1.5
+
+		xp_cost = 5
+	}
+
+	tank_cyo_t_1a = {
+		abbreviation = "cyo_t_1a"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 2.5
+			breakthrough = 3
+			defense = 1.6
+		}
+		multiply_stats = {
+			reliability = -0.1
+			soft_attack = 0.08
+			hard_attack = 0.14
+			ap_attack = 0.1
+			air_attack = 0.03
+		}
+		dismantle_cost_ic = 2.5
+
+		xp_cost = 10
+	}
+
+	tank_cyo_t_2 = {
+		abbreviation = "cyo_t_2"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 4
+			breakthrough = 5
+			defense = 2.4
+		}
+		multiply_stats = {
+			reliability = -0.07
+			soft_attack = 0.12
+			hard_attack = 0.21
+			ap_attack = 0.15
+			air_attack = 0.04
+		}
+		dismantle_cost_ic = 4
+
+		xp_cost = 15
+	}
+
+	tank_cyo_t_2a = {
+		abbreviation = "cyo_t_2a"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 5
+			breakthrough = 6
+			defense = 3.2
+		}
+		multiply_stats = {
+			reliability = -0.07
+			soft_attack = 0.16
+			hard_attack = 0.28
+			ap_attack = 0.2
+			air_attack = 0.5
+		}
+		dismantle_cost_ic = 5
+
+		xp_cost = 20
+	}
+
+	tank_cyo_t_3 = {
+		abbreviation = "cyo_t_3"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 8
+			breakthrough = 8
+			defense = 4
+		}
+		multiply_stats = {
+			reliability = -0.03
+			soft_attack = 0.20
+			hard_attack = 0.35
+			ap_attack = 0.25
+			air_attack = 0.06
+		}
+		dismantle_cost_ic = 8
+
+		xp_cost = 25
+	}
+
+	tank_cyo_t_3a = {
+		abbreviation = "cyo_t_3a"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 10
+			breakthrough = 10
+			defense = 4.8
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			reliability = -0.03
+			soft_attack = 0.24
+			hard_attack = 0.42
+			ap_attack = 0.30
+			air_attack = 0.07
+		}
+		dismantle_cost_ic = 10
+
+		xp_cost = 30
+	}
+
+	tank_cyo_t_4 = {
+		abbreviation = "cyo_t_4"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 13
+			breakthrough = 2
+			defense = 0.8
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			reliability = 0.05
+			soft_attack = 0.28
+			hard_attack = 0.49
+			ap_attack = 0.35
+			air_attack = 0.08
+		}
+		dismantle_cost_ic = 13
+
+		xp_cost = 35
+	}
+
+	tank_cyo_t_4a = {
+		abbreviation = "cyo_t_4a"
+		category = tank_cyo_t
+
+		add_stats = {
+			build_cost_ic = 16
+			breakthrough = 2
+			defense = 0.8
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			reliability = 0.05
+			soft_attack = 0.32
+			hard_attack = 0.56
+			ap_attack = 0.40
+			air_attack = 0.1
+		}
+		dismantle_cost_ic = 16
+
+		xp_cost = 40
+	}
+
+	tank_cyo_a_1 = {
+		abbreviation = "cyo_a_1"
+		category = tank_cyo_a
+
+		add_stats = {
+			build_cost_ic = 2.5
+			breakthrough = 1
+			defense = 0.4
+		}
+		multiply_stats = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			ap_attack = 0.02
+			air_attack = 0.05
+		}
+		dismantle_cost_ic = 2.5
+
+		xp_cost = 10
+	}
+
+	tank_cyo_a_1a = {
+		abbreviation = "cyo_a_1a"
+		category = tank_cyo_a
+
+		add_stats = {
+			build_cost_ic = 4
+			breakthrough = 2
+			defense = 0.8
+		}
+		multiply_stats = {
+			soft_attack = 0.15
+			hard_attack = 0.12
+			ap_attack = 0.05
+			air_attack = 0.1
+		}
+		dismantle_cost_ic = 4
+
+		xp_cost = 15
+	}
+
+	tank_cyo_a_2 = {
+		abbreviation = "cyo_a_2"
+		category = tank_cyo_a
+
+		add_stats = {
+			build_cost_ic = 5
+			breakthrough = 2.5
+			defense = 1.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			reliability = 0.05
+			soft_attack = 0.25
+			hard_attack = 0.20
+			ap_attack = 0.07
+			air_attack = 0.15
+		}
+		dismantle_cost_ic = 5
+
+		xp_cost = 20
+	}
+
+	tank_cyo_a_2a = {
+		abbreviation = "cyo_a_2a"
+		category = tank_cyo_a
+
+		add_stats = {
+			build_cost_ic = 6
+			breakthrough = 3
+			defense = 1.6
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			reliability = 0.05
+			soft_attack = 0.35
+			hard_attack = 0.27
+			ap_attack = 0.1
+			air_attack = 0.2
+		}
+		dismantle_cost_ic = 6
+
+		xp_cost = 25
+	}
+
+	tank_cyo_aa_1 = {
+		abbreviation = "cyo_aa_1"
+		category = tank_cyo_air
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_lightAA_missle
+			} 
+		}
+
+		add_stats = {
+			build_cost_ic = 2
+			breakthrough = 0.5
+			defense = 0.5
+		}
+		multiply_stats = {
+			reliability = -0.1
+			soft_attack = 0.03
+			hard_attack = 0.03
+			air_attack = 0.12
+		}
+		dismantle_cost_ic = 2
+
+		xp_cost = 10
+	}
+
+	tank_cyo_aa_1a = {
+		abbreviation = "cyo_aa_1a"
+		category = tank_cyo_air
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_lightAA_missle
+			} 
+		}
+
+		add_stats = {
+			build_cost_ic = 4
+			breakthrough = 0.9
+			defense = 1
+		}
+		multiply_stats = {
+			reliability = -0.1
+			soft_attack = 0.05
+			hard_attack = 0.05
+			air_attack = 0.24
+		}
+		dismantle_cost_ic = 4
+
+		xp_cost = 15
+	}
+
+	tank_cyo_aa_2 = {
+		abbreviation = "cyo_aa_2"
+		category = tank_cyo_air
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_lightAA_missle
+			} 
+		}
+
+		add_stats = {
+			build_cost_ic = 6
+			breakthrough = 1.2
+			defense = 1.5
+		}
+		multiply_stats = {
+			reliability = -0.05
+			soft_attack = 0.07
+			hard_attack = 0.07
+			air_attack = 0.36
+		}
+		dismantle_cost_ic = 6
+
+		xp_cost = 20
+	}
+
+	tank_cyo_aa_2a = {
+		abbreviation = "cyo_aa_2a"
+		category = tank_cyo_air
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_lightAA_missle
+			} 
+		}
+
+		add_stats = {
+			build_cost_ic = 9
+			breakthrough = 1.6
+			defense = 2
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			reliability = -0.05
+			soft_attack = 0.1
+			hard_attack = 0.1
+			air_attack = 0.48
+		}
+		dismantle_cost_ic = 9
+
+		xp_cost = 25
+	}
+
+	tank_cyo_aa_3 = {
+		abbreviation = "cyo_aa_3"
+		category = tank_cyo_air
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_lightAA_missle
+			} 
+		}
+
+		add_stats = {
+			build_cost_ic = 12
+			breakthrough = 2
+			defense = 2.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			reliability = 0.5
+			soft_attack = 0.13
+			hard_attack = 0.13
+			air_attack = 0.7
+		}
+		dismantle_cost_ic = 12
+
+		xp_cost = 30
+	}
+
+	tank_cyo_aa_3a = {
+		abbreviation = "cyo_aa_3a"
+		category = tank_cyo_air
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_lightAA_missle
+			} 
+		}
+
+		add_stats = {
+			build_cost_ic = 15
+			breakthrough = 2.5
+			defense = 3
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			reliability = 0.5
+			soft_attack = 0.15
+			hard_attack = 0.15
+			air_attack = 0.72
+		}
+		dismantle_cost_ic = 15
+
+		xp_cost = 40
+	}
+}

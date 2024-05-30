@@ -886,17 +886,7 @@ leader_traits = {
 			trait_type = assignable_trait
 			any_parent = {organizer}
 		}
-		army_capicity = { 
-		type = land
-		trait_type = personality_trait
-		non_shared_modifier = {
-				 max_army_group_size = -7 
-				 max_commander_army_size = -90
-			}
-			new_commander_weight = {
-			base = 0
-		}
-		}
+	
 		offensive_doctrine = { 
 			type = field_marshal
 			gain_xp = {
@@ -1286,7 +1276,7 @@ leader_traits = {
 			}
 			cost = 1000
 			modifier = {
-				terrain_penalty_reduction = 0.30
+				terrain_penalty_reduction = 0.15 #0.30
 				acclimatization_cold_climate_gain_factor = 0.1
 				acclimatization_hot_climate_gain_factor = 0.1
 			}
@@ -1564,6 +1554,16 @@ leader_traits = {
 					attack = 0.1
 					defence = 0.1
 				}
+				residential = {
+					movement = 0.05
+					attack = 0.1
+					defence = 0.1
+				}
+				village = {
+					movement = 0.05
+					attack = 0.1
+					defence = 0.1
+				}
 			}
 			
 			ai_will_do = {
@@ -1683,6 +1683,7 @@ leader_traits = {
 			gui_row = 3
 		}
 		
+		### MPR
 		fortress_buster = {
 			type = corps_commander
 			gain_xp = {
@@ -1696,6 +1697,8 @@ leader_traits = {
 				fort = {
 					attack = 0.15
 				}
+				army_artillery_attack_factor = 0.20
+
 			}
 			enable_ability = siege_artillery
 			
@@ -1714,6 +1717,7 @@ leader_traits = {
 			any_parent = { trait_engineer }
 			mutually_exclusive = scavenger
 		}
+		###
 		
 		scavenger = { 
 			type = corps_commander
@@ -1841,6 +1845,7 @@ leader_traits = {
 			gui_row = 10
 		}
 		
+		### MPR
 		paratrooper = { 
 			type = corps_commander
 			gain_xp = {
@@ -1848,7 +1853,9 @@ leader_traits = {
 			}
 			cost = 500
 			modifier = {
-				extra_paratrooper_supply_grace = 240
+				#extra_paratrooper_supply_grace = 240
+				modifier_army_sub_unit_paratrooper_attack_factor = 0.10
+				modifier_army_sub_unit_paratrooper_defence_factor = 0.10
 			}
 			
 			enable_ability = glider_planes
@@ -1862,6 +1869,7 @@ leader_traits = {
 			
 			gui_row = 11
 		}
+		###
 		
 		
 		camouflage_expert = { 

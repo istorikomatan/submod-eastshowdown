@@ -19,13 +19,13 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 10
-		breakthrough = 2
+		breakthrough = 1.50 #was 2.0 reduced by 25%
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 3
-		hard_attack = 0.5
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 0.25 #was 0.5 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 
@@ -59,11 +59,11 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 16
-		breakthrough = 4
+		breakthrough = 3.00 #was 4.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 9
-		hard_attack = 1.5
+		soft_attack = 4.50 #was 9.0 reduced by 50%
+		hard_attack = 0.75 #was 1.5 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -83,11 +83,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 20
-		breakthrough = 5
+		breakthrough = 3.75 #was 5.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 12
-		hard_attack = 2
+		soft_attack = 6.00 #was 12.0 reduced by 50%
+		hard_attack = 1.00 #was 2.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -110,11 +110,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 24
-		breakthrough = 5
+		breakthrough = 3.75 #was 5.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 16
-		hard_attack = 3
+		soft_attack = 8.00 #was 16.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -134,11 +134,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 26
-		breakthrough = 6
+		breakthrough = 4.50 #was 6.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 19
-		hard_attack = 3
+		soft_attack = 9.50 #was 19.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -169,11 +169,11 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 16
-		breakthrough = 4
+		breakthrough = 3.00 #was 4.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 9
-		hard_attack = 1.5
+		soft_attack = 4.50 #was 9.0 reduced by 50%
+		hard_attack = 0.75 #was 1.5 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -194,11 +194,11 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 20
-		breakthrough = 5
+		breakthrough = 3.75 #was 5.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 12
-		hard_attack = 2
+		soft_attack = 6.00 #was 12.0 reduced by 50%
+		hard_attack = 1.00 #was 2.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -221,11 +221,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 24
-		breakthrough = 5
+		breakthrough = 3.75 #was 5.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 16
-		hard_attack = 3
+		soft_attack = 8.00 #was 16.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -245,11 +245,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 26
-		breakthrough = 6
+		breakthrough = 4.50 #was 6.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 19
-		hard_attack = 3
+		soft_attack = 9.50 #was 19.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -280,11 +280,11 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 16
-		breakthrough = 4
+		breakthrough = 3.00 #was 4.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 9
-		hard_attack = 1.5
+		soft_attack = 4.50 #was 9.0 reduced by 50%
+		hard_attack = 0.75 #was 1.5 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -305,11 +305,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 20
-		breakthrough = 5
+		breakthrough = 3.75 #was 5.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 12
-		hard_attack = 2
+		soft_attack = 6.00 #was 12.0 reduced by 50%
+		hard_attack = 1.00 #was 2.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -332,11 +332,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 24
-		breakthrough = 5
+		breakthrough = 3.75 #was 5.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 16
-		hard_attack = 3
+		soft_attack = 8.00 #was 16.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		
@@ -356,11 +356,11 @@ equipments = {
 		
 		#Defensive Abilities
 		defense = 26
-		breakthrough = 6
+		breakthrough = 4.50 #was 6.0 reduced by 25%
 
 		#Offensive Abilities
-		soft_attack = 19
-		hard_attack = 3
+		soft_attack = 9.50 #was 19.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 10
 		air_attack = 0
 		

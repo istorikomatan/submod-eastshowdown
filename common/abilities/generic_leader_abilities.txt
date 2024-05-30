@@ -30,18 +30,18 @@ ability = {
 		}
 		
 		cost = 0.22
-		duration = 168
+		duration = 24
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
 				combat_offense = 0.2
 				combat_breakthrough = 0.25
-				org_damage_multiplier = -1.0
+				org_damage_multiplier = -0.8
 				str_damage_multiplier = 0.6
 				war_support_reduction_on_damage = 0.2
 				cannot_retreat_while_attacking = 1.0
 				
-				days = 7
+				days = 1
 				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
 		}
@@ -61,18 +61,18 @@ ability = {
 		}
 		
 		cost = 0.22
-		duration = 168
+		duration = 24
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
 				combat_defense = 0.2
 				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
+				org_damage_multiplier = -0.95
 				str_damage_multiplier = 0.6
 				war_support_reduction_on_damage = 0.2
 				cannot_retreat_while_defending = 1.0
 				
-				days = 7
+				days = 1
 				tooltip = ABILITY_LAST_STAND_TOOLTIP
 			}
 		}
@@ -140,18 +140,78 @@ ability = {
 		allowed = {
 			has_ability = siege_artillery
 			is_border_war = no
+			NOT = {
+				From = {
+					tag = RUS
+				}
+			}
 		}
 		
 		unit_modifiers = {
-			fort = {
-				attack = 0.2
-			}
-			fortification_damage = 2.0
-			fortification_collateral_chance = 2.0
+			offence = -2.0
+			fortification_damage = 7.0
+			fortification_collateral_chance = 7.0
 		}
-		cost = 0.1
+
+		cost = 0.35
 		duration = 168
 		
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				combat_breakthrough = 50.0
+				org_damage_multiplier = -0.75
+				days = 7
+			}
+		}
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 1.5
+				}
+				
+				set_temp_variable = { temp = num_units_offensive_combats }
+				check_variable = { temp > 6 }
+				set_temp_variable = { temp2 = num_units_offensive_combats_against@fort }
+				divide_temp_variable = { temp2 = temp }
+				check_variable = { temp2 > 0.5 }
+				
+				add = 2
+			}
+		}
+	}
+
+	rus_siege_artillery = {
+		name = ABILITY_SIEGE_ARTILLERY
+		desc = ABILITY_SIEGE_ARTILLERY_DESC
+		
+		type = army_leader
+		
+		allowed = {
+			has_ability = siege_artillery
+			is_border_war = no
+			From = {
+			    tag = RUS
+			}
+		}
+		
+		unit_modifiers = {
+			offence = -2.0
+			fortification_damage = 10.0
+			fortification_collateral_chance = 10.0
+		}
+
+		cost = 0.5
+		duration = 168
+		
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				combat_breakthrough = 50.0
+				org_damage_multiplier = -0.75
+				days = 7
+			}
+		}
 		
 		ai_will_do = {
 			factor = -1
@@ -217,13 +277,12 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			has_ability = probing_attack
 			is_border_war = no
 		}
 		
 		unit_modifiers = {
 			dont_lose_dig_in_on_attack = 1.0
-			offence = -0.2
+			offence = -0.1
 		}
 		
 		cancelable = yes

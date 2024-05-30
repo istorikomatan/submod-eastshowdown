@@ -1,3 +1,4 @@
+
 division_template = {
 	name = "Pechotniy batalion"	
 	force_allow_recruiting = yes
@@ -145,6 +146,7 @@ division_template = {
 	priority = 2
 }
 
+### MPR
 division_template = {
 	name = "Spetsnaz"	
 	force_allow_recruiting = yes
@@ -166,10 +168,6 @@ division_template = {
 		BTR = {
 			x = 1
 			y = 0
-		}
-		BTR = {
-			x = 1
-			y = 1
 		}
 		BMP_2 = {
 			x = 2
@@ -223,6 +221,7 @@ division_template = {
 		}
 	}
 }
+###
 
 division_template = {
 	name = "Rosgvardiya"	
@@ -349,78 +348,13 @@ division_template = {
 	}
 }
 
-division_template = {
-	name = "TOS Batalion"	
-	force_allow_recruiting = yes
-	division_names_group = RUS_ART_03
-	#division_names_group = RUS_RART_01 # Группа названий для дивизий, необязательно
-	regiments = {
-		TOS = {
-			x = 0
-			y = 0
-		}
-		TOS = {
-			x = 0
-			y = 1
-		}
-		BMP_1 = {
-			x = 1
-			y = 0
-		}
-		infantry = {
-			x = 2
-			y = 0
-		}
-	}
-	support = {
-		engineer = {
-			x = 0
-			y = 0
-		}
-		field_hospital = {
-			x = 0
-			y = 1
-		}
-		signal_company = {
-			x = 0
-			y = 2
-		}
-		recon = {
-			x = 0
-			y = 3
-		}
-		logistics_company = {
-			x = 0
-			y = 4
-		}
-		artillery = {
-			x = 1
-			y = 0
-		}		#не баг
-		maintenance_company = {
-			x = 1
-			y = 1
-		}		#не баг
-		sniper = {
-			x = 1
-			y = 2
-		}		#не баг
-		atgm = {
-			x = 1
-			y = 3
-		}		#не баг
-		mortar = {
-			x = 1
-			y = 4
-		}
-	}
-}
-
+### MPR
 division_template = {
 	name = "Tazheliy artileriyskiy batalion"	
 	force_allow_recruiting = yes
 	division_names_group = RUS_ART_02
 	#division_names_group = RUS_RART_01 # Группа названий для дивизий, необязательно
+	#Combat width now 10 one MLRS was removed #MPR
 	regiments = {
 		Osadny_SAU = {
 			x = 0
@@ -433,10 +367,6 @@ division_template = {
 		Osadny_SAU = {
 			x = 0
 			y = 2
-		}
-		MRL = {
-			x = 0
-			y = 3
 		}
 		BMP_3 = {
 			x = 1
@@ -494,6 +424,80 @@ division_template = {
 		}
 	}
 }
+###
+
+### MPR
+division_template = {
+	name = "TOS Batalion"	
+	force_allow_recruiting = yes
+	division_names_group = RUS_ART_03
+	#division_names_group = RUS_RART_01 # Группа названий для дивизий, необязательно
+	regiments = {
+		TOS = {
+			x = 0
+			y = 0
+		}
+		TOS = {
+			x = 0
+			y = 1
+		}
+		TOS = {
+			x = 0
+			y = 2
+		}
+		BMP_1 = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		field_hospital = {
+			x = 0
+			y = 1
+		}
+		signal_company = {
+			x = 0
+			y = 2
+		}
+		recon = {
+			x = 0
+			y = 3
+		}
+		logistics_company = {
+			x = 0
+			y = 4
+		}
+		artillery = {
+			x = 1
+			y = 0
+		}		#не баг
+		maintenance_company = {
+			x = 1
+			y = 1
+		}		#не баг
+		sniper = {
+			x = 1
+			y = 2
+		}		#не баг
+		atgm = {
+			x = 1
+			y = 3
+		}		#не баг
+		mortar = {
+			x = 1
+			y = 4
+		}
+	}
+}
+###
 
 division_template = {
 	name = "Artileriysky batalion"	
@@ -566,6 +570,7 @@ division_template = {
 	}
 }
 
+### MPR
 division_template = {
 	name = "Paratroopers batalion"	
 	force_allow_recruiting = yes
@@ -587,6 +592,10 @@ division_template = {
 		Polevoi_SAU = {
 			x = 1
 			y = 0
+		}
+		Polevoi_SAU = {
+			x = 1
+			y = 1
 		}
 	}
 	support = {
@@ -628,6 +637,7 @@ division_template = {
 		}
 	}
 }
+###
 
 division_template = {
 	name = "Light paratrooper"
@@ -722,6 +732,7 @@ division_template = {
 	}
 }
 
+### MPR
 division_template = {
 	name = "Marines batalion"	
 	force_allow_recruiting = yes
@@ -739,6 +750,10 @@ division_template = {
 		marine = {
 			x = 0
 			y = 2
+		}
+		marine = {
+			x = 0
+			y = 3
 		}
 		Polevoi_SAU = {
 			x = 1
@@ -784,6 +799,7 @@ division_template = {
 		}
 	}
 }
+###
 
 division_template = {
 	name = "Batalion T90"	

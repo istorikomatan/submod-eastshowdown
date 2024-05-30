@@ -1,0 +1,314 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+
+#################### Armor
+
+	tank_armor_h_1 = {
+		abbreviation = "armor_h_1"
+		category = tank_armor_heavy
+
+		add_stats = {
+			build_cost_ic = 4
+			breakthrough = 2
+			defense = 1
+			armor_value = 50
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+		}
+		dismantle_cost_ic = 4
+
+		xp_cost = 10
+	}
+
+	tank_armor_h_2 = {
+		abbreviation = "armor_h_2"
+		category = tank_armor_heavy
+
+		add_stats = {
+			build_cost_ic = 7
+			breakthrough = 3.5
+			defense = 1.5
+			armor_value = 80
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+		}
+		dismantle_cost_ic = 7
+
+		xp_cost = 20
+	}
+
+	tank_armor_h_3 = {
+		abbreviation = "armor_h_3"
+		category = tank_armor_heavy
+
+		add_stats = {
+			build_cost_ic = 10
+			breakthrough = 4.5
+			defense = 2.5
+			armor_value = 120
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+		}
+		dismantle_cost_ic = 10
+
+		xp_cost = 30
+	}
+
+	tank_armor_h_4 = {
+		abbreviation = "armor_h_4"
+		category = tank_armor_heavy
+
+		add_stats = {
+			build_cost_ic = 13
+			breakthrough = 7
+			defense = 3.5
+			armor_value = 150
+		}
+		multiply_stats = {
+			maximum_speed = -0.08
+		}
+		dismantle_cost_ic = 13
+
+		xp_cost = 40
+	}
+
+	tank_armor_m_1 = {
+		abbreviation = "armor_m_1"
+		category = tank_armor_medium
+
+		add_stats = {
+			build_cost_ic = 2
+			breakthrough = 3
+			defense = 1
+			armor_value = 15
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		dismantle_cost_ic = 2
+
+		xp_cost = 10
+	}
+
+	tank_armor_m_2 = {
+		abbreviation = "armor_m_2"
+		category = tank_armor_medium
+
+		add_stats = {
+			build_cost_ic = 3
+			breakthrough = 3.5
+			defense = 1.5
+			armor_value = 20
+		}
+		multiply_stats = {
+			maximum_speed = -0.04
+		}
+		dismantle_cost_ic = 3
+
+		xp_cost = 25
+	}
+
+	tank_armor_l_1 = {
+		abbreviation = "armor_l_1"
+		category = tank_armor_light
+
+		add_stats = {
+			build_cost_ic = 1
+			breakthrough = 2
+			defense = 1
+			armor_value = 5
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+		}
+		dismantle_cost_ic = 1
+
+		xp_cost = 10
+	}
+
+	tank_armor_l_2 = {
+		abbreviation = "armor_l_2"
+		category = tank_armor_light
+
+		add_stats = {
+			build_cost_ic = 2
+			breakthrough = 3
+			defense = 2
+			armor_value = 10
+		}
+		multiply_stats = {
+			maximum_speed = -0.15
+		}
+		dismantle_cost_ic = 2
+
+		xp_cost = 20
+	}
+
+	tank_armor_r_1 = {
+		abbreviation = "armor_r_1"
+		category = tank_armor_reactive
+
+		add_stats = {
+			build_cost_ic = 1.5
+			breakthrough = 2
+			defense = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+			armor_value = 0.2
+		}
+		dismantle_cost_ic = 1.5
+
+		xp_cost = 10
+	}
+
+	tank_armor_r_2 = {
+		abbreviation = "armor_r_2"
+		category = tank_armor_reactive
+
+		add_stats = {
+			build_cost_ic = 3
+			breakthrough = 3
+			defense = 2
+		}
+		multiply_stats = {
+			maximum_speed = -0.06
+			armor_value = 0.3
+		}
+		dismantle_cost_ic = 3
+
+		xp_cost = 15
+	}
+
+	tank_armor_r_3 = {
+		abbreviation = "armor_r_3"
+		category = tank_armor_reactive
+
+		add_stats = {
+			build_cost_ic = 5
+			breakthrough = 5
+			defense = 2.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+			armor_value = 0.4
+		}
+		dismantle_cost_ic = 5
+
+		xp_cost = 20
+	}
+
+	tank_armor_r_4 = {
+		abbreviation = "armor_r_4"
+		category = tank_armor_reactive
+
+		add_stats = {
+			build_cost_ic = 6
+			breakthrough = 5
+			defense = 3
+		}
+		multiply_stats = {
+			maximum_speed = -0.08
+			armor_value = 0.3
+		}
+		dismantle_cost_ic = 6
+
+		xp_cost = 20
+	}
+
+	tank_armor_r_5 = {
+		abbreviation = "armor_r_5"
+		category = tank_armor_reactive
+
+		add_stats = {
+			build_cost_ic = 8
+			breakthrough = 6
+			defense = 4
+		}
+		multiply_stats = {
+			maximum_speed = -0.06
+			armor_value = 0.6
+		}
+		dismantle_cost_ic = 8
+
+		xp_cost = 25
+	}
+
+	tank_armor_r_6 = {
+		abbreviation = "armor_r_6"
+		category = tank_armor_reactive
+
+		add_stats = {
+			build_cost_ic = 10
+			breakthrough = 8
+			defense = 4.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+			armor_value = 0.7
+		}
+		dismantle_cost_ic = 10
+
+		xp_cost = 30
+	}
+
+	tank_armor_r_7 = {
+		abbreviation = "armor_r_7"
+		category = tank_armor_reactive
+
+		add_stats = {
+			build_cost_ic = 14
+			breakthrough = 10
+			defense = 7
+		}
+		multiply_stats = {
+			maximum_speed = -0.08
+			reliability = -0.01
+			armor_value = 0.9
+		}
+		dismantle_cost_ic = 14
+
+		xp_cost = 35
+	}
+
+	tank_armor_dop_1 = {
+		abbreviation = "armor_dop_1"
+		category = tank_armor_dop
+
+		add_stats = {
+			build_cost_ic = 2
+			breakthrough = 2
+			defense = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.04
+			armor_value = 0.1
+		}
+		dismantle_cost_ic = 1
+
+		xp_cost = 10
+	}
+
+	tank_armor_dop_2 = {
+		abbreviation = "armor_dop_2"
+		category = tank_armor_dop
+
+		add_stats = {
+			build_cost_ic = 1
+			breakthrough = 2
+			defense = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+			armor_value = 0.05
+		}
+		dismantle_cost_ic = 1
+
+		xp_cost = 5
+	}
+}

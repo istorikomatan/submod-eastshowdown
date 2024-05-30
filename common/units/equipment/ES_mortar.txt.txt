@@ -12,8 +12,8 @@ equipments = {
 		
 		active = no
 		
-		soft_attack = 2
-		hard_attack = 8
+		soft_attack = 1.00 #was 2.0 reduced by 50%
+		hard_attack = 4.00 #was 8.0 reduced by 50%
 		ap_attack = 60
 		air_attack = 0
 
@@ -42,8 +42,8 @@ equipments = {
 		priority = 10
 		visual_level = 1
 
-		soft_attack = 20
-		hard_attack = 3
+		soft_attack = 10.00 #was 20.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 0
 		air_attack = 0
 
@@ -62,8 +62,8 @@ equipments = {
 		priority = 10
 		visual_level = 2
 		
-		soft_attack = 25
-		hard_attack = 3
+		soft_attack = 12.50 #was 25.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 0
 		air_attack = 0
 
@@ -92,8 +92,8 @@ equipments = {
 		priority = 10
 		visual_level = 1
 
-		soft_attack = 20
-		hard_attack = 3
+		soft_attack = 10.00 #was 20.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 0
 		air_attack = 0
 
@@ -112,8 +112,8 @@ equipments = {
 		priority = 10
 		visual_level = 2
 		
-		soft_attack = 25
-		hard_attack = 3
+		soft_attack = 12.50 #was 25.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 0
 		air_attack = 0
 
@@ -142,8 +142,8 @@ equipments = {
 		priority = 10
 		visual_level = 1
 
-		soft_attack = 20
-		hard_attack = 3
+		soft_attack = 10.00 #was 20.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 0
 		air_attack = 0
 
@@ -162,8 +162,8 @@ equipments = {
 		priority = 10
 		visual_level = 2
 		
-		soft_attack = 25
-		hard_attack = 3
+		soft_attack = 12.50 #was 25.0 reduced by 50%
+		hard_attack = 1.50 #was 3.0 reduced by 50%
 		ap_attack = 0
 		air_attack = 0
 

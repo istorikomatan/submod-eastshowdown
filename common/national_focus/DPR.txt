@@ -1,6 +1,6 @@
 focus_tree = {
 	id = DPR
-	continuous_focus_position = { x = 4190 y = 920 } 
+	continuous_focus_position = { x = 0 y = 0 } 
 	country = {
 		factor = 0
 		modifier = {
@@ -9,571 +9,630 @@ focus_tree = {
 		}
 	}
 	default = no
+	##Подготовка к войне
 	focus = {
-		id = DPR_reshaushiigod
-		icon =  GFX_IMAGE_NOT_FOUND
-		x = 40
+		id = DPR_dark_clouds_over_donbass
+		icon = GFX_DPR_dark_clouds_over_donbass
+		cost = 0.2
+		x = 18
 		y = 0
-		cost = 0.5
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-	focus = {
-		id = DPR_tofuture
-		icon = GFX_IMAGE_NOT_FOUND
-		x = 44
-		y = 2
-		cost = 1.5
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		available = {
-			RUS = {
-				has_completed_focus = RUS_successful_negotiations
-			}
-		}
-		prerequisite = { focus = DPR_reshaushiigod  }
-		mutually_exclusive = { focus = DPR_ojidaemiyishod  }
-		completion_reward = {
-			add_stability = 1.00
-			add_war_support = -1.00
-		}
-	}
-	focus = {
-		id = DPR_zavtra
-		icon = GFX_IMAGE_NOT_FOUND
-		x = 44
-		y = 3
-		cost = 140
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_tofuture  }
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = DPR_ojidaemiyishod
-		icon = GFX_IMAGE_NOT_FOUND
-		x = 36
-		y = 2
-		cost = 1.5
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		available = {
-			OR = {
-				RUS = {
-					has_completed_focus = RUS_conflict_flares_up_again
-				}
-				RUS = {
-					has_completed_focus = RUS_failure_of_negotiations
-				}
-				RUS = {
-					has_completed_focus = RUS_there_will_be_no_peaceful_solution
-				}
-			}
-		}
-		prerequisite = { focus = DPR_reshaushiigod  }
-		mutually_exclusive = { focus = DPR_tofuture  }
-		completion_reward = {
-		}
-	}
-	#Тёмные тучи над Донбассом
-	focus = {
-		id = DPR_tyomnyetuchinaddonbassom
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_tyomnyetuchinaddonbassom
-		x = 36
-		y = 3
-		cost = 0.145
-		available = {
-			has_war=no
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_ojidaemiyishod  }
-		completion_reward = {
-			country_event = {
-				id = DPR.1
-				days = 0
-			}
-		}
-	}
-	#Усиление Блокпостов
-	focus = {
-		id = DPR_usilenieblokpostov
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_usilenieblokpostov
-		x = 36
-		y = 5
-		cost = 0.8
-		available = {
-			has_war=no
-		}
-		search_filters = {
-			FOCUS_FILTER_SPA_CIVIL_WAR
-		}
-		prerequisite = { focus = DPR_tyomnyetuchinaddonbassom  }
-		completion_reward = {
-			add_ideas = DNB_blokposti
-			add_manpower = -5000
-	    }
-	}
-	#Реформа вооруженных сил
-	focus = {
-		id = DPR_reformavoorujennihsil
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_konfiskaciyaoruzhiyaunaseleniya
-		x = 34
-		y = 4
-		cost = 0.8
-		available = {
-			has_war=no
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_tyomnyetuchinaddonbassom  }
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_2
-				amount = 10000
-				producer = RUS
-			}
-			add_stability = -0.05
-			add_ideas = DNB_profarmy
-		}
-	}
-
-	#За что мы сражаемся?
-	focus = {
-		id = DPR_zachtomysrazhaemsya
-		icon =  GFX_DPR_zachtomysrazhaemsya
-		x = 36
-		y = 7
-		cost = 0.8
-		available = {
-			has_war=no
-		}
-		search_filters = {
-			FOCUS_FILTER_WAR_SUPPORT
-		}
-		prerequisite = { focus = DPR_reformavoorujennihsil focus = DPR_usilenieblokpostov focus = DPR_borbasnavodchikami focus = DPR_evacuation_focus0 }
-		completion_reward = {
-			add_ideas = why_we_fight_focus
-		}
-	}
-
-	#Борьба с украинскими диверсантами
-	focus = {
-		id = DPR_borbasukrainskimidiversantami
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_borbasukrainskimidiversantami
-		x = 38
-		y = 5
-		cost = 1
-		available = {
-			has_war=no
-		}
-		search_filters = {
-			FOCUS_FILTER_SPA_CARLIST_UPRISING
-		}
-		prerequisite = { focus = DPR_tyomnyetuchinaddonbassom  }
-		completion_reward = {
-			add_ideas = DNB_diversanti_1
-	    }
-	}
-
-	#Эвакуация населения
-	focus = {
-		id = DPR_evacuation_focus0
-		icon =  GFX_DPR_evacuation_focus0
-		x = 40
-		y = 5
-		cost = 0.8
-		available = {
-			has_war=no
-		}
-		search_filters = {
-			FOCUS_FILTER_TFV_AUTONOMY
-		}
-		prerequisite = { focus = DPR_tyomnyetuchinaddonbassom  }
-		completion_reward = {
-			custom_effect_tooltip = DPR_tooltip_evacuation
-			add_stability = 0.1
-	    }
-	}
-
-	#Борьба с наводчиками
-	focus = {
-		id = DPR_borbasnavodchikami
-		icon =  GFX_DPR_borbasnavodchikami
-		x = 38
-		y = 6
-		cost = 1
-		available = {
-			has_war=no
-		}
-		search_filters = {
-			FOCUS_FILTER_WAR_SUPPORT
-		}
-		prerequisite = { focus = DPR_borbasukrainskimidiversantami  }
-		completion_reward = {
-			swap_ideas = {
-            remove_idea = DNB_diversanti_1
-            add_idea = DNB_diversanti_2
-			}
-		}
-	}
-
-	#Снова война...
-	focus = {
-		id = DPR_snovavoyna
-		icon =  GFX_DPR_snovavoyna
-		x = 16
-		y = 0
-		cost = 1
-		available = {
-			always = no
-		}
-		search_filters = {
-			FOCUS_FILTER_SPA_CIVIL_WAR
-		}
-		completion_reward = {
-			add_war_support = 0.15
-		}
-	}
-
-	#Мобилизация
-	focus = {
-		id = DPR_mobilizaciya
-		icon =  GFX_DPR_mobilizaciya
-		x = 18
-		y = 2
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = DPR_snovavoyna  }
-		completion_reward = {
-			add_war_support = -0.05
-			add_stability = -0.05
-			add_manpower = 25000
-			hidden_effect = {
-				news_event = {
-					id = news.65 
-					hours = 5
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = DPR_mobilizaciya2
-		icon =  GFX_IMAGE_NOT_FOUND
-		x = 18
-		y = 3
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = DPR_mobilizaciya  }
-		completion_reward = {
-			add_war_support = -0.15
-			add_stability = -0.10
-			add_manpower = 50000
-		}
-	}
-	
-	#Все должны воевать за родину
-	focus = {
-		id = DPR_vse_voyut
-		icon =  GFX_DPR_vsevoyut
-		x = 18
-		y = 4
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = DPR_mobilizaciya2  }
-		completion_reward = {
-			add_war_support = -0.3
-			add_stability = -0.25
-			add_manpower = 300000
-		}
-	}
-	
-	#Переговоры о вступлении в состав РФ
-	focus = {
-		id = DPR_vsutplenie_v_rf
-		icon =  GFX_IMAGE_NOT_FOUND
-		x = 16
-		y = 2
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		available = {
-			always = no
-		}
-		prerequisite = { focus = DPR_snovavoyna  }
-		completion_reward = {
-			add_war_support = 0.2
-			news_event = {
-				id = news.23
-			}
-		}
-	}
-	
-	#Донецкая народная республика - новый субъект РФ
-	focus = {
-		id = DPR_DPR_v_rf
-		icon =  GFX_IMAGE_NOT_FOUND
-		x = 16
-		y = 3
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		available = {
-			NOT = {
-				has_global_flag = novorossia_suchestvuet
-			}
-		}
-		prerequisite = { focus = DPR_vsutplenie_v_rf  }
-		completion_reward = {
-			add_stability = 0.25
-			news_event = {
-				id = news.24
-			}
-			RUS = {
-				set_autonomy = {
-					target = DPR
-					autonomous_state = autonomy_integrated_federal_subject
-				}
-			}
-		}
-	}
-
-	#Попросить у России защиту неба
-	focus = {
-		id = DPR_protect_sky
-		icon =  GFX_IMAGE_NOT_FOUND
-		x = 20
-		y = 2
-		cost = 1
-		prerequisite = { focus = DPR_snovavoyna  }
-		completion_reward = {
-			add_ideas = DNB_protect_sky
-		}
-	}
-
-	#Вставай, Донбасс!
-	focus = {
-		id = DPR_vstavaydonbass
-		icon = GFX_DPR_vstavaydonbass
-		x = 14
-		y = 2
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_WAR_SUPPORT
-		}
-		prerequisite = { focus = DPR_snovavoyna  }
-		completion_reward = {
-			swap_ideas = {
-            remove_idea = why_we_fight_focus
-            add_idea = why_we_fight_focus_2
-			}
-		}
-
-	}
-
-	#Бастион борьбы с нацизмом
-	focus = {
-		id = DPR_bastionborbysnacizmom
-		icon =  GFX_DPR_bastionborbysnacizmom
-		x = 14
-		y = 3
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_vstavaydonbass  }
-		completion_reward = {
-			swap_ideas = {
-            remove_idea = why_we_fight_focus_2
-            add_idea = why_we_fight_focus_3
-			}
-		}
-	}
-	
-	#Начало освобождения
-	focus = {
-		id = DPR_startosvobojd
-		icon =  GFX_IMAGE_NOT_FOUND
-		x = 10
-		y = 2
-		cost = 1
-		available = {
-			OR = {
-				DPR = {
-				controls_state = 237
-				controls_state = 213
-				controls_state = 182
-				controls_state = 165
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_snovavoyna  }
-		completion_reward = {
-			add_war_support=0.15
-		}
-	}
-	
-	#Свобода
-	focus = {
-		id = DPR_osvobozhdenierespublikiotokkupacii
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_osvobozhdenierespublikiotokkupacii
-		x = 12
-		y = 6
-		cost = 1
-		available = {
-			DPR = {
-				controls_state = 237
-				controls_state = 213
-				controls_state = 182
-				controls_state = 165
-				controls_state = 189
-				controls_state = 221
-				controls_state = 205
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_snovavoyna  }
-
-		completion_reward = {
-			add_stability = 0.15
-			add_war_support=-0.2
-		}
-		
-	}
-
-	#Очистить умы людей от бандеровской пропаганды
-	focus = {
-		id = DPR_ochistitumylyudeyotbanderovskoypropagandy
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_ochistitumylyudeyotbanderovskoypropagandy
-		x = 14
-		y = 7
-		cost = 1
-		available = {
-			DPR = {
-			controls_state = 237
-			controls_state = 213
-			controls_state = 182
-			controls_state = 165
-		}
-		}
-		search_filters = {
-			FOCUS_FILTER_USA_CONGRESS
-		}
-		prerequisite = { focus = DPR_osvobozhdenierespublikiotokkupacii  }
-		completion_reward = {
-			237 = {
-				add_core_of = DPR
-			}
-            213 = {
-				add_core_of = DPR
-			}
-			182 = {
-				add_core_of = DPR
-			}
-			149 = {
-				add_core_of = DPR
-			}
-			165 = {
-				add_core_of = DPR
-			}
-		}
-	}
-
-	#Мобилизация на освобожденных территориях
-	focus = {
-		id = DPR_mobilizaciyanaosvobozhdennyhterritoriyah
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_mobilizaciyanaosvobozhdennyhterritoriyah
-		x = 14
-		y = 8
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = DPR_ochistitumylyudeyotbanderovskoypropagandy  }
-		completion_reward = {
-			add_manpower = 25000
-			add_stability = -0.1
-		}
-	}
-
-	#Восстановление Донбасса
-	focus = {
-		id = DPR_vosstanovleniedonbassa
-		icon = GFX_IMAGE_NOT_FOUND 
-		x = 10
-		y = 7
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = DPR_osvobozhdenierespublikiotokkupacii  }
-		completion_reward = {
-			swap_ideas = {
-            remove_idea = DNB_donbass_in_ruins
-            add_idea = DNB_donbass_in_ruins_2
-			}
-		}
-	}
-
-	#Общественные работы
-	focus = {
-		id = DPR_obshchestvennyeraboty
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_obshchestvennyeraboty
-		x = 10
-		y = 9
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_privlechenievolontyorovizrossii  }
 		completion_reward={
-			remove_ideas = DNB_donbass_in_ruins_3 
-			}
+			custom_effect_tooltip = DLPR_another_year_tt
+		}
+		ai_will_do = { factor = 1 }
 	}
-
-	#Привлечение волонтёров из России
 	focus = {
-		id = DPR_privlechenievolontyorovizrossii
-		icon =  GFX_IMAGE_NOT_FOUND #GFX_DPR_privlechenievolontyorovizrossii
-		x = 10
-		y = 8
+		id = DPR_preparations_day_and_night
+		icon = GFX_DPR_preparations_day_and_night
+		relative_position_id = DPR_dark_clouds_over_donbass
+		prerequisite = { focus = DPR_dark_clouds_over_donbass }
+		cost = 0.3
+		x = 0
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_get_ready_for_the_inevitable_tt
+			add_command_power = 30
+			add_stability = 0.025
+			add_political_power = 50
+			add_timed_idea = { idea = DPR_get_ready_for_the_inevitable_idea days = 30}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_war_on_the_horizon
+		icon = GFX_DPR_war_on_the_horizon
+		relative_position_id = DPR_preparations_day_and_night
+		prerequisite = { focus = DPR_preparations_day_and_night }
+		cost = 0.3
+		x = -3
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_war_on_the_horizon_tt
+			army_experience = 25
+			add_command_power = 25
+			add_war_support = 0.02
+			add_timed_idea = { idea = DPR_prepare_the_army_idea days = 10}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_remind_the_russian_spring
+		icon = GFX_DPR_remind_the_russian_spring
+		relative_position_id = DPR_war_on_the_horizon
+		prerequisite = { focus = DPR_war_on_the_horizon }
+		cost = 0.3
+		x = 0
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_russian_spring_tt
+			army_experience = 30
+			add_war_support = 0.025
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_find_the_ammunition_for_our_soldiers
+		icon = GFX_DPR_find_the_ammunition_for_our_soldiers
+		relative_position_id = DPR_remind_the_russian_spring
+		prerequisite = { focus = DPR_remind_the_russian_spring }
+		cost = 0.3
+		x = -1
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_russian_spring_tt
+			add_political_power = 35
+			army_experience = 10
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 2000
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 950
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_3
+                amount = 200
+                producer = RUS
+            }
+			add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 400
+                producer = RUS
+            }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_mobolize_transport
+		icon = GFX_DPR_mobolise_the_transport
+		relative_position_id = DPR_remind_the_russian_spring
+		prerequisite = { focus = DPR_remind_the_russian_spring }
+		cost = 0.3
+		x = 1
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_russian_spring_tt
+			army_experience = 15
+			add_command_power = 20
+			add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 100
+                producer = DPR
+            }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_repair_the_remnants_of_tanks
+		icon = GFX_DPR_repair_the_remnants_of_tanks
+		relative_position_id = DPR_remind_the_russian_spring
+		prerequisite = { focus = DPR_mobolize_transport }
+		prerequisite = { focus = DPR_find_the_ammunition_for_our_soldiers }
+		cost = 0.6
+		x = 0
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_russian_spring_tt
+			add_command_power = 15
+			army_experience = 5
+			add_equipment_to_stockpile = {
+                type = T64_chassis
+                amount = 60
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = T72_chassis
+                amount = 40
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = T80_chassis
+                amount = 10
+                producer = DPR
+            }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_general_moblization
+		icon = GFX_DPR_general_moblization
+		relative_position_id =DPR_repair_the_remnants_of_tanks
+		prerequisite = { focus = DPR_repair_the_remnants_of_tanks }
 		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = DPR_vosstanovleniedonbassa  }
-		completion_reward = {
-			swap_ideas = {
-            remove_idea = DNB_donbass_in_ruins_2
-            add_idea = DNB_donbass_in_ruins_3
-			}
-			add_autonomy_score = {
-				value = -30
+		x = 0
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
 			}
 		}
+		completion_reward={
+			custom_effect_tooltip = DPR_general_moblization_tt
+			custom_effect_tooltip = DPR_russian_spring_tt
+			add_war_support = -0.1
+			hidden_effect = {
+			    swap_ideas = {
+				    remove_idea = society_medium
+				    add_idea = society_low
+			    }
+			    swap_ideas = {
+				    remove_idea = extensive_conscription
+				    add_idea = all_adults_serve
+			    }
+			    swap_ideas = {
+				    remove_idea = low_economic_mobilisation
+				    add_idea = tot_economic_mobilisation
+			    }
+				add_ideas = DPR_students_in_the_army 
+			}
+			add_ideas = DPR_students_in_the_army_idea
+		    add_timed_idea = { idea = DPR_postmobilisation_pizdec_idea days = 40}
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_0
+                amount = 10000
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 1000
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = mortar_1_eq
+                amount = 70
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = infantry_anti_tank_equipment_0
+                amount = 400
+                producer = DPR
+            }
+			add_equipment_to_stockpile = {
+                type = artillery_equipment_2
+                amount = 30
+                producer = DPR
+            }
+			hidden_effect = {
+			    division_template = {
+                    name = "Strelkoviy Batalion Rezerva NM DNR"
+                    is_locked = yes
+                    division_names_group = DPR_INF_01
+                    priority = 0
+                    template_counter = 0
+                    regiments = {
+                        infantry = { x = 0 y = 0 }
+                        infantry = { x = 0 y = 1 }
+                        infantry = { x = 0 y = 2 }
+                    }
+                    support = {
+                        command = { x = 0 y = 0 }
+					    signal_company = { x = 0 y = 1 }
+					    recon = { x = 1 y = 0 }
+					    field_hospital = { x = 1 y = 1 }
+				    }
+                }
+			    205 = {
+			        create_unit = { division = "name = \"1. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"2. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"3. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"4. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"5. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"6. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+                    create_unit = { division = "name = \"7. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"8. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"9. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"10. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"11. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"12. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"13. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"14. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"15. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"16. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"17. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"18. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"19. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"20. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"21. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+                    create_unit = { division = "name = \"22. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"23. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"24. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				    create_unit = { division = "name = \"25. batalion narodnogo opolcheniya\" division_template = \"Teretorialnaya oborona\" start_experience_factor = 0.01 start_equipment_factor = 0.01"  owner = DPR }
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_prepare_the_mgb
+		icon = GFX_DPR_prepare_the_MGB
+		relative_position_id = DPR_war_on_the_horizon
+		prerequisite = { focus = DPR_war_on_the_horizon }
+		cost = 0.7
+		x = -2
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_mgb_mobilization_tt
+			custom_effect_tooltip = DPR_mgb_modernisation_tt
+			hidden_effect{
+				create_intelligence_agency = {
+				    name = "MGB"
+				    icon = FSB
+			    }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_not_fallen_republic
+		icon = GFX_DPR_not_fallen_republic
+		relative_position_id = DPR_preparations_day_and_night
+		prerequisite = { focus = DPR_preparations_day_and_night }
+		cost = 0.3
+		x = 3
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_civilian_reforms_tt
+			add_stability = 0.05
+			add_war_support = 0.025
+			add_political_power = 75
+			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_strenghten_the_roadblocks
+		icon = GFX_DPR_strenghten_the_roadblocks
+		relative_position_id = DPR_not_fallen_republic
+		prerequisite = { focus = DPR_not_fallen_republic }
+		cost = 0.7
+		x = 0
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_civilian_reforms_tt
+			custom_effect_tooltip = DPR_roadblocks_tt
+			add_command_power = 35
+			army_experience = 5
+			hidden_effect = {
+				205 = {
+					add_building_construction = { type = bunker level = 1 province = 18743 }
+					add_building_construction = { type = bunker level = 1 province = 18583 }
+					add_building_construction = { type = bunker level = 1 province = 4271 }
+					add_building_construction = { type = bunker level = 1 province = 18574 }
+					add_building_construction = { type = bunker level = 1 province = 6147 }
+					add_building_construction = { type = bunker level = 1 province = 12420 }
+					add_building_construction = { type = bunker level = 1 province = 1934 }
+					add_building_construction = { type = bunker level = 1 province = 12644 }
+					add_building_construction = { type = bunker level = 1 province = 15976 }
+				}
+				221 = {
+					add_building_construction = { type = bunker level = 1 province = 18138 }
+					add_building_construction = { type = bunker level = 1 province = 12403 }
+					add_building_construction = { type = bunker level = 1 province = 8544 }
+					add_building_construction = { type = bunker level = 1 province = 7594 }
+					add_building_construction = { type = bunker level = 1 province = 2264 }
+					add_building_construction = { type = bunker level = 1 province = 10091 }
+					add_building_construction = { type = bunker level = 1 province = 18535 }
+					add_building_construction = { type = bunker level = 1 province = 18544 }
+				}
+				189 = {
+					add_building_construction = { type = bunker level = 1 province = 12176 }
+					add_building_construction = { type = bunker level = 1 province = 18621 }
+					add_building_construction = { type = bunker level = 1 province = 18592 }
+					add_building_construction = { type = bunker level = 1 province = 18623 }
+					add_building_construction = { type = bunker level = 1 province = 18630 }
+					add_building_construction = { type = bunker level = 1 province = 18648 }
+					add_building_construction = { type = bunker level = 1 province = 15964 }
+					add_building_construction = { type = bunker level = 1 province = 18674 }
+					add_building_construction = { type = bunker level = 1 province = 5403 }
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_evacuate_the_people
+		icon = GFX_DPR_evacuate_the_people
+		relative_position_id = DPR_strenghten_the_roadblocks
+		prerequisite = { focus = DPR_strenghten_the_roadblocks focus = DPR_strenghten_the_patrols }
+		cost = 0.3
+		x = 0
+		y = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_civilian_reforms_tt
+			add_political_power = 55
+			add_command_power = 45
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_fight_the_saboteurs
+		icon = GFX_DPR_fight_the_saboteurs
+		relative_position_id = DPR_not_fallen_republic
+		prerequisite = { focus = DPR_not_fallen_republic }
+		cost = 0.5
+		x = 2
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_civilian_reforms_tt
+			if = {
+				limit = {
+					has_completed_focus = DPR_prepare_the_mgb
+				}
+				custom_effect_tooltip = DPR_mgb_modernisation_tt
+			}
+			add_stability = 0.025
+			add_command_power = 25
+			add_political_power = 30
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_strenghten_the_patrols
+		icon = GFX_DPR_strenghten_the_patrols
+		relative_position_id = DPR_fight_the_saboteurs
+		prerequisite = { focus = DPR_fight_the_saboteurs }
+		cost = 0.5
+		x = 0
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_civilian_reforms_tt
+			if = {
+				limit = {
+					has_completed_focus = DPR_prepare_the_mgb
+				}
+				custom_effect_tooltip = DPR_mgb_modernisation_tt
+			}
+			add_command_power = 30
+			add_stability = 0.05
+			add_timed_idea = { idea = DPR_patrools_idea days = 20}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_on_high_alert
+		icon = GFX_DPR_on_high_alert
+		relative_position_id = DPR_general_moblization
+		prerequisite = { focus = DPR_general_moblization }
+		prerequisite = { focus = DPR_evacuate_the_people }
+		cost = 0.5
+		x = 4
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_we_are_ready_tt
+			add_timed_idea = { idea = DPR_on_high_alert_idea days = 15 }
+			add_command_power = 95
+			army_experience = 25
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_warriors_from_the_east
+		icon = GFX_DPR_warriors_from_the_east
+		relative_position_id = DPR_on_high_alert
+		prerequisite = { focus = DPR_on_high_alert }
+		cost = 0.3
+		x = 0
+		y = 1
+		completion_reward={
+			custom_effect_tooltip = DPR_warriors_from_the_east_tt
+			add_command_power = 35
+			army_experience = 25
+			add_timed_idea = { idea = DPR_lightning_strike_idea days = 10}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_cooperate_with_russian_goverment
+		icon = 404
+		relative_position_id = DPR_preparations_day_and_night
+		prerequisite = { focus = DPR_preparations_day_and_night }
+		cost = 0.3
+		x = 0
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_civilian_reforms_tt
+			custom_effect_tooltip = DPR_our_autonomy_tt
+			add_political_power = 90
+			add_stability = 0.025
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_expand_the_FSB_contacts
+		icon = 404
+		relative_position_id = DPR_cooperate_with_russian_goverment
+		prerequisite = { focus = DPR_cooperate_with_russian_goverment }
+		cost = 0.6
+		x = 1
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_civilian_reforms_tt
+			custom_effect_tooltip = DPR_our_autonomy_tt
+			if = {
+				limit = {
+					has_completed_focus = DPR_prepare_the_mgb
+				}
+				custom_effect_tooltip = DPR_mgb_modernisation_tt
+			}
+			add_political_power = 95
+			add_command_power = 45
+			army_experience = 10
+		}
+		ai_will_do = { factor = 1 }
+	}
+	focus = {
+		id = DPR_coordinate_with_VS_RF
+		icon = 404
+		relative_position_id = DPR_cooperate_with_russian_goverment
+		prerequisite = { focus = DPR_cooperate_with_russian_goverment }
+		cost = 0.3
+		x = -1
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SVO_not_started_tt
+				NOT = {
+				    has_war_with = UKR
+				}
+			}
+		}
+		completion_reward={
+			custom_effect_tooltip = DPR_russian_spring_tt
+			custom_effect_tooltip = DPR_our_autonomy_tt
+			add_command_power = 75
+			army_experience = 55
+			custom_effect_tooltip = DPR_cooperate_with_VS_RF_cet
+			add_to_variable = { var = DPR_NM_DNR_modifier_command_power_gain_mult value =  0.15 }
+			add_to_variable = { var = DPR_NM_DNR_planning_speed value =  0.2 }
+			add_to_variable = { var = DPR_NM_DNR_max_planning value =  0.25 }
+		}
+		ai_will_do = { factor = 1 }
 	}
 }
+	

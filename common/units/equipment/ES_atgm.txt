@@ -14,8 +14,8 @@ equipments = {
 		
 		active = no
 		
-		soft_attack = 2
-		hard_attack = 8
+		soft_attack = 1.00 #was 2.0 reduced by 50%
+		hard_attack = 4.00 #was 8.0 reduced by 50%
 		ap_attack = 60
 		air_attack = 2
 
@@ -46,8 +46,8 @@ equipments = {
 		priority = 10
 		visual_level = 1
 
-		soft_attack = 3
-		hard_attack = 12
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 6.00 #was 12.0 reduced by 50%
 		ap_attack = 80
 		air_attack = 2
 
@@ -66,8 +66,8 @@ equipments = {
 		priority = 10
 		visual_level = 2
 		
-		soft_attack = 3
-		hard_attack = 15
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 7.50 #was 15.0 reduced by 50%
 		ap_attack = 85
 		air_attack = 2
 
@@ -87,8 +87,8 @@ equipments = {
 		priority = 10
 		visual_level = 3
 		
-		soft_attack = 3
-		hard_attack = 18
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 9.00 #was 18.0 reduced by 50%
 		ap_attack = 95
 		air_attack = 0
 
@@ -119,8 +119,8 @@ equipments = {
 		priority = 10
 		visual_level = 1
 
-		soft_attack = 3
-		hard_attack = 12
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 6.00 #was 12.0 reduced by 50%
 		ap_attack = 80
 		air_attack = 0
 
@@ -139,8 +139,8 @@ equipments = {
 		priority = 10
 		visual_level = 2
 		
-		soft_attack = 3
-		hard_attack = 15
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 7.50 #was 15.0 reduced by 50%
 		ap_attack = 85
 		air_attack = 0
 
@@ -172,8 +172,8 @@ equipments = {
 		priority = 10
 		visual_level = 1
 
-		soft_attack = 3
-		hard_attack = 12
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 6.00 #was 12.0 reduced by 50%
 		ap_attack = 80
 		air_attack = 0
 
@@ -192,8 +192,8 @@ equipments = {
 		priority = 10
 		visual_level = 2
 		
-		soft_attack = 3
-		hard_attack = 15
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 7.50 #was 15.0 reduced by 50%
 		ap_attack = 85
 		air_attack = 0
 
@@ -213,8 +213,8 @@ equipments = {
 		priority = 10
 		visual_level = 3
 		
-		soft_attack = 3
-		hard_attack = 18
+		soft_attack = 1.50 #was 3.0 reduced by 50%
+		hard_attack = 9.00 #was 18.0 reduced by 50%
 		ap_attack = 95
 		air_attack = 0
 
