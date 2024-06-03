@@ -1264,9 +1264,9 @@ LFR_new_type_brigade = {
 				value = 3500
 				tooltip = LFR_recruits_var_remove1
 				}
-554 = {
+617 = {
 					create_unit = {
-						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
+						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pekhotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.01"
 						owner = LFR
 						prioritize_location = 19560
 						count = 1
@@ -1308,9 +1308,9 @@ LFR_new_type_brigade1 = {
 				var = LFR_recruits_var
 				value = 4000
 				}
-517 = {
+617 = {
 					create_unit = {
-						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
+						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mekhanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
 						owner = LFR
 						prioritize_location = 18933 
 						count = 1

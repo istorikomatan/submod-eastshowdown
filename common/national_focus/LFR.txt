@@ -50,10 +50,7 @@ focus_tree = {
 				idea = podgotovka_lfr
 				days = 30
 			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
+			
 			add_offsite_building = {
 				type = ammunition_plant
 				level = 5
@@ -123,7 +120,7 @@ focus = {
             }
         }
         completion_reward = {
-			set_cosmetic_tag = LFR_l
+			set_cosmetic_tag = LFR_1
 			load_focus_tree = {
     tree = LFR_after_war
             

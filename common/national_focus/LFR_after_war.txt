@@ -163,7 +163,20 @@ add_resource = {
 		}
 		x = 9
 		y = 3
-
+		completion_reward = {
+add_political_power = 100
+        add_stability = 0.05
+        add_war_support = 0.10
+        army_experience = 10	
+		add_timed_idea = {
+    idea =  LFR_morale
+    days = 365
+	}
+	country_event = {
+			id = LFR.8
+	
+	}
+	}
 	}
 	focus = {
 		id = LFR_one_oppocitia
@@ -177,12 +190,23 @@ add_resource = {
 		}
 		x = 7
 		y = 4
+		available = {
+					always = no
+					
+				}
+				bypass = {
+			has_country_flag =  LFR_net_peregovori
+		}
+			completion_reward = {
+		
+}		
+}
 
-	}
+	
 	focus = {
 		id = LFR_forum
-		icon = GFX_goal_unknown
-		cost = 10,00
+		icon = GFX_forum
+		cost = 0.143
 		prerequisite = {
 			focus = LFR_oposicia
 		}
@@ -191,7 +215,17 @@ add_resource = {
 		}
 		x = 11
 		y = 4
-
+available = {
+		always = no
+				}
+				
+			completion_reward = {
+			country_event = {
+			id = LFR.9
+			days = 0
+			}
+			
+}
 	}
 	focus = {
 		id = LFR_succses
@@ -205,8 +239,31 @@ add_resource = {
 		}
 		x = 9
 		y = 5
-
+available = {
+					always = no
+					
+				}
+				bypass = {
+			has_country_flag = LFR_prinili
+				}
+			completion_reward = {
+			 add_political_power = 100
+        add_stability  = 0.05
+		add_manpower = 17
+		country_event = {
+			id = LFR.11
+			}
+		RUS = {
+		add_popularity = {
+    ideology = democratic
+    popularity = 0.1
 	}
+	}
+}
+      
+			
+}
+	
 	focus = {
 		id = LFR_dogovors_help
 		icon = GFX_goal_unknown
@@ -216,11 +273,18 @@ add_resource = {
 		}
 		x = 9
 		y = 6
-
+available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+   add_ideas = sovmset_dogovors
+			
+			
+}
 	}
 	focus = {
 		id = LFR_ne_prinili
-		icon = GFX_goal_unknown
+		icon = GFX_ne_prinli
 		cost = 10,00
 		prerequisite = {
 			focus = LFR_forum
@@ -230,7 +294,25 @@ add_resource = {
 		}
 		x = 13
 		y = 5
-
+available = {
+					always = no 
+				}
+				bypass = {
+			has_country_flag = LFR_ne_prinili
+			}
+			completion_reward = {
+			 add_political_power = -50
+    add_stability = -0.1
+	country_event = {
+			id = LFR.12
+			}
+			RUS = {
+		add_popularity = {
+    ideology = neutrality
+    popularity = 0.01
+	}
+}
+	}
 	}
 	focus = {
 		id = LFR_conkurencia
@@ -241,28 +323,102 @@ add_resource = {
 		}
 		x = 13
 		y = 6
-
+available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+			add_political_power = 100
+ add_stability = -0.05
+   add_war_support = 0.10
+   country_event = {
+			id = LFR.13
+			}
+   add_ideas = LFR_competition_propaganda
+   
+			
+}
 	}
 	focus = {
 		id = LFR_fin_help
-		icon = GFX_goal_unknown
+		icon = GFX_money
 		cost = 10,00
 		prerequisite = {
 			focus = LFR_dogovors_help
 		}
 		x = 7
 		y = 7
+available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+add_political_power = 150
+        add_stability = 0.05
+        add_war_support = 0.05
+		add_resource = {
+    type = oil
+    amount = 10
+    state = 617
+}
+add_to_variable  = {
+    var = LFR_budget_var
+    value = 2500
+    tooltip = LFR_budget_var_add_3
+}
+country_event = {
+			id = LFR.14
+			}
+add_equipment_to_stockpile = {
+				type = ukr_infantry_equipment_3
+				amount = 5000
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 1000
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1	
+				amount = 100
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = ukr_infantry_anti_tank_equipment_2	
+				amount = 1000
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = ukr_atgm_1_eq	
+				amount = 100
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = ukr_infantry_anti_air_equipment_2	
+				amount = 100
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = ukr_mortar_2_eq	
+				amount = 100
+				producer = UKR
+			}
 
+}
 	}
 	focus = {
 		id = polit_ad
-		icon = GFX_goal_unknown
+		icon = GFX_propoganda
 		cost = 10,00
 		prerequisite = {
 			focus = LFR_dogovors_help
 		}
 		x = 11
 		y = 7
-
+available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+			
+}
 	}
 }

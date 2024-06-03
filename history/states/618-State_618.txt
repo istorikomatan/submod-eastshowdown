@@ -1,0 +1,26 @@
+state = {
+	id = 618
+	name = "Пограничная зона Любчане-Сушаны"
+	manpower = 1000
+
+	state_category = small_town
+
+	provinces = {
+		2370
+	}
+
+	history = {
+		owner = UKR
+		
+	
+		victory_points = { 2370 1 }
+		
+		
+		buildings = {
+		}
+		
+		add_core_of = UKR
+	}
+
+	buildings_max_level_factor = 0.75
+}

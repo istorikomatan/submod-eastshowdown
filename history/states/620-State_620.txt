@@ -1,0 +1,26 @@
+state = {
+	id = 620
+	name = "Пограничная зона Козинка"
+	manpower = 1000
+
+	state_category = small_town
+
+	provinces = {
+		1675 6736 3997 15091 1995 5738 4687
+	}
+
+	history = {
+		owner = UKR
+		
+	
+		victory_points = {  6736 1 }
+		
+		
+		buildings = {
+		}
+		
+		add_core_of = UKR
+	}
+
+	buildings_max_level_factor = 0.75
+}

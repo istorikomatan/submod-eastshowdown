@@ -111,6 +111,117 @@ days = 30
 		hidden = yes
     }
 	country_event = {
+    id = LFR.8
+    title = LFR.8.t
+    desc = LFR.8.desc
+    picture = GFX_LFR_mirnaya
+    is_triggered_only = yes
+
+    option = {
+        name = LFR.8.a
+        set_country_flag = LFR_net_peregovori
+		clr_country_flag = LFR_peregovori
+    }
+    option = {
+        name = LFR.8.b
+        add_political_power = 100
+		complete_national_focus =  LFR_forum
+    }
+}
+country_event = {
+    id = LFR.9
+    title = LFR.9.t
+    desc = LFR.9.desc
+    picture = GFX_LFR_forum_nachalo
+    is_triggered_only = yes
+
+    option = {
+        name = LFR.9.a
+        country_event = {
+		id = LFR.10
+		}
+		
+    }
+}
+country_event = {
+    id = LFR.10
+    title = LFR.10.t
+    desc = LFR.10.desc
+    picture = GFX_fond
+    is_triggered_only = yes
+
+    option = {
+        name = LFR.10.a	
+		set_country_flag = LFR_prinili
+		clr_country_flag =LFR_ne_prinili
+    }
+	 option = {
+        name = LFR.10.b	
+		set_country_flag = LFR_ne_prinili
+		clr_country_flag =  LFR_prinili
+    }
+}
+country_event = {
+    id = LFR.11
+    title = LFR.11.t
+    desc = LFR.11.desc
+    is_triggered_only = yes
+
+    option = {
+        name = LFR.11.a
+		add_political_power = 50
+    add_stability = 0.03
+		
+    }
+
+}
+country_event = {
+    id = LFR.12
+    title = LFR.12.t
+    desc = LFR.12.desc
+    is_triggered_only = yes
+
+    option = {
+        name = LFR.12.a
+		add_political_power = -50
+add_stability = -0.03
+		
+    }
+
+}
+country_event = {
+    id = LFR.13
+    title = LFR.13.t
+    desc = LFR.13.desc
+    is_triggered_only = yes
+
+    option = {
+        name = LFR.13.a
+		add_political_power = 100
+ add_stability = -0.05
+ add_war_support = 0.10
+		
+    }
+	}
+	country_event = {
+    id = LFR.14
+    title = LFR.14.t
+    desc = LFR.14.desc
+    is_triggered_only = yes
+
+    option = {
+        name = LFR.14.a
+		add_political_power = 150
+        add_stability = 0.05
+        add_war_support = 0.05
+		
+		
+    }
+	}
+
+
+
+	country_event = {
     id = LFR.1
 	days = 380
     title = "War Event"

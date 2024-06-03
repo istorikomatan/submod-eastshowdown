@@ -373,6 +373,12 @@
  Prohibition_of_OPFL_desc: "Запрет ОПЗЖ"
  Increase_Zelenskys_ratings: "Нарастить рейтинги Зеленского"
  Increase_Zelenskys_ratings_desc: "Нарастить рейтинги Зеленского"
+ Finance_construction_of_new_fortifications: "Финансировать строительство новых фортификаций"
+ Finance_construction_of_new_fortifications_desc: "Финансировать строительство новых фортификаций"
+ Start_using_dragon_tooths: "Начать использование зубов дракона"
+ Start_using_dragon_tooths_desc: "Начать использование зубов дракона"
+ Terror_TTSK: "Террор ТЦК"
+ Terror_TTSK_desc: "Террор ТЦК"
   LFR_party_long: "Лево-центристы"
   
   # ЛСР-фокусы
@@ -392,6 +398,17 @@
     LFR_defence_kiev: "Оборона Киева"
     LFR_contract: "Подписать контракт с ВСУ"
     LFR_combat: "Боевые действия"
+    LFR_oposicia: "Мирная оппозиция"
+    LFR_forum: "Форум свободной России"
+    LFR_one_oppocitia: "Единственная реальная оппозиция"
+     LFR_succses: "Успешные переговоры"
+      LFR_ne_prinili: "Нас не приняли"
+     LFR_conkurencia: "Конкуренция"
+    LFR_dogovors_help: "Проработка договоров совместной помощи"
+    LFR_fin_help: "Финансовая помощь"
+     polit_ad: "Политическая реклама"
+     
+    
   
   #ЛСР-мать твоя шлюха
      LFR_party: "Лево-центристы"

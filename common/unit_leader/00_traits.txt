@@ -886,7 +886,17 @@ leader_traits = {
 			trait_type = assignable_trait
 			any_parent = {organizer}
 		}
-	
+	army_capicity = { 
+		type = land
+		trait_type = personality_trait
+		non_shared_modifier = {
+				 max_army_group_size = -7 
+				 max_commander_army_size = -90
+			}
+			new_commander_weight = {
+			base = 0
+		}
+		}
 		offensive_doctrine = { 
 			type = field_marshal
 			gain_xp = {

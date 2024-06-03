@@ -1,4 +1,4 @@
-capital = 554
+capital = 617
 oob = LFR_2022
 set_research_slots = 0
 

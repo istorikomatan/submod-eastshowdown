@@ -2176,6 +2176,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/UKR/Starlink_in_Ukraine.png"
 	}
 	spriteType = {
+		name = "GFX_Terror_TTSK"
+		texturefile = "gfx/interface/goals/UKR/Terror_TTSK.png"
+	}
+	spriteType = {
+		name = "GFX_Crimea_bridge_should_be_destoyed"
+		texturefile = "gfx/interface/goals/UKR/Crimea_bridge_should_be_destoyed.png"
+	}
+	spriteType = {
+		name = "GFX_Attack_military_centers_in_crimea"
+		texturefile = "gfx/interface/goals/UKR/Attack_military_centers_in_crimea.png"
+	}
+	spriteType = {
 		name = "GFX_start"
 		texturefile = "gfx/interface/goals/LFR/start.dds"
 	}
@@ -2227,4 +2239,28 @@ spriteTypes = {
 		name = "GFX_LPR_Declare_a_general_Mobilization"
 		texturefile = "gfx/interface/goals/LPR/LPR_Declare_a_general_Mobilization.dds"
 	}
+	spriteType = {
+		name = "GFX_LPR_Prepare_for_the_critical_phase_of_the_conflict"
+		texturefile = "gfx/interface/goals/LPR/LPR_Prepare_for_the_critical_phase_of_the_conflict.dds"
+	}
+	spriteType = {
+		name = "GFX_LPR_Arm_the_Interior_Ministry_operatives"
+		texturefile = "gfx/interface/goals/LPR/LPR_Arm_the_Interior_Ministry_operatives.dds"
+	}
+	spriteType = {
+        name = "GFX_forum"
+        texturefile = "gfx/interface/goals/LFR/forum.dds"
+    }
+	spriteType = {
+        name = "GFX_money"
+        texturefile = "gfx/interface/goals/LFR/money.dds"
+    }
+	spriteType = {
+        name = "GFX_ne_prinli"
+        texturefile = "gfx/interface/goals/LFR/ne_prinli.dds"
+    }
+	spriteType = {
+        name = "GFX_propoganda"
+        texturefile = "gfx/interface/goals/LFR/propoganda.dds"
+    }
 }

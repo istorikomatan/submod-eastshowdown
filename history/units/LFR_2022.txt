@@ -128,3 +128,144 @@ division_template = {
 		}
 	}
 }
+division_template = {
+	name = "Mekhanizirovaniy batalion"
+	force_allow_recruiting = yes
+	regiments = {
+	BTR = {
+			x = 0
+			y = 0
+		}
+		BMP_1 = {
+			x = 0
+			y = 2
+		}
+		BTR = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+		}
+support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		field_hospital = {
+			x = 0
+			y = 1
+		}
+		signal_company = {
+			x = 0
+			y = 2
+		}
+		recon = {
+			x = 0
+			y = 3
+		}
+		logistics_company = {
+			x = 0
+			y = 4
+		}
+		
+		signal_company = {
+			x = 1
+			y = 0
+		}
+		maintenance_company = {
+			x = 1
+			y = 1
+		}		#Не баг
+		atgm = {
+			x = 1
+			y = 2
+		}	
+		mortar = {
+			x = 1
+			y = 3
+		}
+		artillery_nig = {
+			x = 1
+			y = 4
+		}
+artillery = {
+			x = 1
+			y = 5
+		}		#не баг		#Не баг
+	}
+}
+division_template = {
+	name = "Pekhotniy batalion"
+	force_allow_recruiting = yes
+	regiments = {
+		spetsnaz = {
+			x = 0
+			y = 0
+		}
+		spetsnaz = {
+			x = 0
+			y = 1
+		}
+		spetsnaz = {
+			x = 0
+			y = 2
+		}
+		BTR = {
+			x = 1
+			y = 1
+		}
+		BMP_1 = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		field_hospital = {
+			x = 0
+			y = 1
+		}
+		signal_company = {
+			x = 0
+			y = 2
+		}
+		recon = {
+			x = 0
+			y = 3
+		}
+		logistics_company = {
+			x = 0
+			y = 4
+		}
+		artillery_nig = {
+			x = 0
+			y = 5
+		}
+		maintenance_company = {
+			x = 1
+			y = 0
+		}		#Не баг
+		atgm = {
+			x = 1
+			y = 1
+		}	
+		mortar = {
+			x = 1
+			y = 2
+		}
+		sniper = {
+			x = 1
+			y = 3
+		}
+		artillery = {
+			x = 1
+			y = 4
+		}
+	}
+}

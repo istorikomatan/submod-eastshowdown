@@ -1050,6 +1050,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/country_event_149.dds"
 	}
 	spriteType = {
+		name = "GFX_country_event_150"
+		texturefile = "gfx/event_pictures/country_event_150.dds"
+	}
+	spriteType = {
+		name = "GFX_country_event_151"
+		texturefile = "gfx/event_pictures/country_event_151.dds"
+	}
+	spriteType = {
 		name = "GFX_random_event_001"
 		texturefile = "gfx/event_pictures/re_event_001.dds"
 	}
@@ -1124,5 +1132,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_random_event_019"
 		texturefile = "gfx/event_pictures/re_event_019.dds"
+	}
+	spriteType = {
+		name = "GFX_LFR_mirnaya"
+		texturefile = "gfx/event_pictures/LFR_mirnaya.dds"
+	}
+	spriteType = {
+		name = "GFX_LFR_forum_nachalo"
+		texturefile = "gfx/event_pictures/LFR_forum_nachalo.dds"
+	}
+	spriteType = {
+		name = "GFX_fond"
+		texturefile = "gfx/event_pictures/fond.dds"
 	}
 }
