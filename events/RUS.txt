@@ -4655,10 +4655,7 @@ country_event = {
 				    id = putin_mission.5
 					days = 15
 				} 
-ROOT = { 
-				    set_variable = {
-					    RUS_general_name_for_loc = PREV 
-					} 
+			}
 			random_army_leader = { 
 			    limit = { 
 				    is_field_marshal = no
@@ -4671,10 +4668,7 @@ ROOT = {
 				    id = putin_mission.5
 					days = 25
 				} 
-ROOT = { 
-				    set_variable = {
-					    RUS_general_name_for_loc = PREV 
-					} 
+			}
         }
     }
 }
@@ -6071,5 +6065,3 @@ country_event = {
 		custom_effect_tooltip = RUS_tt_decision_to_repair_bridge
     }
 }
-
-
