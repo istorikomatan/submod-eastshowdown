@@ -7,9 +7,10 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = national_democracy
+			ideology = authoritarian_democracy 
 			expire = no
-			traits = { war_democrat }
+			traits = { LFR_Cesar_desc }
+			 desc = LFR_Cesar_desc
 		}
 	}
 	 LFR_Cesar_1 = {

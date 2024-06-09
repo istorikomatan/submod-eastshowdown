@@ -1194,7 +1194,7 @@ add_to_variable = {
 }						
 }
 }
-FR_ad4  = {
+LFR_ad4  = {
         cost = 500
         days_remove = 45
         ai_will_do = {

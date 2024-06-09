@@ -14,25 +14,17 @@ set_power_balance = {
 set_convoys = 0
 create_intelligence_agency = yes
 set_popularities = {
-                democratic = 32
-                neutrality = 21
+                democratic = 21
+                neutrality = 32
                 fascism = 27
                 communism = 20
 }
 
 set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
 				elections_allowed = no
-				long_name = LFR_party_long
-				name = LFR_party
-}
-create_country_leader =  {
-name = "LFR_Cesar"
-decs= "Максимилиа́н Алекса́ндрович Андро́нников (позывной — Цезарь) — русский оппозиционер национал-либерального толка,  заместитель командира Легиона «Свобода России» по военно-гражданскому сотрудничеству. Также являлся членом Съезда народных депутатов -  оппозиционное собрание бывших депутатов разных уровней и созывов из России, претендующее на то, чтобы стать переходным парламентом "Свободной России""
-picture = "Cesar_LFR.dds"
-idealogy = authoritarian_democracy
-traits = {
-}
+				long_name = LFR_n_long
+				name = LFR_n
 }
 create_field_marshal = {
  name = "LFR_Cesar_1"
@@ -55,19 +47,6 @@ create_field_marshal = {
 			logistics_skill=5
 			}
 recruit_character = LFR_Cesar
-
-set_politics = {
-				ruling_party = democratic
-				elections_allowed = no
-				long_name = LFR_party_long
-				name = LFR_party
-}
-set_popularities = {
-                democratic = 32
-                neutrality = 21
-                fascism = 27
-                communism = 20
-}
 set_party_name = {
                 ideology = neutrality
                 long_name = LFR_n_long

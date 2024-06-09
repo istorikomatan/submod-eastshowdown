@@ -218,40 +218,269 @@ country_event = {
 		
     }
 	}
-
-
-
+country_event = {
+    id = LFR.15
+    title = LFR.15.t
+    desc = LFR.15.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.15.a
+		}
+		}
+		country_event = {
+    id = LFR.16
+    title = LFR.16.t
+    desc = LFR.16.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.16.a
+		}
+		}
+		country_event = {
+    id = LFR.17
+    title = LFR.17.t
+    desc = LFR.17.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.17.a
+		}
+		}
+		country_event = {
+    id = LFR.18
+    title = LFR.18.t
+    desc = LFR.18.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.18.a
+		}
+		}
+		country_event = {
+    id = LFR.19
+    title = LFR.19.t
+    desc = LFR.19.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.19.a
+		}
+		}
+		country_event = {
+    id = LFR.20
+    title = LFR.20.t
+    desc = LFR.20.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.20.a
+		}
+		}
+		country_event = {
+    id = LFR.21
+    title = LFR.21.t
+    desc = LFR.21.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.21.a
+		}
+		}
+		country_event = {
+    id = LFR.22
+    title = LFR.22.t
+    desc = LFR.22.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.22.a
+		}
+		}
+		country_event = {
+    id = LFR.23
+    title = LFR.23.t
+    desc = LFR.23.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.23.a
+  clr_country_flag =  LFR_not_podpishem
+set_country_flag =	LFR_podpishem
+		}
+		option = {
+        name = LFR.23.b
+		clr_country_flag =  LFR_podpishem 
+		set_country_flag = LFR_not_podpishem
+		}
+		}
+	country_event = {
+    id = LFR.24
+    title = LFR.24.t
+    desc = LFR.24.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.24.a
+  
+		}
+		}
+		country_event = {
+    id = LFR.25
+    title = LFR.25.t
+    desc = LFR.25.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.25.a
+  
+		}
+		}	
+		country_event = {
+    id = LFR.26
+    title = LFR.26.t
+    desc = LFR.26.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.26.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.27
+    title = LFR.27.t
+    desc = LFR.27.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.27.a
+		country_event = {
+		id = LFR.28
+		}
+		
+  
+		}
+		}
+	country_event = {
+    id = LFR.28
+    title = LFR.28.t
+    desc = LFR.28.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.28.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.29
+    title = LFR.29.t
+    desc = LFR.29.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.29.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.30
+    title = LFR.30.t
+    desc = LFR.30.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.30.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.31
+    title = LFR.31.t
+    desc = LFR.31.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.31.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.32
+    title = LFR.32.t
+    desc = LFR.32.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.32.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.33
+    title = LFR.33.t
+    desc = LFR.33.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.33.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.34
+    title = LFR.34.t
+    desc = LFR.34.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.34.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.35
+    title = LFR.35.t
+    desc = LFR.35.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.35.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.36
+    title = LFR.36.t
+    desc = LFR.36.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.36.a
+		
+  
+		}
+		}
 	country_event = {
     id = LFR.1
 	days = 380
-    title = "War Event"
-    desc = "This is a war declaration event."
+    title = LFR.1.t
+    desc = LFR.1.desc
     picture = GFX_report_event_default
     is_triggered_only = yes
 	
     option = {
-        name = "Declare War on Russia"
+        name = LFR.1.a
         ai_chance = {
             base = 100
         }
        start_border_war = {
-    change_state_after_war = no
-    attacker = {
-        state = 89
-        num_provinces = 1
-        on_win = 
-        on_lose = 
-        on_cancel = 
+    change_state_after_war = yes
+     attacker = {
+        state = 620
+        num_provinces = 4
+        on_win = japan_border_conflict.2
+        on_lose = japan_border_conflict.3
+        on_cancel = japan_border_conflict.4
         modifier = 0.1
         dig_in_factor = 0
         terrain_factor = 0
     }	
     defender = {
-        state = 371
-        num_provinces = 1
-        on_win = 
-        on_lose = 
-        on_cancel =
+        state = 622
+        num_provinces = 4
+        on_win = japan_border_conflict.3
+        on_lose = japan_border_conflict.2
+        on_cancel = japan_border_conflict.4
     }
 }
         }

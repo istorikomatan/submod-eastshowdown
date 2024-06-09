@@ -1,5 +1,9 @@
 focus_tree = {
 	id = LFR_after_war
+	continuous_focus_position = {
+		x = 2500
+		y = 1
+	}
 	country = {
 		factor = 0
 		modifier = {
@@ -8,33 +12,33 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 20 y = 1200 }
 	focus = {
 		id = LFR_meetings
-		icon = GFX_meetings1 # Используйте правильное имя иконки
-		cost = 1
+		icon = GFX_meetings1
+		cost = 1,00
 		x = 4
 		y = 0
-		available = {
-			original_tag = LFR
-		}
-		completion_reward = {
-			RUS = { add_stability = -0.10 
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.05
+			available = {
+					original_tag = LFR
 				}
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.10
-			}
-			country_event = {
-			id = LFR.5
-			}
-		}
-	}
+			completion_reward = {
+					RUS = {
+							add_stability = -0.10
+							add_popularity = {
+									ideology = democratic
+									popularity = 0.05
+								}
+						}
+					add_popularity = {
+							ideology = democratic
+							popularity = 0.10
+						}
+					country_event = {
+							id = LFR.5
+						}
+				}
 
+	}
 	focus = {
 		id = LFR_defence_kiev
 		icon = GFX_defence_kiev
@@ -49,50 +53,48 @@ focus_tree = {
 					original_tag = LFR
 				}
 			completion_reward = {
-			add_timed_idea = {
-    idea =  LFR_kyiv_defense_morale_boost
-    days = 45
-}
-add_timed_idea = {
-    idea =  LFR_temp_defense_boost
-    days = 30
-}
-			73 = {
-			add_building_construction = {
-            type = bunker
-            level = 3
-			province = {
-        all_provinces = yes
-		}
-		}
-      add_building_construction = {
-            type = anti_air_building
-            level = 2
-			province = {
-        all_provinces = yes
-		}
-        }
-		
-}
- 86 = {
- add_building_construction = {
-            type = bunker
-            level = 3
-			province = {
-        all_provinces = yes
-		}
-		}
-      add_building_construction = {
-            type = anti_air_building
-            level = 2
-			province = {
-        all_provinces = yes
-		}
-        }
-}
+					add_timed_idea = {
+							idea = LFR_kyiv_defense_morale_boost
+							days = 45
+						}
+					add_timed_idea = {
+							idea = LFR_temp_defense_boost
+							days = 30
+						}
+					73 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = {
+											all_provinces = yes
+										}
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					86 = {
+							add_building_construction = {
+									type = bunker
+									level = 3
+									province = {
+											all_provinces = yes
+										}
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 2
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+				}
 
-
-	}
 	}
 	focus = {
 		id = LFR_contract
@@ -108,24 +110,23 @@ add_timed_idea = {
 					original_tag = LFR
 				}
 			completion_reward = {
-			add_opinion_modifier = {
-    target = UKR
-    modifier =  same_ruling_party
-}
-add_political_power  = 75
- add_war_support = 0.1
-add_timed_idea = {
-    idea =  LFR_better_supply_lines
-    days = 90
-}		
-add_timed_idea = {
-    idea =  LFR_joint_operations
-    days = 1095
-}		
-}
-}
+					add_opinion_modifier = {
+							target = UKR
+							modifier = same_ruling_party
+						}
+					add_political_power = 75
+					add_war_support = 0.1
+					add_timed_idea = {
+							idea = LFR_better_supply_lines
+							days = 90
+						}
+					add_timed_idea = {
+							idea = LFR_joint_operations
+							days = 1095
+						}
+				}
 
-	
+	}
 	focus = {
 		id = LFR_combat
 		icon = GFX_combat_actions
@@ -139,20 +140,292 @@ add_timed_idea = {
 					original_tag = LFR
 				}
 			completion_reward = {
-army_experience = 25
- add_ideas = LFR_combat_efficiency
- add_ideas = LFR_improved_logistics
- add_resource = {
-    type = oil
-    amount = 5
-    state = 617
+					army_experience = 25
+					add_ideas = LFR_combat_efficiency
+					add_ideas = LFR_improved_logistics
+					add_resource = {
+							type = oil
+							amount = 5
+							state = 617
+						}
+					add_resource = {
+							type = steel
+							amount = 3
+							state = 617
+						}
+				}
+
+	}
+	focus = {
+		id = LFR_small_group
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_combat
+		}
+		x = 1
+		y = 4
+available = {
+		original_tag = LFR			
+				}
+			completion_reward = {
+			add_timed_idea = {
+							idea = LFR_small_group_actions_idea
+							days = 165
+						}
+			
+			
+				}
+	}
+	focus = {
+		id = LFR_succes_in_TG
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_small_group
+		}
+		x = 0
+		y = 5
+available = {
+					
+				}
+			completion_reward = {
+			add_political_power = 50
+			add_stability  = 0.05
+			country_event = {
+							id = LFR.15
+						}
+				}
+	}
+	focus = {
+		id = LFR_operations
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_small_group
+		}
+		x = 2
+		y = 5
+available = {
+					
+				}
+			completion_reward = {
+			add_ideas = LFR_joint_operations_boost                           
+			add_war_support = 0.05
+			add_stability = 0.03
+        add_political_power = 75
+		617 = {
+					create_unit = {
+						division = "name = \"Mekhanizirovanniy batal'on legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+						owner = LFR
+						prioritize_location = 18933
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"Pechotniy batal'on legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.4 start_equipment_factor = 0.1"
+						owner = LFR
+						prioritize_location = 18933
+						count = 1
+					}
+				}
+			
+				}
+	}
+	focus = {
+		id = LFR_peredislokacia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_succes_in_TG
+		}
+		prerequisite = {
+			focus = LFR_operations
+		}
+		x = 1
+		y = 6
+available = {
+					
+				}
+			completion_reward = {
+			add_timed_idea = {  idea = strategic_redeployment  days = 31 }
+			country_event = {
+							id = LFR.16
+						}
+						mark_focus_tree_layout_dirty = yes
+				}
+	}
+	focus = {
+		id = LFR_donetsk
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_peredislokacia
+		}
+		x = 1
+		y = 7
+allow_branch  = {
+has_completed_focus = LFR_peredislokacia
 }
-add_resource = {
-    type = steel
-    amount = 3
-    state = 617
-}
-}
+available = {
+ 
+
+					
+				}
+			completion_reward = {
+			 	
+
+add_war_support = 0.2
+			country_event = {
+							id = LFR.17
+						}
+			
+				}
+	}
+	focus = {
+		id = LFR_bahmut
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_donetsk
+		}
+		prerequisite = {
+			focus = LFR_donetsk
+		}
+		x = 1
+		y = 8
+available = {
+	WGN = {
+	has_completed_focus = WGN_bakhmut
+	}
+				}
+			completion_reward = {
+			add_war_support = 0.10  # Увеличение поддержки войны на 10%
+        add_stability = -0.05
+		army_experience = 20
+		add_timed_idea = { idea = LFR_bakhmut_meat_grinder_idea 
+		days = 365 
+		}
+		country_event = {
+							id = LFR.18
+						}
+			
+				}
+	}
+	focus = {
+		id = LFR_stupki
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_bahmut
+		}
+		x = 0
+		y = 9
+available = {
+					
+				}
+			completion_reward = {
+		add_timed_idea = { idea = 	LFR_stupki_prom_idea 
+		days = 31
+		}
+		add_stability = -0.03  # Уменьшение стабильности на 3%
+        add_war_support = -0.05
+		
+				}
+	}
+	focus = {
+		id = LFR_promzona
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_bahmut
+		}
+		x = 2
+		y = 9
+available = {
+					
+				}
+			completion_reward = {
+			add_timed_idea = { idea = 	LFR_stupki_prom_idea days = 31}
+			add_stability = -0.03  # Уменьшение стабильности на 3%
+        add_war_support = -0.05
+		
+				}
+	}
+	focus = {
+		id = LFR_airport
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_promzona
+		}
+		prerequisite = {
+			focus = LFR_stupki
+		}
+		x = 2
+		y = 10
+available = {
+					
+				}
+			completion_reward = {
+			add_stability = -0.05 # Уменьшение стабильности на 3%
+        add_war_support = -0.1
+		add_timed_idea = { idea =  LFR_azom_aero_idea days = 31}
+			country_event = {
+							id = LFR.20
+						}
+				}
+	}
+	focus = {
+		id = LFR_azom
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_stupki
+		}
+		prerequisite = {
+			focus = LFR_promzona
+		}
+		x = 0
+		y = 10
+available = {
+					
+				}
+			completion_reward = {
+			add_stability = -0.04 # Уменьшение стабильности на 3%
+        add_war_support = -0.06
+		add_timed_idea = { idea = LFR_azom_aero_idea2 days = 31}
+			country_event = {
+							id = LFR.19
+						}
+				}
+	}
+	focus = {
+		id = LFR_ivanovskoe
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_airport
+		}
+		prerequisite = {
+			focus = LFR_azom
+		}
+		prerequisite = {
+			focus = LFR_airport
+		}
+		x = 2
+		y = 11
+available = {
+					
+				}
+			completion_reward = {
+			add_stability = -0.1  # Уменьшение стабильности на 3%
+        add_war_support = -0.3
+		add_timed_idea = { idea =  LFR_iva_chrom_idea days = 90}
+		country_event = {
+							id = LFR.21
+						}
+		
+				}
 	}
 	focus = {
 		id = LFR_oposicia
@@ -163,20 +436,20 @@ add_resource = {
 		}
 		x = 9
 		y = 3
-		completion_reward = {
-add_political_power = 100
-        add_stability = 0.05
-        add_war_support = 0.10
-        army_experience = 10	
-		add_timed_idea = {
-    idea =  LFR_morale
-    days = 365
-	}
-	country_event = {
-			id = LFR.8
-	
-	}
-	}
+			completion_reward = {
+					add_political_power = 100
+					add_stability = 0.05
+					add_war_support = 0.10
+					army_experience = 10
+					add_timed_idea = {
+							idea = LFR_morale
+							days = 365
+						}
+					country_event = {
+							id = LFR.8
+						}
+				}
+
 	}
 	focus = {
 		id = LFR_one_oppocitia
@@ -190,23 +463,21 @@ add_political_power = 100
 		}
 		x = 7
 		y = 4
-		available = {
+			available = {
 					always = no
-					
 				}
-				bypass = {
-			has_country_flag =  LFR_net_peregovori
-		}
+			bypass = {
+					has_country_flag = LFR_net_peregovori
+				}
 			completion_reward = {
-		
-}		
+
 }
 
-	
+	}
 	focus = {
 		id = LFR_forum
 		icon = GFX_forum
-		cost = 0.143
+		cost = 0,14
 		prerequisite = {
 			focus = LFR_oposicia
 		}
@@ -215,17 +486,16 @@ add_political_power = 100
 		}
 		x = 11
 		y = 4
-available = {
-		always = no
+			available = {
+					always = no
 				}
-				
 			completion_reward = {
-			country_event = {
-			id = LFR.9
-			days = 0
-			}
-			
-}
+					country_event = {
+							id = LFR.9
+							days = 0
+						}
+				}
+
 	}
 	focus = {
 		id = LFR_succses
@@ -239,31 +509,28 @@ available = {
 		}
 		x = 9
 		y = 5
-available = {
+			available = {
 					always = no
-					
 				}
-				bypass = {
-			has_country_flag = LFR_prinili
+			bypass = {
+					has_country_flag = LFR_prinili
 				}
 			completion_reward = {
-			 add_political_power = 100
-        add_stability  = 0.05
-		add_manpower = 17
-		country_event = {
-			id = LFR.11
-			}
-		RUS = {
-		add_popularity = {
-    ideology = democratic
-    popularity = 0.1
+					add_political_power = 100
+					add_stability = 0.05
+					add_manpower = 17
+					country_event = {
+							id = LFR.11
+						}
+					RUS = {
+							add_popularity = {
+									ideology = democratic
+									popularity = 0.1
+								}
+						}
+				}
+
 	}
-	}
-}
-      
-			
-}
-	
 	focus = {
 		id = LFR_dogovors_help
 		icon = GFX_goal_unknown
@@ -273,14 +540,242 @@ available = {
 		}
 		x = 9
 		y = 6
+			available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+					add_ideas = sovmset_dogovors
+				}
+
+	}
+	focus = {
+		id = LFR_fin_help
+		icon = GFX_money
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_dogovors_help
+		}
+		x = 7
+		y = 7
+			available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+					add_political_power = 150
+					add_stability = 0.05
+					add_war_support = 0.05
+					add_resource = {
+							type = oil
+							amount = 10
+							state = 617
+						}
+					add_to_variable = {
+							var = LFR_budget_var
+							value = 2500
+							tooltip = LFR_budget_var_add_3
+						}
+					country_event = {
+							id = LFR.14
+						}
+					add_equipment_to_stockpile = {
+							type = ukr_infantry_equipment_3
+							amount = 5000
+							producer = UKR
+						}
+					add_equipment_to_stockpile = {
+							type = support_equipment_1
+							amount = 1000
+							producer = UKR
+						}
+					add_equipment_to_stockpile = {
+							type = motorized_equipment_1
+							amount = 100
+							producer = UKR
+						}
+					add_equipment_to_stockpile = {
+							type = ukr_infantry_anti_tank_equipment_2
+							amount = 1000
+							producer = UKR
+						}
+					add_equipment_to_stockpile = {
+							type = ukr_atgm_1_eq
+							amount = 100
+							producer = UKR
+						}
+					add_equipment_to_stockpile = {
+							type = ukr_infantry_anti_air_equipment_2
+							amount = 100
+							producer = UKR
+						}
+					add_equipment_to_stockpile = {
+							type = ukr_mortar_2_eq
+							amount = 100
+							producer = UKR
+						}
+				}
+
+	}
+	focus = {
+		id = polit_ad
+		icon = GFX_propoganda
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_dogovors_help
+		}
+		x = 11
+		y = 7
+			available = {
+					original_tag = LFR
+				}
+			completion_reward = {
+			add_political_power = 150  # Увеличение политической власти на 150
+        add_stability = 0.05
+
+}
+
+	}
+	focus = {
+		id = LFR_Irpen
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = polit_ad
+		}
+		prerequisite = {
+			focus = LFR_fin_help
+		}
+		x = 9
+		y = 8
 available = {
 					original_tag = LFR
 				}
 			completion_reward = {
-   add_ideas = sovmset_dogovors
-			
-			
+			add_political_power = 200  # Увеличение политической власти на 200
+        add_stability = 0.10 
+		add_ideas = LFR_irpen_declaration
+			country_event = {
+							id = LFR.23
+						}
+
 }
+	}
+	focus = {
+		id = LFR_prinyat
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_Irpen
+		}
+		bypass = {
+					has_country_flag = LFR_podpishem 
+				}
+		x = 6
+		y = 9
+available = {
+					always = no
+				}
+			completion_reward = {
+			add_political_power = 200  # Увеличение политической власти на 200
+        add_stability = 0.10
+		add_ideas = LFR_irpen_declarationok
+		country_event = {
+							id = LFR.24
+						}
+	
+
+}
+	}
+	focus = {
+		id = LFR_rosdep
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_prinyat
+		}
+		x = 8
+		y = 10
+
+	
+	available = {
+				
+				}
+			completion_reward = {
+			create_country_leader = {
+	name = LFR_ilya_ponomarev
+	desc = "POLITICS_LFR_ilya_ponomarev_DESC"
+	expire = "1976.1.1"
+	ideology = national_democracy
+	traits = {
+	}
+}
+add_political_power = 10
+add_stability = 0.05
+country_event = {
+							id = LFR.25
+						}
+	}
+	}
+
+
+	focus = {
+		id = LFR_speach
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_rosdep
+		}
+		x = 8
+		y = 11
+available = {
+				
+				}
+			completion_reward = {
+			add_political_power = 25
+add_stability = 0.01
+country_event = {
+							id = LFR.26
+						}
+	}
+	}
+	focus = {
+		id = LFR_obrashenya
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_speach
+		}
+		x = 10
+		y = 12
+available = {
+				
+				}
+			completion_reward = {
+			add_ideas = LFR_obrshenya
+			country_event = {
+							id = LFR.27
+						}
+	}
+	}
+	focus = {
+		id = LFR_amnistia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_obrashenya
+		}
+		x = 10
+		y = 13
+available = {
+				
+				}
+			completion_reward = {
+			add_manpower = 10000
+			add_ideas = LFR_amnistia
+			country_event = {
+							id = LFR.36
+						}
+						
+	}
 	}
 	focus = {
 		id = LFR_ne_prinili
@@ -294,25 +789,26 @@ available = {
 		}
 		x = 13
 		y = 5
-available = {
-					always = no 
+			available = {
+					always = no
 				}
-				bypass = {
-			has_country_flag = LFR_ne_prinili
-			}
+			bypass = {
+					has_country_flag = LFR_ne_prinili
+				}
 			completion_reward = {
-			 add_political_power = -50
-    add_stability = -0.1
-	country_event = {
-			id = LFR.12
-			}
-			RUS = {
-		add_popularity = {
-    ideology = neutrality
-    popularity = 0.01
-	}
-}
-	}
+					add_political_power = -50
+					add_stability = -0.1
+					country_event = {
+							id = LFR.12
+						}
+					RUS = {
+							add_popularity = {
+									ideology = neutrality
+									popularity = 0.01
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = LFR_conkurencia
@@ -323,102 +819,552 @@ available = {
 		}
 		x = 13
 		y = 6
-available = {
+			available = {
 					original_tag = LFR
 				}
+			completion_reward = {
+					add_political_power = 100
+					add_stability = -0.05
+					add_war_support = 0.10
+					country_event = {
+							id = LFR.13
+						}
+					add_ideas = LFR_competition_propaganda
+				}
+
+	}
+	focus = {
+		id = LFR_net
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_Irpen
+		}
+		x = 13
+		y = 9
+		bypass = {
+					has_country_flag = LFR_not_podpishem
+				}
+available = {
+					always = no
+				}
+				
+			completion_reward = {
+				
+				}
+	}
+	focus = {
+		id = LFR_odni_k_pobede
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_net
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = LFR_raids
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_contract
+		}
+		x = 19
+		y = 3
+available = {
+				date > 2023.3.1	
+				}
+				
+			completion_reward = {
+				country_event = {
+				id = LFR.29
+				}
+				add_war_support = 0.2
+				
+				}
+	}
+	focus = {
+		id = LSR_podgotovka
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_raids
+		}
+		x = 19
+		y = 4
+available = {
+					
+				}
+				
+			completion_reward = {
+				set_state_owner = 620
+				set_state_controller = 620
+				add_war_support = 0.1
+				add_command_power = 15
+				army_experience = 15
+				}
+	}
+	focus = {
+		id = LFR_equipment
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LSR_podgotovka
+		}
+		x = 18
+		y = 5
+available = {
+	has_equipment = {
+     ukr_infantry_equipment_3 > 999
+	 }
+	 has_equipment = {
+	 support_equipment_1 > 499
+	 }
+	 has_equipment = {
+	 ukr_infantry_anti_tank_equipment_2 > 299
+	 }
+	 has_equipment = {
+	 ukr_atgm_1_eq > 299
+}
+has_equipment = {	
+	ukr_infantry_anti_air_equipment_2 > 199
+	}
+	has_equipment = {
+	 ukr_mortar_2_eq > 99
+}	 
+	 
+	 
+}	
+				
+				
+			completion_reward = {
+				
+				}
+	}
+	focus = {
+		id = LFR_drg
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LSR_podgotovka
+		}
+		x = 20
+		y = 5
+available = {
+				}
+				
+			completion_reward = {
+			set_unit_organization = 0.3
+				620 = {
+					create_unit = {
+						division = "name = \"DRG legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.5"
+						owner = LFR
+						prioritize_location = 6736
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"DRG legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
+						owner = LFR
+						prioritize_location = 1675
+						count = 1
+					}
+				}
+				RBZ = {
+				622 = {
+				create_unit = {
+						division = "name = \"Porganichiki\" division_template = \"Rosgvardiya\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
+						owner = RBZ
+						prioritize_location = 12900
+						count = 2
+					}
+				
+				}
+	}
+	}
+	}
+	focus = {
+		id = LFR_granica
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_drg
+		}
+		prerequisite = {
+			focus = LFR_equipment
+		}
+		x = 19
+		y = 6
+available = {
+					
+				}
+				
+			completion_reward = {
+			add_timed_idea  ={ 
+			idea = LFR_raid1
+			days= 15 }
+				country_event = {
+				id = LFR.1 
+				}
+				}
+	}
+	focus = {
+		id = LFR_mir
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = act_lustracii
+		}
+		x = 6
+		y = 16
+
+	}
+	focus = {
+		id = LFR_konstitucia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_prava
+		}
+		x = 10
+		y = 16
+
+	}
+	focus = {
+		id = LFR_osvobozdenie_kozinki
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_granica
+		}
+		x = 18
+		y = 7
+available = {
+					
+				}
+				
+			completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			country_event = {
+			id = LFR.30
+			}
+				
+				}
+	}
+	focus = {
+		id = LFR_glotovo
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_granica
+		}
+		x = 20
+		y = 7
+available = {
+					
+				}
+				
+			completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.2
+				country_event = {
+			id = LFR.31
+			}
+			
+				}
+	}
+	focus = {
+		id = LFR_chromo
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_azom
+			focus = LFR_azom
+		}
+		prerequisite = {
+			focus = LFR_azom
+		}
+		prerequisite = {
+			focus = LFR_airport
+		}
+		x = 0
+		y = 11
+available = {
+					
+				}
+			completion_reward = {
+			add_stability = -0.1  # Уменьшение стабильности на 3%
+        add_war_support = -0.3
+		add_timed_idea = { idea =  LFR_iva_chrom_idea days = 90}
+
+	}
+	}
+	focus = {
+		id = LFR_chasovyar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_ivanovskoe
+		}
+		prerequisite = {
+			focus = LFR_chromo
+		}
+		x = 1
+		y = 12
+available = {
+					
+				}
+			completion_reward = {
+			add_stability = 0.1  # Уменьшение стабильности на 3%
+        add_war_support = 0.1
+		add_timed_idea = { idea =  LFR_chasov_yar_idea days = 365 }
+		country_event = {
+							id = LFR.22
+						}
+		}
+	}
+	focus = {
+		id = LFR_2raid
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_othod
+			focus = LFR_dalshe
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = LSR_podgotovka2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_2raid
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = LFR_equipment2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LSR_podgotovka2
+		}
+		x = 18
+		y = 11
+
+	}
+	focus = {
+		id = LFR_drg2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LSR_podgotovka2
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = LFR_granica2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_drg2
+		}
+		prerequisite = {
+			focus = LFR_equipment2
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = LFR_tavolzhanka
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_granica2
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = LFR_dalshe1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_tavolzhanka
+		}
+		mutually_exclusive = {
+			focus = LFR_otsup
+		}
+		x = 18
+		y = 14
+
+	}
+	focus = {
+		id = LFR_otsup
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_tavolzhanka
+		}
+		mutually_exclusive = {
+			focus = LFR_dalshe1
+		}
+		x = 20
+		y = 14
+
+	}
+	focus = {
+		id = LFR_dalshe
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_glotovo
+		}
+		prerequisite = {
+			focus = LFR_osvobozdenie_kozinki
+		}
+		mutually_exclusive = {
+			focus = LFR_othod
+		}
+		x = 18
+		y = 8
+available = {
+				
+				}
+				
+			completion_reward = {
+				country_event = {
+				id = LFR.32
+				}
+				}
+	}
+	focus = {
+		id = LFR_othod
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_glotovo
+		}
+		prerequisite = {
+			focus = LFR_osvobozdenie_kozinki
+		}
+		mutually_exclusive = {
+			focus = LFR_dalshe
+		}
+		x = 20
+		y = 8
+available = {
+					
+				}
+				
+			completion_reward = {
+			add_war_support = 0.1
+				add_command_power = 15
+				army_experience = 15
+				country_event = {
+				id = LFR.33
+				}
+				}
+	}
+	focus = {
+		id = act_soprotivlenii
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_speach
+		}
+		x = 6
+		y = 12
+available = {
+					
+				}
+				
+			completion_reward = {
+			add_ideas = LFR_soprotilenie
+			country_event = {
+							id = LFR.34
+						}
+				}
+	}
+	focus = {
+		id = act_lustracii
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_rosdep2
+		}
+		x = 6
+		y = 15
+
+	}
+	focus = {
+		id = LFR_rosdep2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_amnistia
+		}
+		prerequisite = {
+			focus = LFR_predparlament
+		}
+		x = 8
+		y = 14
+
+	}
+	focus = {
+		id = LFR_prava
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = LFR_rosdep2
+		}
+		x = 10
+		y = 15
+
+	}
+	focus = {
+		id = LFR_predparlament
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = act_soprotivlenii
+		}
+		x = 6
+		y = 13
+available = {
+					
+				}
+				
 			completion_reward = {
 			add_political_power = 100
- add_stability = -0.05
-   add_war_support = 0.10
-   country_event = {
-			id = LFR.13
-			}
-   add_ideas = LFR_competition_propaganda
-   
-			
-}
+			country_event = {
+			id = LFR.35
+				}
+				}
 	}
 	focus = {
-		id = LFR_fin_help
-		icon = GFX_money
+		id = LFR_rosdep3
+		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
-			focus = LFR_dogovors_help
+			focus = LFR_mir
 		}
-		x = 7
-		y = 7
-available = {
-					original_tag = LFR
-				}
-			completion_reward = {
-add_political_power = 150
-        add_stability = 0.05
-        add_war_support = 0.05
-		add_resource = {
-    type = oil
-    amount = 10
-    state = 617
-}
-add_to_variable  = {
-    var = LFR_budget_var
-    value = 2500
-    tooltip = LFR_budget_var_add_3
-}
-country_event = {
-			id = LFR.14
-			}
-add_equipment_to_stockpile = {
-				type = ukr_infantry_equipment_3
-				amount = 5000
-				producer = UKR
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment_1
-				amount = 1000
-				producer = UKR
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment_1	
-				amount = 100
-				producer = UKR
-			}
-			add_equipment_to_stockpile = {
-				type = ukr_infantry_anti_tank_equipment_2	
-				amount = 1000
-				producer = UKR
-			}
-			add_equipment_to_stockpile = {
-				type = ukr_atgm_1_eq	
-				amount = 100
-				producer = UKR
-			}
-			add_equipment_to_stockpile = {
-				type = ukr_infantry_anti_air_equipment_2	
-				amount = 100
-				producer = UKR
-			}
-			add_equipment_to_stockpile = {
-				type = ukr_mortar_2_eq	
-				amount = 100
-				producer = UKR
-			}
+		prerequisite = {
+			focus = LFR_konstitucia
+		}
+		x = 8
+		y = 17
 
-}
-	}
-	focus = {
-		id = polit_ad
-		icon = GFX_propoganda
-		cost = 10,00
-		prerequisite = {
-			focus = LFR_dogovors_help
-		}
-		x = 11
-		y = 7
-available = {
-					original_tag = LFR
-				}
-			completion_reward = {
-			
-}
 	}
 }
