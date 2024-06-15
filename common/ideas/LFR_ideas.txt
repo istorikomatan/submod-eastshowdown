@@ -545,3 +545,48 @@ LFR_competition_propaganda = {
 		experience_gain_army_factor = 0.2
 		}
 		}
+		LFR_lustracia = {
+		allowed = {
+           original_tag = LFR
+        }
+		modifier = {
+		stability_factor = -0.3
+		war_support_factor = -0.15
+		resistance_growth_on_our_occupied_states = 0.3
+		}
+		}
+		LFR_pravarr = {
+		allowed = {
+           original_tag = LFR
+        }
+		modifier = {
+		stability_factor = 0.05
+		war_support_factor = 0.1
+		resistance_growth_on_our_occupied_states = 0.1
+		compliance_growth = 0.1 
+		
+		}
+		}
+		LFR_raid2 = {
+		 allowed = {
+           original_tag = LFR
+        }
+        modifier = {
+		army_attack_factor =  0.3
+		army_defence_factor  = 0.1
+		army_morale_factor = 0.1
+		army_org_factor = 0.3
+		
+		}
+		}
+		LFR_first_head = {
+		allowed = {
+           original_tag = LFR
+        }
+		modifier = {
+		stability_factor = 0.1
+		compliance_growth = 0.1 
+		
+		}
+		}
+		

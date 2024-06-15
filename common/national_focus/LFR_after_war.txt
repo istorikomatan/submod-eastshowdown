@@ -1018,7 +1018,10 @@ available = {
 		}
 		x = 6
 		y = 16
-
+completion_reward = {
+add_political_power = 100
+add_stability = 0.1
+}
 	}
 	focus = {
 		id = LFR_konstitucia
@@ -1026,6 +1029,10 @@ available = {
 		cost = 10,00
 		prerequisite = {
 			focus = LFR_prava
+		}
+		completion_reward = {
+		add_ideas = LFR_first_head
+		
 		}
 		x = 10
 		y = 16
@@ -1136,6 +1143,12 @@ available = {
 		}
 		x = 19
 		y = 9
+		completion_reward = {
+		add_war_support = 0.05
+		country_event = {
+		id = LFR.38
+		}
+		}
 
 	}
 	focus = {
@@ -1147,7 +1160,13 @@ available = {
 		}
 		x = 19
 		y = 10
-
+completion_reward = {
+				set_state_owner = 621
+				set_state_controller = 621
+				add_war_support = 0.1
+				add_command_power = 15
+				army_experience = 15
+				}
 	}
 	focus = {
 		id = LFR_equipment2
@@ -1158,7 +1177,33 @@ available = {
 		}
 		x = 18
 		y = 11
-
+available = {
+	has_equipment = {
+     ukr_infantry_equipment_3 > 999
+	 }
+	 has_equipment = {
+	 support_equipment_1 > 499
+	 }
+	 has_equipment = {
+	 ukr_infantry_anti_tank_equipment_2 > 299
+	 }
+	 has_equipment = {
+	 ukr_atgm_1_eq > 299
+}
+has_equipment = {	
+	ukr_infantry_anti_air_equipment_2 > 199
+	}
+	has_equipment = {
+	 ukr_mortar_2_eq > 99
+}	 
+	 
+	 
+}	
+				
+				
+			completion_reward = {
+				
+				}
 	}
 	focus = {
 		id = LFR_drg2
@@ -1169,7 +1214,37 @@ available = {
 		}
 		x = 20
 		y = 11
-
+available = {
+				}
+				
+			completion_reward = {
+			set_unit_organization = 0.3
+				621 = {
+					create_unit = {
+						division = "name = \"DRG legiona «Svoboda Rossii»\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.8 start_equipment_factor = 0.5"
+						owner = LFR
+						prioritize_location = 18381
+						count = 1
+					}
+					create_unit = {
+						division = "name = \"DRG legiona «Svoboda Rossii»\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.6 start_equipment_factor = 0.5"
+						owner = LFR
+						prioritize_location = 12643
+						count = 1
+					}
+				}
+				RBZ = {
+				623 = {
+				create_unit = {
+						division = "name = \"Porganichiki\" division_template = \"Rosgvardiya\" start_experience_factor = 0.5 start_equipment_factor = 0.01"
+						owner = RBZ
+						prioritize_location = 15060
+						count = 2
+					}
+				
+				}
+	}
+	}
 	}
 	focus = {
 		id = LFR_granica2
@@ -1183,7 +1258,15 @@ available = {
 		}
 		x = 19
 		y = 12
+completion_reward = {
+add_timed_idea  = { 
+			idea = LFR_raid2
+			days= 15 }
+country_event = {
+id = LFR.39
+}
 
+	}
 	}
 	focus = {
 		id = LFR_tavolzhanka
@@ -1194,7 +1277,12 @@ available = {
 		}
 		x = 19
 		y = 13
-
+ completion_reward = {
+add_stability = 0.05
+country_event = {
+id = LFR.40
+}
+}
 	}
 	focus = {
 		id = LFR_dalshe1
@@ -1208,7 +1296,11 @@ available = {
 		}
 		x = 18
 		y = 14
-
+completion_reward = {
+country_event = {
+id = lfr.32
+}
+	}
 	}
 	focus = {
 		id = LFR_otsup
@@ -1222,6 +1314,14 @@ available = {
 		}
 		x = 20
 		y = 14
+completion_reward = {
+add_war_support = 0.1
+				add_command_power = 15
+				army_experience = 15
+country_event = {
+id = lfr.33
+}
+}
 
 	}
 	focus = {
@@ -1306,6 +1406,10 @@ available = {
 		}
 		x = 6
 		y = 15
+		completion_reward = {
+		add_political_power = 50
+		add_ideas = LFR_act_lustration
+		}
 
 	}
 	focus = {
@@ -1320,7 +1424,13 @@ available = {
 		}
 		x = 8
 		y = 14
-
+completion_reward = {
+country_event = {
+id = LFR.37
+}
+add_political_power = 100
+add_stability = 0.02
+}
 	}
 	focus = {
 		id = LFR_prava
@@ -1331,7 +1441,9 @@ available = {
 		}
 		x = 10
 		y = 15
-
+completion_reward = {
+add_ideas = LFR_pravarr 
+}
 	}
 	focus = {
 		id = LFR_predparlament

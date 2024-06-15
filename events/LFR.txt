@@ -450,6 +450,73 @@ option = {
   
 		}
 		}
+		country_event = {
+    id = LFR.37
+    title = LFR.37.t
+    desc = LFR.37.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.37.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.38
+    title = LFR.38.t
+    desc = LFR.38.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.38.a
+		
+  
+		}
+		}
+		country_event = {
+    id = LFR.39
+    title = LFR.39.t
+    desc = LFR.39.desc
+    picture = GFX_report_event_default
+    is_triggered_only = yes
+	
+    option = {
+        name = LFR.39.a
+        ai_chance = {
+            base = 100
+        }
+       start_border_war = {
+    change_state_after_war = yes
+     attacker = {
+        state = 621
+        num_provinces = 3
+        on_win = japan_border_conflict.2
+        on_lose = japan_border_conflict.3
+        on_cancel = japan_border_conflict.4
+        modifier = 0.1
+        dig_in_factor = 0
+        terrain_factor = 0
+    }	
+    defender = {
+        state = 623
+        num_provinces = 3
+        on_win = japan_border_conflict.3
+        on_lose = japan_border_conflict.2
+        on_cancel = japan_border_conflict.4
+    }
+}
+        }
+      }
+	  country_event = {
+    id = LFR.40
+    title = LFR.40.t
+    desc = LFR.40.desc
+ is_triggered_only = yes
+option = {
+        name = LFR.40.a
+		
+  
+		}
+		}
 	country_event = {
     id = LFR.1
 	days = 380
