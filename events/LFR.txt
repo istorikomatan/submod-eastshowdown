@@ -534,7 +534,7 @@ option = {
     change_state_after_war = yes
      attacker = {
         state = 620
-        num_provinces = 4
+        num_provinces = 1
         on_win = japan_border_conflict.2
         on_lose = japan_border_conflict.3
         on_cancel = japan_border_conflict.4
@@ -544,7 +544,7 @@ option = {
     }	
     defender = {
         state = 622
-        num_provinces = 4
+        num_provinces = 1
         on_win = japan_border_conflict.3
         on_lose = japan_border_conflict.2
         on_cancel = japan_border_conflict.4
